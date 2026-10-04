@@ -1,0 +1,13 @@
+# Tested with Python 3.12.4 on macOS arm64, 2026-10-04.
+dill==0.4.1
+iniconfig==2.3.0
+numpy==2.5.3
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0
+pytest==9.1.1
+qiskit==2.5.2
+rustworkx==0.18.1
+scipy==1.18.1
+stevedore==5.9.1
+typing_extensions==4.16.0
