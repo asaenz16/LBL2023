@@ -1,0 +1,2375 @@
+{
+  "date": "2026-10-08",
+  "hamiltonian": "H=-sum[g(XX+YY)+atan(alpha*(tau-d))ZZ]/4",
+  "data": "Existing verified Weizmann single-object archive and masks; fixed source-level 25 calibration / 75 comparison split",
+  "reuse_limit": "These 75 images appeared in prior Ising development. This is internal held-out comparison within the present protocol, not fresh external validation.",
+  "seeds": "Same mask-derived background/foreground seeds, no spin clamp; primary background-seed Algorithm 1 signs",
+  "candidates": [
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed50",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "fixed100",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "q75",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "combined"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    }
+  ],
+  "sensitivity_rule": "inverse_spread: alpha=1/max(q90(d)-q10(d),1)",
+  "exchange_rule": "Relative g=r*median(abs(Delta)); absolute g=1 is a separate comparison",
+  "temperature_rule": "longitudinal b=4K/median(abs(Delta)); combined b=4K/(median(abs(Delta))+g); beta_paper=N*b",
+  "screen": "All 288 rules on 25 calibration images at 8x8. Two chains, short screen, never a final Gibbs claim.",
+  "refine": "Within each model/threshold family retain the best two by mean uncertainty-lower IoU plus best by raw IoU; repeat on all 25 calibration 8x8 images with independent longer sampling.",
+  "selection": "Highest mean uncertainty-lower IoU in each of eight model/threshold families, with failed Rhat cases scored zero; ties by raw IoU, then lexical rule ID. Also retain best overall Ising and XXZ.",
+  "objective": "Lower IoU over all assignments of signs whose approximate simultaneous MCMC interval includes zero; not a rigorous finite-time MCMC confidence bound.",
+  "comparison": "Each family winner on all 75 comparison images at 8x8 and 16x16; report every case including convergence failures. Classical baselines and exact Ising targets retained.",
+  "small": "Overall winners on all 100 native 2x4 boundary crops; dense XXZ and exact Ising reference checks.",
+  "mechanism": "Overall XXZ winner: g/median(abs(Delta))=0,.25,.5,1,2 and absolute g=1 on all 75 8x8 comparison images, holding its other rules fixed. Exact classical controls at matched b: remove exchange, neutralize intermediate bonds, and match isolated-bond ZZ correlations.",
+  "confirmation": "Re-run overall-winner comparison cases flagged by Rhat>=1.05 or undefined, or ESS<200, at the confirm budget; record separately, without changing rules. Also confirm the first five comparison IDs at 16x16 for both overall winners independent of scores.",
+  "uncertainty": "Four diverse chain starts for final runs; block/chain SE, approximate Bonferroni-t sign intervals, unranked split Rhat, ESS estimate. Image bootstrap uses original source IDs. Weak signs and convergence failures must remain visible.",
+  "phase_interpretation": "Delta>g, abs(Delta)<=g, Delta<-g are bond-level proxies for uniform-chain regimes, not phase identification on finite disordered 2D images.",
+  "sampling_settings": {
+    "screen": {
+      "burn": 300,
+      "samples": 512,
+      "thin": 1,
+      "chains": 2
+    },
+    "refine": {
+      "burn": 1500,
+      "samples": 2048,
+      "thin": 2,
+      "chains": 4
+    },
+    "test": {
+      "burn": 2000,
+      "samples": 4096,
+      "thin": 2,
+      "chains": 4
+    },
+    "small": {
+      "burn": 1500,
+      "samples": 4096,
+      "thin": 2,
+      "chains": 4
+    },
+    "scan": {
+      "burn": 2000,
+      "samples": 4096,
+      "thin": 2,
+      "chains": 4
+    },
+    "confirm": {
+      "burn": 8000,
+      "samples": 16384,
+      "thin": 2,
+      "chains": 4
+    }
+  },
+  "numerical_method": "Sign-free SSE directed-loop heat bath with eight complete loops per sweep; fixed expansion cutoff tail < exp(-50). Signed-cluster plus heat-bath Ising sampling; exact row-transfer references through width16.",
+  "code_hashes": {
+    "xxz_image_gibbs.py": "bd913f06ad3ba80d1c63a2b0cc6be3c5a60785152f633c6dde8b17954e8b707c",
+    "xxz_sse_fast.py": "cdc0e367fff5d89909400d01f3e643f5871000546cacffeab7f72e4fb29b2e1c",
+    "xxz_glauber.py": "fdf36afa73de9bada80a645b74974869cff7126ff368fda72f397809e31acc1b",
+    "ising_grid_transfer.py": "1ddc0418ab54f11583d1d64b351b372ab843de9a0140c1e282fd758bda1fe494",
+    "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9",
+    "run_weizmann_xxz.py": "cdc364948dcb846cd73022ac4431b50cc26525a63964c64d5815d7b1e6aa0f76"
+  }
+}

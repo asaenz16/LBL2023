@@ -1,0 +1,629 @@
+{
+  "date": "2026-10-08",
+  "status": "passed",
+  "tests": 37,
+  "failures": 0,
+  "prepared_cases": 200,
+  "calibration_cases": 25,
+  "test_cases": 150,
+  "model_case_results": 2550,
+  "sampling_decisions_recomputed": 183600,
+  "max_metric_recompute_error": 0.0,
+  "max_self_error": 1.7463808177353712e-13,
+  "max_correlation_reciprocity_error": 5.484501741648273e-14,
+  "global_sampling_bound_excess": 0.0,
+  "maximum_dimensionless_bond": 1709.8257743475822,
+  "legacy_exact_iou_max_difference": 0.0,
+  "legacy_exact_iou_nonidentical_cases": 0,
+  "legacy_reference_sha256": "898de6b7ac46d61e74bd79d13c1b679c53537ba3058cdf5334d2fb0129c4de07",
+  "code_hashes": {
+    "ising_seed_sampling.py": "879a49afd8d85bfd907ca100c16b201bf903fa07cffc871056792e8cc4d94c29",
+    "run_weizmann_ising_seeds.py": "c713bcf36187db0c1734b95f21d98e7f3e2135933426e6f46e9480054f3375bb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "ising_algorithm1.py": "898ffe08c96a87cad04f3880148bcebafe14231891862dde280261d4df2f5450",
+    "weizmann_petz_data.py": "1e87ad3c6339ac79d8e3caa6a7469e9b9539d120cfe9fbcb75efdacd89a9e9fd",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9"
+  },
+  "result_hashes": {
+    "110016671724--square-8": {
+      ".json": "30d7eece08544e9578ab21563c8614479c9168767229c5c3de78091ce78ed76b",
+      ".npz": "c9a95a932a93d0f7653f0053194667f0d88c2df6c7081767869702ce01d76441"
+    },
+    "110016671724--square-16": {
+      ".json": "20e0c2c03e31c35556a995a8061d7b66b98e190076c84890292a68c8a7955524",
+      ".npz": "f73399c0a0828052edff771db17e5e2d2e15c8401a472b5f64b04374d9046b2e"
+    },
+    "112255696146--square-8": {
+      ".json": "5cfafac3857e44dc0a508175df31ba25ba99fbf4a97b116e2b81143baeae9940",
+      ".npz": "ade67e5b4c3611ba0d0f41c45e61d18a57bcd41e6f678edbdf21553592c32ced"
+    },
+    "112255696146--square-16": {
+      ".json": "4f1b7922ec5aba9f4a7097f1d7220ab8dad7dca111319db2fc6fa2eb09817de5",
+      ".npz": "081896c322af1ae80a01baf35deb1eefd17b9a9e1e8a838b7cc934ebaf47f522"
+    },
+    "113334665744--square-8": {
+      ".json": "c1cea0b2158ee853521e89fe3de2599caf4a01b431077bd12f41a0f6b2a16004",
+      ".npz": "8d328bc3554bed51ddba90bf47002d2e5272fef08c2492a93e1dee70f96bee93"
+    },
+    "113334665744--square-16": {
+      ".json": "03eade645709eaae3be9a3a0bc7b8a7a08bb30b0454ffb7e947d37275c9fce79",
+      ".npz": "2b2cf0da033fbd56c4f8ace836c25cc5a439a5ae705ab727b8a191f1eb0b076f"
+    },
+    "114591144943--square-8": {
+      ".json": "b5c2b811531721631e2880f179db852f7ab71e1aaab0aaf7eacca2bb216399b0",
+      ".npz": "0950a4cd73d1bb58153cdc787b5d66b7773cda991d9a910ad4ccd0a484c2b0cf"
+    },
+    "114591144943--square-16": {
+      ".json": "fcbee79c601e4ce1d275bdd1819d6f9cf8b9704007cb0c65f9fef3180d8e8f03",
+      ".npz": "33c01d53519c9c74ac7d96db6386b34195ac1312d753e2bd96a102314d730d0d"
+    },
+    "aaa--square-8": {
+      ".json": "447236604cab4668aa4a3a36f29facd5d5281bb5ff73aab90efe4951a7405258",
+      ".npz": "92c884c0e53b91f6d7c6d7dea31454cc0cc227735680075f1e2d622b21ab8adf"
+    },
+    "aaa--square-16": {
+      ".json": "050343f8652ded6acd0fae11c739dbe5e4c29d31c3b5a3dd73832fd5f1551ad9",
+      ".npz": "43d5cb9eee9d3a4c17618b7703dc28f1e02fcbbfb5565f1e3673e020c9868f25"
+    },
+    "animal_5_bg_020803--square-8": {
+      ".json": "0ea48577a6e73bdbdcec7932572ca06c8faa582b6073d2f4ae6e9f1feb97e29c",
+      ".npz": "113ea4f3b8135cd7f314d7de7a9ef5d48f6730c4dbf175fe9aad2bcd0a143f99"
+    },
+    "animal_5_bg_020803--square-16": {
+      ".json": "7f35d46eba35c210562778cb06df0c3723a607489d7598fd372cfe9113a0f807",
+      ".npz": "77035d4d86cd9a8177f11827ccd07da953cd99d908a88a10f6cb96049f9007bc"
+    },
+    "b14pavel013--square-8": {
+      ".json": "f9bd8a32fdc7e7ccc33cd0a8c0cfa27af4052219aed3e1f66131e9f76d9801f5",
+      ".npz": "082cc5f1231d4c1efdda224eafa2880aa6d00b88aef85fc8bd2f092da245711a"
+    },
+    "b14pavel013--square-16": {
+      ".json": "785c33af4e772cac49d9136e52c953819489b564323695ac317e7a496ce8be5f",
+      ".npz": "1bc7b6fc0dccc47d16f749ceb8138d353090c2a4212abdcd9a865898a2324170"
+    },
+    "b19objects118--square-8": {
+      ".json": "e70c5b2d3c834d980508f2573d4f7e6fddcd38db6471f063593acb0673b5206f",
+      ".npz": "d95346032280bc80fea3832d4c8190b7c44ce7f2ea3939eee4b497c431ba0019"
+    },
+    "b19objects118--square-16": {
+      ".json": "762899ea58cd4962ca2fec919f47e0a130ab2aac3d65048b2021ad44aa8716df",
+      ".npz": "e78d7b1691b6d8bc08964e4197d9c995b31586850229745e3cad2200ec4dd3af"
+    },
+    "b20nature_landscapes129--square-8": {
+      ".json": "26029885d8b435c5d4a3be952a384139c12465a97344bccb116e00333372cd8f",
+      ".npz": "ec75a2599bcd8eff4a7fdcc4c041fe8caab38c7d79eb3578958676d521bfc470"
+    },
+    "b20nature_landscapes129--square-16": {
+      ".json": "a4ecc758cb21388eefd6c463702ca9846a2bd87ac73b13a19fa34931bb221bcd",
+      ".npz": "16bccd6da9eaf600362205040e17200be1bc173f52733f51f9dbeda8566d544a"
+    },
+    "b2chopper008--square-8": {
+      ".json": "ab2c0698a360a40e1fdc77b527617f8440e26180871abb3ec28472f16c368ed8",
+      ".npz": "7c4bc7f59d5fe296774a6c2d837be146780952cf3d9c2ea6a9e75c284a66f8bf"
+    },
+    "b2chopper008--square-16": {
+      ".json": "32a2ace2ee5d1943d3e7dd039723fc3cb63f40bff8fb5fe6e19121d3f3dd35e1",
+      ".npz": "e2b2d0e7c521c4149294ad7764c07632fe566cb955b277c4d9cc93484f117000"
+    },
+    "b2pods001--square-8": {
+      ".json": "362db578fb3f7cf367752482384b089d6c5b4e4318d50bc7c410414840e4d0af",
+      ".npz": "7ac3eb4eb742a6d73b617f2f0cd09087ce55d03796e2afee3932c3aacdeaf06e"
+    },
+    "b2pods001--square-16": {
+      ".json": "2bf60b5d9261e4af5a48d8cbadff12b749d39f6f543a6eb3b087032bd2e71fee",
+      ".npz": "6f37b11cd172ce1a08e6a042f2c391291c612f8fdbe378606278d2c88f7f4e8e"
+    },
+    "b4nature_animals_land009--square-8": {
+      ".json": "6331097db8a734a291e4441b9183a87ff4efcf372d51008fd2e011859a611928",
+      ".npz": "2c6a942ee2c7c7b85df6a31400526f3f209ade8f109e0ca5abad58833d1ecdc3"
+    },
+    "b4nature_animals_land009--square-16": {
+      ".json": "292bbde8ddc56b8c83100ffff563d4ffb11f70f918b491093c480e96437b3506",
+      ".npz": "d3a3cb53abe1857bb972ae583560b24b7c289d914889f98381431e3489d71f93"
+    },
+    "bbmf_lancaster_july_06--square-8": {
+      ".json": "76c9cdb65aadd84b6bb27801287750705c0cf9ec948a9118eb8029a67b4d5a16",
+      ".npz": "06bdfda89bfb6bc5b5f589c19f73d45efaffd3b9b27149f1b6b706e70e25beea"
+    },
+    "bbmf_lancaster_july_06--square-16": {
+      ".json": "f16402c68e6579e45603325505ea7aa3d3b0fcc6c96f85f848bf36d6d09d0ec1",
+      ".npz": "920c71f76aada138e227874b826a050c663323d81c53a431c08b4d96f10a38ca"
+    },
+    "beltaine_4_bg_050502--square-8": {
+      ".json": "f0eb06887d05edc1aa69a6c8443651dacbb6cbc93d138a25867813d96a7d2407",
+      ".npz": "8c9008a9e9b61b286016d38f33def8e27dbe45391ccfe43f68b4ef6b01b92281"
+    },
+    "beltaine_4_bg_050502--square-16": {
+      ".json": "6ce8581ccd0d4af077bbc550073b3ad7c704336b217c889fe7d58f96e442aef2",
+      ".npz": "a240700903987b180ea057d7ccf4bce1a4f2f3b28d9921b69b343ef339925fc2"
+    },
+    "boy_float_lake--square-8": {
+      ".json": "f89fed8c26e3002ee7f0537d42966b867c5b654165afcc5fdb0aa3a88e57e4ac",
+      ".npz": "d3811d407d77938c584a4aaebf7917b2206b5597c77a1a53d72e664639e2cf53"
+    },
+    "boy_float_lake--square-16": {
+      ".json": "a97bf9e7ae62d2ffbb4d0135c2fd189aa19ff21993b66a5c139e3b7fb3c9657e",
+      ".npz": "00d1900b000a059a65239d7e07e6abc123d92e3282a65da525ffec97cad3ff4d"
+    },
+    "bream_in_basin--square-8": {
+      ".json": "a43aa1a7031f0c5e239b94add7ee1ad697ed4cab056603d4163126664052c796",
+      ".npz": "2621ef1e4bb843d0fce2354a17fae03a0339d126f156cf58ef0754c033ce7565"
+    },
+    "bream_in_basin--square-16": {
+      ".json": "2c26f90e5f97322d202e2fff5a0f919afbb47b64a81233cf49cf3b05765ce047",
+      ".npz": "428397b94c41de3f381d04319b029944d6b824fb086abdab8b4cbada609c5906"
+    },
+    "broom07--square-8": {
+      ".json": "57b90571d5e53212f8c92c58615e945e532809257eb279db46dfbe95ca6812ba",
+      ".npz": "7abf4fcbbc7e6d70b21fd4aeee37c9c8c74d94e9a71166245f0b06dcd58b3670"
+    },
+    "broom07--square-16": {
+      ".json": "e98f7ed48343a9de4a1094bfa7ed6bad53f1bb87c76fd1c9d67eaccef8bf1c49",
+      ".npz": "bca28448892aaa98d85843ce1100576aea77d50e80f7da35832cd4231dcf8189"
+    },
+    "buggy_005--square-8": {
+      ".json": "51c8d489661d8fd386e915a07e06b6b18b3a26c7ee743e29433af2bd9f183193",
+      ".npz": "d5d810b9439741703c0f76eb27b505c8e036f4b97ef4bdc74ffa43319918b348"
+    },
+    "buggy_005--square-16": {
+      ".json": "97f9346e6bd65f207cac64171a5735d0b1fd9b1ec86e661c3e41f82e983adf93",
+      ".npz": "1dc4bb0b9671fa18f87d47a843e33be00244e65961e9e9c0c4566f74e2331517"
+    },
+    "bw4--square-8": {
+      ".json": "ab523ba986461cfa4d305450f2a46b3972c4f7a00e8547d741864aa29848b95b",
+      ".npz": "e685614b72227aa775a2fa7662a37b12be328b183a0b9778b3eeb5ef718b9862"
+    },
+    "bw4--square-16": {
+      ".json": "e59d191042b94d06e3eaba6eb0ab30c75d6e38d21e2c56beafc9031abf51c001",
+      ".npz": "d128ddb332be4cd77dd79ce71c85f51b57ff1e071f22b0e9a985f32e4a20e450"
+    },
+    "carriage--square-8": {
+      ".json": "041ec202668ee05ee3393208bef25b73100c83e9e342211912b976456df10921",
+      ".npz": "8b01bc5ddc06e9520a4ad32ff0aac1977cf7e2e457a72ef5e6dcd5e2873c42de"
+    },
+    "carriage--square-16": {
+      ".json": "867bdb1ab0d73900fd81d0616f1c29853317fca1bf356196e4c4838f59519093",
+      ".npz": "5dcea2cabfaaa2a5d3585e18b1744ed1f26368ee4721e1910940a21cd03ec958"
+    },
+    "carrigafoyle_castle_ext--square-8": {
+      ".json": "7d75dd153df95998c366d5ccbe68e4eb3b03ff52aba3af6f1264deb5b4801c97",
+      ".npz": "3ae6567a3a7440618c8596d44cfd6e07e5a0faa7e02e105da98d6cdda8397757"
+    },
+    "carrigafoyle_castle_ext--square-16": {
+      ".json": "45152fb1ba2d7acbbaeb17a874a8cdbbd9cab4e4bbd19ad572f7efdb6f453f3b",
+      ".npz": "5128a9d93441c888f8f57be4fe366328b486a307c3aa7e24a424d9b203ee5c1f"
+    },
+    "chain98--square-8": {
+      ".json": "a483775190db3ac39d5c89ec647b0ed7f041a6d10cb6bf51f9206fcb801e0e73",
+      ".npz": "5cb859eea4a3063b331504d0a5c78a5847776d50c561b8b16f81655c4308f0bd"
+    },
+    "chain98--square-16": {
+      ".json": "416995475b4d1af53abbf6ee764f530c4cfde917eec3e25654bb8f7a886deed9",
+      ".npz": "82de27be91120330c9dc52ce62419f033cce1c5273cb5b47571711b743f92854"
+    },
+    "crw_0384--square-8": {
+      ".json": "c75a155eedc2219bda22a34fe1f891c909878ed79d8932841cbc36628bbeb87a",
+      ".npz": "7d80d5ee70c17c051ceae074dbf3cf701b98dc3633a9f83d236ed13ae23c0763"
+    },
+    "crw_0384--square-16": {
+      ".json": "817f0f9e0db833986df5620578e0e2a40c2894c6d62fb3bfa789ae3ca699a0d7",
+      ".npz": "43bed9ad764961baa6a62f31f87256a07db8d659eefd1231fc907b9b1b431ef4"
+    },
+    "culzeancastle--square-8": {
+      ".json": "902290b93081dd0ac17c0c86f10cdbf59fe7fd06988114e4c3b0ac40b35b6d59",
+      ".npz": "e52d3e0903227a89fb2b888b46da3104369bb25e9d9372a3116a483bef77faa7"
+    },
+    "culzeancastle--square-16": {
+      ".json": "52ba2d600f46aac876350a29e2d9d5b6fd38846b6a8c6a43bdc1c16ce8563b49",
+      ".npz": "013f3c8d7bec3a26b3959a7a6190a4fd661b4e5e9e8aabb28747775a6ef02055"
+    },
+    "dsc01236--square-8": {
+      ".json": "eb5a29f72fcea032a9444e583f105e43bc79b59ef7da3b215e122deae517a9e4",
+      ".npz": "245c4aeae69511a2c5f1c47dfdd3bf6cc8000a89ec7fb8be04917942de9a4ad3"
+    },
+    "dsc01236--square-16": {
+      ".json": "6ac330a9c328adc57a0385eb133a9162acf9be583a90e874ab1c2a82a03ac06d",
+      ".npz": "3b726ddfa4f9f2fc7213c738ec50160674f63cc00644ed12d20aa34c3c309e9e"
+    },
+    "dsc01239_d--square-8": {
+      ".json": "11b6ecad3b3c7208b49d57d0150e89438b2b7c866722122605038d2b6700811a",
+      ".npz": "bc5763fc566da2c00effe8335f257bf08a98bf989ed35fd4de0dbb498128e268"
+    },
+    "dsc01239_d--square-16": {
+      ".json": "74d6aaaecce199a2c2ac6ddbd9619fc83306f39d74e13d151aef0037d20e403a",
+      ".npz": "55edec863b7d2b2aa887749dd26e844274462d7760a745b127df2e6918df166a"
+    },
+    "dsc04575--square-8": {
+      ".json": "2112aaefb4b56aadc6ef46ec83f01b2cd00f91b2200dcdfc39c60bc959e04c42",
+      ".npz": "dfb5a4c1369344da6b5603d24b8131fb8fdb0fcca69327542fdf0cf581090370"
+    },
+    "dsc04575--square-16": {
+      ".json": "782e8626fdf48e4fb0f438ce6fa5ee7a185f74f84cc6d330696784c440c52d70",
+      ".npz": "2ca4008c0f893d3354d6e05301c251b7a9857db1ffd7b306f7d988c93f6ed775"
+    },
+    "dsc_0769--square-8": {
+      ".json": "0949c61cced3e535400c7d3bf500fc41ba86b9cfcc2a09a6c0d4b3f556c2b948",
+      ".npz": "39f85400bf2d66e9d1e42748047ddc28527b36f254cecc706d1995b46bad8bc7"
+    },
+    "dsc_0769--square-16": {
+      ".json": "4eca8d8e18c3ced232cadbb7c9181c471798a57b59dd0e51ae65e83504a99516",
+      ".npz": "6155420a8f6c35306d14055d8bafbfcb03de8457013388ca8784cbd44b8f6818"
+    },
+    "dsc_0959--square-8": {
+      ".json": "4b63461f108754e220a66cda98e39490464d65204818e336ab5943481592a23b",
+      ".npz": "30e6799c21e7cc4ad219307f673787f1b9a69cff14c9d3cb9831ee38fc21210c"
+    },
+    "dsc_0959--square-16": {
+      ".json": "23e3970a96cf63f8da5f591e87de8e6ddc9a717b3ab15cf398204a49b90daf12",
+      ".npz": "f43e922a0785886cdc7d170ebb119e6eacc5711750a4c76e3b2028048e0d6c83"
+    },
+    "dsc_422910022--square-8": {
+      ".json": "32fdee68f527ffd0861ea5a7551a4c88ced3b100b28e0e516db1cfb99ae234b5",
+      ".npz": "5fbc51b9c165efb933c5387e05d029cb83fbebf0a30f96842eef0a6cb297394e"
+    },
+    "dsc_422910022--square-16": {
+      ".json": "f3e5bdee6b6b13c2fb1540109d7f6cb44846fb22489a57eb40e79321469f8d7b",
+      ".npz": "b6fe0aa5864bad808c92b0cd5d8abb1247e38064fcb0be062fcec9203315b5e7"
+    },
+    "dscf0459--square-8": {
+      ".json": "ba10f85c11a5eb95a55a221a0add9fd7b90ecc19f77874ab6e2070283c98a534",
+      ".npz": "5efc15c7ebefa0778a9ecac063771ae6a6795faeb1ed21a2b3c6dceab4616b66"
+    },
+    "dscf0459--square-16": {
+      ".json": "b1ebb86cd6b5046fbc6cef36c8915493c2c5a888ee35ec9626614f1b275838b9",
+      ".npz": "da87a50a2150ca4871afddf8c00719c5a6d282fa6fa66a9828f85ec00a05286a"
+    },
+    "dscf3583--square-8": {
+      ".json": "76f18a6727cf648e57a7052f054863b5f3fc5824c346502cf6ba6993c82e7220",
+      ".npz": "c3c293c6452f0cf370d0ca0ae3bbe67b47d329b44b05b194dd4cebd300c90da9"
+    },
+    "dscf3583--square-16": {
+      ".json": "7f6c3fdf8e92086e26ff799643d076ea46cf075dda2d57368758ce652ce2b280",
+      ".npz": "26a7206739a341b295a666d8af09a052d538f18ad00f7be6dac25c6ca39b9748"
+    },
+    "dscf3623--square-8": {
+      ".json": "c27154a13974c955fd8fce934d8fd83b05fa08d5e0d8f0cc1266079e5b1cd301",
+      ".npz": "adc1a5af0096803d3449f12499be00cddb22a3f9bfa4d9e0d988a2aa08bc8e2b"
+    },
+    "dscf3623--square-16": {
+      ".json": "1dff214483cd064d9b55d92388ea1a93f279cb8a8770dcf58f4603e32858948a",
+      ".npz": "c8b77220f3bd9c4c75c8f10325856cc8dff95e34b3316ef0228c6638654e5f1f"
+    },
+    "dscn1908--square-8": {
+      ".json": "b1f0f13a24df4cf9b12d26679f58c8cdbb50025a91852dea277824e87a7c6780",
+      ".npz": "355d817b7822fbccb863d50975c3ffda7d620cc657966321fb1f9b926a34ec0d"
+    },
+    "dscn1908--square-16": {
+      ".json": "51c5ed3cd1578817293a50cec1f955cc5fadbac80557c27ee00cfe8bfdca1d2a",
+      ".npz": "46afae8e7f2b5a10ba95163a6130a403db7446c85b5921ac044fb7d69b6d4223"
+    },
+    "dscn2064--square-8": {
+      ".json": "3d987802e030bab8fc8eb49e711baef0c141bfdd1cd01dbd255736735c42cbe8",
+      ".npz": "2847dc1353ac8a8856c500d76e09ae4c9e58f157780684706dc3f25b322976ca"
+    },
+    "dscn2064--square-16": {
+      ".json": "627233b9f97590e1b845e97fdfbc06be5a0818cc9c146fac8133e1f09a4aafa3",
+      ".npz": "ffbc57677ad60042c715777c5e32b0f590229817dc53503a7d0d4963dbe04162"
+    },
+    "dscn2154--square-8": {
+      ".json": "dbd59ed30c9794c900bcdd45cb2a84945580a97715d3d78c979d9982984b46c8",
+      ".npz": "6b9251b9608275bcb80f1d3e39ab272dc7f5a7e60beeed021638542fd3b46af3"
+    },
+    "dscn2154--square-16": {
+      ".json": "253be8c15c213d5cddc57247f4c4c2e65f463994a98ffdfdcda96b6afe2fdf04",
+      ".npz": "fc4ce7aacc47c14c225de2ce9a5986f9f1e03b618cdf043d0a370e9ff57d1902"
+    },
+    "dscn6805--square-8": {
+      ".json": "2dfb6964ff290ab93981f9c09bcdedfd429fad829a792ac2dae07f8f4948c0d7",
+      ".npz": "8897b47f720c6fd189a70896ff9b0bceec26319db150e0b8cd18f8cf5b4ee03e"
+    },
+    "dscn6805--square-16": {
+      ".json": "427c102b1e5cf15afc6ab2456e85194a6525d17a9bb0e1dd96fdfa36e1bef70a",
+      ".npz": "5941d1cbda9d09fa3082ab95ffe4c556cd25ae19dbcedbf383a34fa4e7428173"
+    },
+    "egret_face--square-8": {
+      ".json": "cd546a5cd397239af80aeb598d22cf27f95dd24890f1f1c13435a3a81c99cd43",
+      ".npz": "b98d997c687c92fbbd8bb523f211450962a0af0b16e1baba54dc11d9b7d27e1d"
+    },
+    "egret_face--square-16": {
+      ".json": "47ac1569e3463a562053d3685ff9772c58077923da8589c935561406e7048672",
+      ".npz": "c5fe00ed51c58a98e379f64dbb0e466572a0bcc5cd2ce87d908b8217aed390a4"
+    },
+    "estb_img_6461_--square-8": {
+      ".json": "1b0037293736c3a428a46fbcfaf52499871f98ffb22e60d686866ab6a6cc233f",
+      ".npz": "082a73795a9b81a4049751a1b332d05458a080e87a4a53782334114147e241ab"
+    },
+    "estb_img_6461_--square-16": {
+      ".json": "de63cadfb263f438b8afd05ebdb64e15f08e4ce92d5278eb82645be88b982e39",
+      ".npz": "41b4cf5dd8b535c081ca081089ec9639f00db9426a31ed7116f0c3b708f9c272"
+    },
+    "europe_holiday_484--square-8": {
+      ".json": "f50270ff861a1f3434397a87c8dd1f469953e0eb890663b1484043d9a0a86286",
+      ".npz": "99a0d0761acb95af8df331949bd9b83e65328dce9753ac802f4eb0583fec5738"
+    },
+    "europe_holiday_484--square-16": {
+      ".json": "9022f2c8354e9ca09cb88fd1768afe42ff3d9b1522c0782df706d741c5696b14",
+      ".npz": "8dc8cca0ca1b17bff9d41d35974465fc54f812291804b29e45d0c97c2cfd7ed0"
+    },
+    "fullicewater--square-8": {
+      ".json": "d7e67bc97a062f7b8cb1deee86712ac69ede240bfb23772dddbc574f8da29a72",
+      ".npz": "d67dc652ab90bfef963df0265ee3c98557ae3c80c10f30eb6213de61f6b59b58"
+    },
+    "fullicewater--square-16": {
+      ".json": "8b732bff8c76dbbf9bacf0d341e3e5ecb3d65d48bd8a68f6a8e0ae0e14e229d0",
+      ".npz": "a07cfa1391c67775045c559d7a61554e3b9769f8740b9484a85e13c232ac1509"
+    },
+    "hot_air_balloons_05--square-8": {
+      ".json": "0a2711466d29d191ec5d0b76b2d3bd5535973be96b19d373d4a4c5cd47be0c70",
+      ".npz": "99c3f6c8c051370bcd60bc75b17ddd40e8a1c37f669497bcac3e694e4500daf4"
+    },
+    "hot_air_balloons_05--square-16": {
+      ".json": "2635de096607c0be0d639e2204dee426ed19a5c42dbf794cd975e8f04e27276f",
+      ".npz": "b5361cfca370be64e7ea0d52900d9e896af4ad720a708c22e4bbedd4e773a2bc"
+    },
+    "hpim5083_morguefile--square-8": {
+      ".json": "cb01be333a6180b794644ea5f78e2b0e592faf208319e77c4c44cf1874b42a00",
+      ".npz": "8fde764f52876a7bf35fcb5f1cddc07b80eabbe6c5955e038694875f051fd40c"
+    },
+    "hpim5083_morguefile--square-16": {
+      ".json": "ecb6045ab952fb3eae1c4ab6c774d86452262028d2c577f9b12202920460e215",
+      ".npz": "3cba62ea4edaa1889b7e04d93b0302ade9df2e7d75be02a9cc06809ea8ae0a00"
+    },
+    "imagen_072__1_--square-8": {
+      ".json": "4775cabd9a5c1617b9b5f668ef3ec56708c044da15459660a6b339ef31e597ff",
+      ".npz": "0e22daf4c117eac804bba5f68345382a465904a67aa8ec4b4c6291d05f45922a"
+    },
+    "imagen_072__1_--square-16": {
+      ".json": "5f94ecf2d8dcc3bef5acae7bc902d563cadd0782df660c0d6bf565cb0ba1b5c5",
+      ".npz": "6800c9b3ab0b95d82f6c4d52173c91c809ad82890297680e23501d5c2e8090f3"
+    },
+    "img_1516--square-8": {
+      ".json": "e5c0d8147e14e058453b5d58735a51fad28f5b963e69a2cc3735176d7ee70251",
+      ".npz": "445624710949d1a73ead6ae30b474863e9d61b9d7aca232a52cc0e9698cdf262"
+    },
+    "img_1516--square-16": {
+      ".json": "58c0b5787c13cca8d2bade361305a2e7b737d07bf1c43741e5986e9d9f0d2d46",
+      ".npz": "317ad76967b0c848cdda954416c85d7a73bec7549770561cae9b5422571395e9"
+    },
+    "img_1965--square-8": {
+      ".json": "d631a01415119d00bca47fd5c282ac3797cf0f76974a449f26362c327f9cc69c",
+      ".npz": "ab139a0d2c0a283f81a176c3596ffb513a678ceeb3825051b378be0c3b42040f"
+    },
+    "img_1965--square-16": {
+      ".json": "cf251d947b7e4e3f5f238d7f1961c64a0388205e511affc5ae1e4c9856094c92",
+      ".npz": "6b2129f57e885075dc090aa6f8b3cd2eaa15597082d272e5d26a51e5c8b13096"
+    },
+    "img_2528--square-8": {
+      ".json": "fa9f037fdeb2a9e32ec745b100f82455adc04c01027b00ec5882692107c54298",
+      ".npz": "bf5ec19f23b6ca99c4cac894b623587043a666a35b40366bd4bf4d6269b0307f"
+    },
+    "img_2528--square-16": {
+      ".json": "070dec4558e09986e28f9f0a934d2cc0b3622f89afba1b69bd88f1011415ae2c",
+      ".npz": "51d68d9d560c20bdbb23be925fbf041d5eebbdb46f6e50d61866760c65502f3a"
+    },
+    "img_2577--square-8": {
+      ".json": "1b218034ed5c8ccd6532406ef5405228a5e682d8483501a0bbf9ad9a42b0687b",
+      ".npz": "2c2c7df2c6d7e81b32ca6ce48b7e0397f1a385702363d5fcae1496de4e0b708f"
+    },
+    "img_2577--square-16": {
+      ".json": "5a16b613381fea4aa1ba09c6f65bf6d4e55a61cf479bb6fce6ee2c8e0e978173",
+      ".npz": "afb7cfddd985728ad406bedbd01c283d89d87a0fa027e060a82a15b172e897db"
+    },
+    "img_2592_f--square-8": {
+      ".json": "e1af35c32f55d58c00a161102027306cbc7ea2eff1490582f2c525f7e28bed31",
+      ".npz": "82d0621899ce968a8995fa78d87bf91664e62e1bc4322c38816020f02226f153"
+    },
+    "img_2592_f--square-16": {
+      ".json": "8c17011b01fe23373e794ee26711f50c41a891cf04ccebe126d78d5b2b9d89db",
+      ".npz": "840822bf037a2823592a7c114cfac50197c1a0fb41bf6f6506d851a4c825335d"
+    },
+    "img_3083_modif--square-8": {
+      ".json": "8b1fdc6eccae2da5e764ba1e0647daa56bba4c33b7180826f3fc950b0b99a8ba",
+      ".npz": "09af9ca75b86ee46798559989b68d934ae9c12ba2d7d70a5edb15fa5272f6d5f"
+    },
+    "img_3083_modif--square-16": {
+      ".json": "6fe533da2380ff3e6543f37b713b377c062f23bdad3406699fdb548c7b19ea59",
+      ".npz": "8cdf31bfe3080bc8bf6d79d286f529543ceac356ab57e28642ca537a5d43f6cd"
+    },
+    "img_7359_copia--square-8": {
+      ".json": "e189a2c0b071ca719f72b803a984a2ded86c05d2b5697ceeae8d06bee6998d71",
+      ".npz": "95b296bec2618b2d32316ca67444935fb3e6bcea6710434418550779d0cdde5d"
+    },
+    "img_7359_copia--square-16": {
+      ".json": "fcfbea009209c3eac7f23a2851ec78c2ae609c0673ef76abbfae2d6c2a83c5f8",
+      ".npz": "cfc87678c4d9a2e972a4ae59149b97f2b7829c867fce0000a853f3c7eef91138"
+    },
+    "imgp2712--square-8": {
+      ".json": "672072fd6c5298b9e43b76c9757135a24b2e34da212035393d40d5d0e3e364d8",
+      ".npz": "7b2a96e8c0238d322de3717762c70e1c254da4c759180c14d03c2c7b837798ae"
+    },
+    "imgp2712--square-16": {
+      ".json": "9bb57aa360844f0a208c990220ba4b1f6db135d10e556e0b97a87b68057fbc32",
+      ".npz": "b216e1f1fab3ad66d3e524aa0a233cbec02ce3e70ba77e1e95257f8cec30fe68"
+    },
+    "ireland_62_bg_061502--square-8": {
+      ".json": "c03f3c7f2e93387ceb145a5ba1b0390381648e6743444fa55da99322e3a69573",
+      ".npz": "a4797b38446be0f46a8b78d4b31c2d429d6505abe4627dec424a844183fd75fd"
+    },
+    "ireland_62_bg_061502--square-16": {
+      ".json": "d2fdb0eb4bf75f900e8512682469d386cef9650bfd32296e281e1871511785dc",
+      ".npz": "719ec97fcdb33efd3ef30bdd43ce89eeded0fe77adaf2efade327b2c298362f3"
+    },
+    "kconnors030466--square-8": {
+      ".json": "e98c38c9b50c3746955cf721aed3c6d111d9bb8401518255fb1cd2f9ac6ad10e",
+      ".npz": "24ddc776b3a07e091cd8f70267eea175eede3b412d1daa3ee569c102274dcf0a"
+    },
+    "kconnors030466--square-16": {
+      ".json": "6527c3fe7c701ac5a2ad2d539f131a04de24fcab0052497556a820b3952ca476",
+      ".npz": "8e273cbdbf209c160f29959bdb8ab37f5b56849de75bd45c66b62d0453a2bb2e"
+    },
+    "london_zoo3--square-8": {
+      ".json": "ec131744f10b8a8e4d052456c0afec95d840222258ad4e83892643e3fdb4d162",
+      ".npz": "64cc2a7ac817a51a4506925008e28e215588f31e7b7cea491b669411d8f0f38c"
+    },
+    "london_zoo3--square-16": {
+      ".json": "81863abcc28b4ccfaa3258aa5e1ccbeed421f3965f2f541a47757e8d70257d7b",
+      ".npz": "fa0106260fd3c15cd6e0b7632cab739d54437a9eb334b6a299e09dcc5c55697e"
+    },
+    "matsumt060102_dyj08--square-8": {
+      ".json": "b93ae8e501e9dd4107adfb6a10105437754771fee7970268316c8be70626d8a3",
+      ".npz": "01cc68cb636781244856077396c0776cd0d001518c0950ee1e9458d9690804ac"
+    },
+    "matsumt060102_dyj08--square-16": {
+      ".json": "1ff6af2f8e9faf17a9085d6913df07abcbb7ec231bdf1f69ebacda461e437ddf",
+      ".npz": "bb12896d8baaabfbb37bd42910479f41935fb0a3394aeaadca401e906d3fe8fa"
+    },
+    "moth061304_0679--square-8": {
+      ".json": "badbbe4e3df6dae35d1986e51ff3450c3477b072c0a61eb9a7a474299f7605f7",
+      ".npz": "2ffae2931b955754326b6dbb35054c47073318ffccc9151a3c9e489d5e934a64"
+    },
+    "moth061304_0679--square-16": {
+      ".json": "6feda60c577f07959af68d7568e6f2cece09dc6cff81207d2f1ff232a22e5030",
+      ".npz": "ad5d5fcf09d2ca4ccf8a74daa46cd5db5f9bbfcaddc9459a59f36e2ee321aea9"
+    },
+    "nitpix_p1280114--square-8": {
+      ".json": "3a186c8e337bba6011bf49664e098cdabad44fd72e5c7e3cf94a71d76e5d3a52",
+      ".npz": "77200930d7f8a0968cf038e1dfca29b0fb1c2f9502a14f50cb407fabf858eeb5"
+    },
+    "nitpix_p1280114--square-16": {
+      ".json": "7e59e7a78424f5d42dbd1166df56a5d01eea28c92ed0fb4c11226ebab16661a0",
+      ".npz": "42a7f325112a28eb76a6d5cf04a502e1429d55dd162f8cb01782b0d464cebf50"
+    },
+    "osaka060102_dyjsn071--square-8": {
+      ".json": "461c2cfcc124f3c6002bd7d3711e034be9d5e04a2f5b8f39fd5f412ba82752fe",
+      ".npz": "0f2c8f40859f3ad8ac09ace02ab750f4331ae6d1599ae96ca675b6e6e8e2293e"
+    },
+    "osaka060102_dyjsn071--square-16": {
+      ".json": "f6d2f74cb69b068cbd47120164011fb671ffc28553226d04aa0d1a75bb22787e",
+      ".npz": "7fa975c91bc2b2bf400f034d4d83ed72b4f7f408b3521d907ba05c917ebcb64a"
+    },
+    "oscar2005_05_07--square-8": {
+      ".json": "954a93151170ae2efce9dfcd90265ecdcca333da369c8993198cc9f0702f84f7",
+      ".npz": "c6fbd8cdc05f9ab32b1da4ed714bf41e9872b5affcf58030b4e51b9ae02c24a1"
+    },
+    "oscar2005_05_07--square-16": {
+      ".json": "705c606d9c231581e04c0db5910a250c06bbd0a5894a834e13eac1894114ae18",
+      ".npz": "074b635032c826174872cd77963f50318469f654dc8441157cfa190c1630f149"
+    },
+    "outside_guggenheim_walls--square-8": {
+      ".json": "d59a8c4d28daef15064665147dd19c4068266b2efac29f6f021816f2de877505",
+      ".npz": "288868457390eb0ce257df0b5631959282853bc231df234d06e2e5fac33b81de"
+    },
+    "outside_guggenheim_walls--square-16": {
+      ".json": "397e3d274942f18b3d198c5b3efd7d371e0aa1f729f5a58a993e13017d89341d",
+      ".npz": "66aaf0f315b40ef2686af5c49924adb2b68f2d205401c223ce55577375709835"
+    },
+    "palovigna--square-8": {
+      ".json": "c8bd44f31f86bdff1013b70fb6b1f7eb8ebb5f5885e30feb71bd881872360c91",
+      ".npz": "8129bf87c368f77badc72eabc47f19e49234cdaa4c4cee4b111f52454d7b71c2"
+    },
+    "palovigna--square-16": {
+      ".json": "b1990f98d63de08ed2093913204741848d93459322d88c1e40228f96ebd25f5e",
+      ".npz": "4f57343d13da44eec65ed824f417ef2514f49aaaff64138c569c9a4702818d43"
+    },
+    "pic0203vn0092--square-8": {
+      ".json": "5fa710e8e58ce67ecf4163165831475df8af0a661850f0a9b15003c1d73e6e50",
+      ".npz": "3908a3716449a00f202ab117488bb12bf8440ca2223c2969e883456408813e6f"
+    },
+    "pic0203vn0092--square-16": {
+      ".json": "9d2b0a5a0addee56bce6d72679e7c77c617ff3f7e4e51ef90608e0734e632785",
+      ".npz": "a7d711afbc63819ccd31c07f946f810f96c8752808d19d80dbfc68ae2d08c006"
+    },
+    "pic0203vn0105--square-8": {
+      ".json": "53f6f86df9000f311428d1fc07322a221bd4420c12aa23b34b8b952073248369",
+      ".npz": "7a6a8d710920737d0d027105061a5785cd36f74f890c84d1af14234f33d68277"
+    },
+    "pic0203vn0105--square-16": {
+      ".json": "d5893b9401c879b67ddbf0fe15a4994db283900b9bb85f2c0817ce2b560f6300",
+      ".npz": "47d546be75b699b2849a942832d657ef8312542aa6d6642b68eb42edf9ea9221"
+    },
+    "pic106470172014--square-8": {
+      ".json": "9f831629477bc97f3bb458f07b469590288be772603746cd7c2214e8d34370ba",
+      ".npz": "4e13e63b5f2de3283a8bbfe9ede1727d9bd863d6e8b5993a6e225a5d595307e3"
+    },
+    "pic106470172014--square-16": {
+      ".json": "6ec4e635b023579c095246fa9b4c658c68f0e2b38e31d156f741b55f79c68b35",
+      ".npz": "5d69bc42dec2f659163d3a217f130e597ba7601419141803672b0e7eeada4339"
+    },
+    "pic1080629574--square-8": {
+      ".json": "8fba6a5a392795ca347d5425e16a313dfc968f33aee215375266d8789c0f66b5",
+      ".npz": "d528ea686e2c6d2c0cef265fe18dafa6b544b6490afe1c1505d5dbd6ef824f89"
+    },
+    "pic1080629574--square-16": {
+      ".json": "2f9d0317dff9071973310bd13aa86319c0b4341cc596eba1103b42cf5f7c91a2",
+      ".npz": "cfcb753009661bed54c95f1eaad24c0d2adc0592be03c3569fdc6e53caab7cc8"
+    },
+    "pic109250805856--square-8": {
+      ".json": "5f4cf32cd26a159281a031157d29293645e55c7e42812f5b3046e55dc9341862",
+      ".npz": "070d55328c1ca28b05c753616d1e633d92e4bc03f82e1bdcafe266193c15834e"
+    },
+    "pic109250805856--square-16": {
+      ".json": "d7713885c5410c04cc3a948fa3b2a8b910318dab9461164b6484a2f7c343cfe0",
+      ".npz": "2c5de03880f3242cb4d70fc9ada7f3a82bfb99629f4ef2252c3b95b94f21ca67"
+    },
+    "pic1092515922117--square-8": {
+      ".json": "94df11695400eb503b1400a43a507790623f7a82ca982996f64bd289086486fd",
+      ".npz": "0b5f6c10bc49a99f644dccc7d01bedaa07a010f8f23aa8559411b829948158b9"
+    },
+    "pic1092515922117--square-16": {
+      ".json": "93d352cdb61743ae199415591204729ba050a3ba20a6c738e574d561a74d03ce",
+      ".npz": "0d2c32e4d59f65c86dc715618801618b12369199b0481ce8dd544e40a2aa46fa"
+    },
+    "pict2272--square-8": {
+      ".json": "cdd20bb1d27ab0a3ec84a388222afce4c83a97a6f5488e8267e986d10b0775eb",
+      ".npz": "586a6493fc31d97e633929d45602064ebccc290c52747a52d28a0c3586ae1cea"
+    },
+    "pict2272--square-16": {
+      ".json": "2e4561345f32242d8e9967035b1c886a51dff89d24e67c3286e1dc64f0ec65c9",
+      ".npz": "076773df943be62bbf2730801f1eea160f534b5e3caf6466a1c0ba3eb5c7ed8a"
+    },
+    "pict2605--square-8": {
+      ".json": "a41a330bbd6c0b0f87990ebd33cc99cb6f9d176b47713c031072ed07be62f780",
+      ".npz": "0ae4ad035e7b9a128d7e5ee7d7e235b9c47bcc29018bd5eab3513f56f76f0165"
+    },
+    "pict2605--square-16": {
+      ".json": "e88f82d4f1c181db5f5171ea63163c69bec50c8c19aa963cafc580b4b813c94a",
+      ".npz": "0da46906a5b9622cd665e070f674002b4ccbdf0e961684a231d72e6e203c892a"
+    },
+    "picture_458--square-8": {
+      ".json": "98edbcc974b2c07a6736f2e02e1316c613907c4e96c83f086b801a38702c5ea8",
+      ".npz": "39357106bf026cc17490a6c1dda28da110bc058257ec42fb99adacc8a3636c3d"
+    },
+    "picture_458--square-16": {
+      ".json": "07f12440a3cd04a72b890ea1d0b07f644b66120380a95b94f924b876eef83975",
+      ".npz": "9052310d7b18ec386681804fa03c70a41184a048ede46c8e23afced570034722"
+    },
+    "postjp--square-8": {
+      ".json": "4b5cdaf39e93f922b46e985f75fd1e4e4fff3594e01d13a35a8caa668890f19c",
+      ".npz": "ff6767e62d928ee7c185c118b81caf0659a671d133492e56bfefa11071205b2e"
+    },
+    "postjp--square-16": {
+      ".json": "f7adc2ac4fd97bfc54dcd96e0228b02a8b7e3b4bcb74583904b14f94ae49bbad",
+      ".npz": "34cbbdcdd407875664570e5dd4d51551ad59c7c0998767680fc27f14f41be29b"
+    },
+    "san_andres_130--square-8": {
+      ".json": "b76200c4499681e8c55ce8ab85079ac70babe91763d768371f13ba5530b13ce4",
+      ".npz": "ef9d053556d8d787fdbcbcf0ca5938db5f6dea7d1ec8ba7fc9a35d8e525de805"
+    },
+    "san_andres_130--square-16": {
+      ".json": "960954e75d0b4952626975969b3b4f405952f19749098f03f26449df3b035f77",
+      ".npz": "159ab732cce9e29251e4ace0a616cc7857a8eeab4f23cb64add17bce0c20dc70"
+    },
+    "sg_01_img_1943_tratada--square-8": {
+      ".json": "1d7240650afd4f8f286ff4579769908fdb4ac69e0fbb5d7cb7dfa9984ff63678",
+      ".npz": "b98da84c54d0471d1abc3c74e84c23724d033d63c25bd4794d31f6d9f5af2103"
+    },
+    "sg_01_img_1943_tratada--square-16": {
+      ".json": "39b5eae2f7ddb8cd562c74dc63c5ba10499fc64aec9c65f41a5d1d437e5e7cf3",
+      ".npz": "8c10563a6bf5c4629605bf40bd81cb67ebf6ee6315bb6f501ed6e84ec6cdff59"
+    },
+    "yokohm060409_dyjsn191--square-8": {
+      ".json": "b764347ab2d77de290312d50ff6136dae44fb76544fa830cfcdd9169d8e23d6a",
+      ".npz": "5968290d8e6d02bfe701610d661f13b79972093c15e257e1575c0ae0b35a7bf6"
+    },
+    "yokohm060409_dyjsn191--square-16": {
+      ".json": "fea573bc306ccee22c5e2ba6680791fcd1a709d20b448b2d10bb0c71a540122d",
+      ".npz": "82f33de24805365d4a11c64eaf1861c145c44f1269619ea2a8a1801f815cc53e"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-08",
+  "status": "post-hoc mechanism diagnostic",
+  "rationale": "Main test revealed poor 16x16 transfer of the fixed75/K=.4 cubic recipe. Threshold and temperature both differ from the q90/K=.8 control. Add the two missing factorial corners to separate their effects. Main selection and results remain frozen; this is not an independent confirmation or a new parameter selection.",
+  "fixed": "J=Delta+4Delta^3, alpha=1/S; same source split and sample budget.",
+  "rules": [
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    }
+  ],
+  "code_hashes": {
+    "ising_seed_sampling.py": "879a49afd8d85bfd907ca100c16b201bf903fa07cffc871056792e8cc4d94c29",
+    "run_weizmann_ising_seeds.py": "c713bcf36187db0c1734b95f21d98e7f3e2135933426e6f46e9480054f3375bb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "ising_algorithm1.py": "898ffe08c96a87cad04f3880148bcebafe14231891862dde280261d4df2f5450",
+    "weizmann_petz_data.py": "1e87ad3c6339ac79d8e3caa6a7469e9b9539d120cfe9fbcb75efdacd89a9e9fd",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9"
+  },
+  "diagnostic_sha256": "b7a2353857a769df123fd64125a370830b0fc55df0c256ef68e3e2c0bc8d885b"
+}

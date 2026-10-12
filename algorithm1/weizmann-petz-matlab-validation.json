@@ -1,0 +1,40 @@
+{
+  "environment": {
+    "matlab": "26.2.0.3386108 (R2026b)",
+    "qclab_root": "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/external/qclab",
+    "qclab_release": "v1.2.0",
+    "expected_commit": "b9de8ca2d2e78186dc159a6ac6340646b7d603aa",
+    "checkout_head": "b9de8ca2d2e78186dc159a6ac6340646b7d603aa"
+  },
+  "natural_8_spin_density_error": 7.6013795478847245E-15,
+  "natural_correlation_history_error": 4.2188474935755949E-15,
+  "frustrated_9_spin_density_error": 2.3368960763799093E-16,
+  "nine_spin_enumeration_vs_transfer_error": 2.7755575615628914E-16,
+  "local_kraus_error": 1.4662097913237526E-15,
+  "qclab_statevector_error": 0,
+  "native_64_spin_trajectory_max_difference": 0.0088043212890625,
+  "counts": {
+    "small": {
+      "cx": 80,
+      "ry": 32,
+      "reset": 24,
+      "system_qubits": 8,
+      "parallel_bath_qubits": 8
+    },
+    "square8": {
+      "cx": 1040,
+      "ry": 456,
+      "reset": 192,
+      "system_qubits": 64,
+      "parallel_bath_qubits": 64
+    },
+    "square16": {
+      "cx": 4624,
+      "ry": 2056,
+      "reset": 768,
+      "system_qubits": 256,
+      "parallel_bath_qubits": 256
+    }
+  },
+  "all_checks_passed": true
+}

@@ -1,0 +1,13 @@
+{
+  "python": "3.12.4 (main, Jun  6 2024, 18:26:44) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "darwin",
+  "machine": "arm64",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "numba": "0.68.0",
+    "scikit-image": "0.25.2",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1"
+  }
+}

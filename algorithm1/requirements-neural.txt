@@ -1,0 +1,2 @@
+-r requirements-bpm.txt
+torch==2.14.1

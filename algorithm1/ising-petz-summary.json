@@ -1,0 +1,2273 @@
+{
+  "model": {
+    "hamiltonian": "-sum atan(alpha*(threshold-distance))*Zi*Zj/4",
+    "threshold": 100,
+    "alpha": 0.001,
+    "boundary": "open",
+    "initial": "plus_x unless explicitly stated",
+    "temperature": "b=beta_paper/N; K=b*median(abs(Delta))/4",
+    "image": "two copies of [0,0,255,255,...]"
+  },
+  "methods": {
+    "small": "QCLAB gate-derived full density simulation, 8 system spins",
+    "population_exact": "16 spins, 50 sweeps, cross-validated MATLAB and Python",
+    "large": "independent population trajectories of the gate-validated channel",
+    "reference": "exact 4x4 rung transfer contraction",
+    "bound": "95% Hoeffding simultaneous across pixels for primary seed at each checkpoint; not across time",
+    "gamma_linf": "maximum across both seeds and all pixels; includes sampling error"
+  },
+  "resources": [
+    {
+      "width": 4,
+      "n_spins": 8,
+      "system_plus_bath_qubits": 16,
+      "layers": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "b": 32.106383702576444,
+      "beta_paper": 256.85106962061155,
+      "operations": {
+        "cx": 80,
+        "ry": 32,
+        "reset": 24,
+        "barrier": 4
+      },
+      "depth": 76,
+      "serial_qubits": 9,
+      "serial_depth": 128
+    },
+    {
+      "width": 8,
+      "n_spins": 16,
+      "system_plus_bath_qubits": 32,
+      "layers": [
+        [
+          0,
+          4,
+          10,
+          14
+        ],
+        [
+          1,
+          5,
+          11,
+          15
+        ],
+        [
+          2,
+          6,
+          8,
+          12
+        ],
+        [
+          3,
+          7,
+          9,
+          13
+        ]
+      ],
+      "b": 32.106383702576444,
+      "beta_paper": 513.7021392412231,
+      "operations": {
+        "cx": 176,
+        "ry": 72,
+        "reset": 48,
+        "barrier": 4
+      },
+      "depth": 76,
+      "serial_qubits": 17,
+      "serial_depth": 280
+    },
+    {
+      "width": 16,
+      "n_spins": 32,
+      "system_plus_bath_qubits": 64,
+      "layers": [
+        [
+          0,
+          4,
+          8,
+          12,
+          18,
+          22,
+          26,
+          30
+        ],
+        [
+          1,
+          5,
+          9,
+          13,
+          19,
+          23,
+          27,
+          31
+        ],
+        [
+          2,
+          6,
+          10,
+          14,
+          16,
+          20,
+          24,
+          28
+        ],
+        [
+          3,
+          7,
+          11,
+          15,
+          17,
+          21,
+          25,
+          29
+        ]
+      ],
+      "b": 32.106383702576444,
+      "beta_paper": 1027.4042784824462,
+      "operations": {
+        "cx": 368,
+        "ry": 152,
+        "reset": 96,
+        "barrier": 4
+      },
+      "depth": 76,
+      "serial_qubits": 33,
+      "serial_depth": 584
+    },
+    {
+      "width": 32,
+      "n_spins": 64,
+      "system_plus_bath_qubits": 128,
+      "layers": [
+        [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62
+        ],
+        [
+          1,
+          5,
+          9,
+          13,
+          17,
+          21,
+          25,
+          29,
+          35,
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63
+        ],
+        [
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26,
+          30,
+          32,
+          36,
+          40,
+          44,
+          48,
+          52,
+          56,
+          60
+        ],
+        [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27,
+          31,
+          33,
+          37,
+          41,
+          45,
+          49,
+          53,
+          57,
+          61
+        ]
+      ],
+      "b": 32.106383702576444,
+      "beta_paper": 2054.8085569648924,
+      "operations": {
+        "cx": 752,
+        "ry": 312,
+        "reset": 192,
+        "barrier": 4
+      },
+      "depth": 76,
+      "serial_qubits": 65,
+      "serial_depth": 1192
+    },
+    {
+      "width": 64,
+      "n_spins": 128,
+      "system_plus_bath_qubits": 256,
+      "layers": [
+        [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          28,
+          32,
+          36,
+          40,
+          44,
+          48,
+          52,
+          56,
+          60,
+          66,
+          70,
+          74,
+          78,
+          82,
+          86,
+          90,
+          94,
+          98,
+          102,
+          106,
+          110,
+          114,
+          118,
+          122,
+          126
+        ],
+        [
+          1,
+          5,
+          9,
+          13,
+          17,
+          21,
+          25,
+          29,
+          33,
+          37,
+          41,
+          45,
+          49,
+          53,
+          57,
+          61,
+          67,
+          71,
+          75,
+          79,
+          83,
+          87,
+          91,
+          95,
+          99,
+          103,
+          107,
+          111,
+          115,
+          119,
+          123,
+          127
+        ],
+        [
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26,
+          30,
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          64,
+          68,
+          72,
+          76,
+          80,
+          84,
+          88,
+          92,
+          96,
+          100,
+          104,
+          108,
+          112,
+          116,
+          120,
+          124
+        ],
+        [
+          3,
+          7,
+          11,
+          15,
+          19,
+          23,
+          27,
+          31,
+          35,
+          39,
+          43,
+          47,
+          51,
+          55,
+          59,
+          63,
+          65,
+          69,
+          73,
+          77,
+          81,
+          85,
+          89,
+          93,
+          97,
+          101,
+          105,
+          109,
+          113,
+          117,
+          121,
+          125
+        ]
+      ],
+      "b": 32.106383702576444,
+      "beta_paper": 4109.617113929785,
+      "operations": {
+        "cx": 1520,
+        "ry": 632,
+        "reset": 384,
+        "barrier": 4
+      },
+      "depth": 76,
+      "serial_qubits": 129,
+      "serial_depth": 2408
+    }
+  ],
+  "matlab_validation": {
+    "environment": {
+      "matlab": "26.2.0.3386108 (R2026b)",
+      "qclab_root": "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/external/qclab",
+      "qclab_release": "v1.2.0",
+      "expected_commit": "b9de8ca2d2e78186dc159a6ac6340646b7d603aa",
+      "checkout_head": "b9de8ca2d2e78186dc159a6ac6340646b7d603aa"
+    },
+    "kraus_error": 5.73036696484635e-16,
+    "qclab_simulate_error": 0,
+    "density_error_after_50_sweeps": 2.35240283286967e-14,
+    "all_sweeps_correlation_error": 1.071365218763276e-14,
+    "density_vs_population_error": 1.1463052729254741e-14,
+    "L8_population_history_error": 4.218847493575595e-15,
+    "transfer_reference_error": 3.608224830031759e-16,
+    "matlab_trajectory_max_error": 0.00412112227975131,
+    "N128_circuit_counts": {
+      "cx": 1520,
+      "ry": 632,
+      "reset": 384,
+      "system_qubits": 128,
+      "parallel_bath_qubits": 128
+    },
+    "density_simulation_spins": 8,
+    "exact_population_simulation_spins": 16,
+    "large_circuit_construction_spins": 128,
+    "all_checks_passed": true
+  },
+  "study": [
+    {
+      "signature": {
+        "width": 16,
+        "k": 0.8,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6227280,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 32.106383702576444,
+      "beta_paper": 1027.4042784824462,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.0787214048025843,
+      "exact_min_abs_gamma": 0.0787214048025843,
+      "simultaneous_radius": 0.0036940960760798564,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5161290322580645,
+          "accuracy": 0.53125,
+          "resolved_fraction": 0.03125,
+          "correct_resolved_fraction": 0.03125,
+          "gamma_linf": 0.23859506662182325,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.5238095238095238,
+          "accuracy": 0.6875,
+          "resolved_fraction": 0.1875,
+          "correct_resolved_fraction": 0.1875,
+          "gamma_linf": 0.20115610264149214,
+          "far_aligned": 0.0007171630859375,
+          "far_se": 0.0009765659324793476
+        },
+        {
+          "sweep": 2,
+          "iou": 0.7222222222222222,
+          "accuracy": 0.84375,
+          "resolved_fraction": 0.375,
+          "correct_resolved_fraction": 0.375,
+          "gamma_linf": 0.17300454795585873,
+          "far_aligned": -0.0002899169921875,
+          "far_se": 0.0009765692940054578
+        },
+        {
+          "sweep": 4,
+          "iou": 0.7368421052631579,
+          "accuracy": 0.84375,
+          "resolved_fraction": 0.5,
+          "correct_resolved_fraction": 0.5,
+          "gamma_linf": 0.15546951865683686,
+          "far_aligned": -0.00079345703125,
+          "far_se": 0.0009765650320686034
+        },
+        {
+          "sweep": 8,
+          "iou": 0.9375,
+          "accuracy": 0.96875,
+          "resolved_fraction": 0.6875,
+          "correct_resolved_fraction": 0.6875,
+          "gamma_linf": 0.13683275475699416,
+          "far_aligned": 0.0002899169921875,
+          "far_se": 0.0009765692940054578
+        },
+        {
+          "sweep": 12,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 0.78125,
+          "correct_resolved_fraction": 0.78125,
+          "gamma_linf": 0.1277284166704018,
+          "far_aligned": 0.0010833740234375,
+          "far_se": 0.0009765607810272714
+        },
+        {
+          "sweep": 20,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.10973274282320775,
+          "far_aligned": 0.0043182373046875,
+          "far_se": 0.0009764242576441888
+        },
+        {
+          "sweep": 30,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.09406679524980782,
+          "far_aligned": 0.01268768310546875,
+          "far_se": 0.0009753114950406941
+        },
+        {
+          "sweep": 50,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.06316774739824532,
+          "far_aligned": 0.0326385498046875,
+          "far_se": 0.0009682116581664828
+        },
+        {
+          "sweep": 100,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.021228965659964072,
+          "far_aligned": 0.063140869140625,
+          "far_se": 0.0009449098727634208
+        },
+        {
+          "sweep": 200,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0026944882986780494,
+          "far_aligned": 0.07602691650390625,
+          "far_se": 0.0009303173209425137
+        }
+      ],
+      "seconds": 3.3043596670031548,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 145,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 16,
+        "k": 1.2,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6227320,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 48.15957555386466,
+      "beta_paper": 1541.1064177236692,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.20737572098469256,
+      "exact_min_abs_gamma": 0.20737572098469256,
+      "simultaneous_radius": 0.0036940960760798564,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5161290322580645,
+          "accuracy": 0.53125,
+          "resolved_fraction": 0.03125,
+          "correct_resolved_fraction": 0.03125,
+          "gamma_linf": 0.24938278824409923,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.6842105263157895,
+          "accuracy": 0.8125,
+          "resolved_fraction": 0.1875,
+          "correct_resolved_fraction": 0.1875,
+          "gamma_linf": 0.24385583878705053,
+          "far_aligned": 0.001739501953125,
+          "far_se": 0.0009765463106130867
+        },
+        {
+          "sweep": 2,
+          "iou": 0.6666666666666666,
+          "accuracy": 0.8125,
+          "resolved_fraction": 0.40625,
+          "correct_resolved_fraction": 0.40625,
+          "gamma_linf": 0.23436892042475344,
+          "far_aligned": -0.00042724609375,
+          "far_se": 0.000976568524566249
+        },
+        {
+          "sweep": 4,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 0.5625,
+          "correct_resolved_fraction": 0.5625,
+          "gamma_linf": 0.23010816611669332,
+          "far_aligned": 0.0005645751953125,
+          "far_se": 0.0009765674604471958
+        },
+        {
+          "sweep": 8,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 0.5625,
+          "correct_resolved_fraction": 0.5625,
+          "gamma_linf": 0.22875746619996057,
+          "far_aligned": 0.00025177001953125,
+          "far_se": 0.0009765694554420942
+        },
+        {
+          "sweep": 12,
+          "iou": 0.7777777777777778,
+          "accuracy": 0.875,
+          "resolved_fraction": 0.65625,
+          "correct_resolved_fraction": 0.65625,
+          "gamma_linf": 0.22541608847997457,
+          "far_aligned": 0.00018310546875,
+          "far_se": 0.0009765696887293555
+        },
+        {
+          "sweep": 20,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 0.6875,
+          "correct_resolved_fraction": 0.6875,
+          "gamma_linf": 0.2234860721768682,
+          "far_aligned": 0.0012359619140625,
+          "far_se": 0.0009765580161124078
+        },
+        {
+          "sweep": 30,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 0.8125,
+          "correct_resolved_fraction": 0.8125,
+          "gamma_linf": 0.2198593975476268,
+          "far_aligned": 0.00131988525390625,
+          "far_se": 0.0009765563403337174
+        },
+        {
+          "sweep": 50,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.21328255042572367,
+          "far_aligned": 0.006683349609375,
+          "far_se": 0.0009762209234289582
+        },
+        {
+          "sweep": 100,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.18380256995697367,
+          "far_aligned": 0.0338134765625,
+          "far_se": 0.0009675962213595015
+        },
+        {
+          "sweep": 200,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.11804481849212992,
+          "far_aligned": 0.0960235595703125,
+          "far_se": 0.000901661073265415
+        }
+      ],
+      "seconds": 2.953611958073452,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 21,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 32,
+        "k": 0.8,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6243280,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 32.106383702576444,
+      "beta_paper": 2054.8085569648924,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.02784105659223471,
+      "exact_min_abs_gamma": 0.02784105659223471,
+      "simultaneous_radius": 0.003868904127332111,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5079365079365079,
+          "accuracy": 0.515625,
+          "resolved_fraction": 0.015625,
+          "correct_resolved_fraction": 0.015625,
+          "gamma_linf": 0.23859506662267463,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.20408163265306123,
+          "accuracy": 0.390625,
+          "resolved_fraction": 0.09375,
+          "correct_resolved_fraction": 0.09375,
+          "gamma_linf": 0.20027872227180077,
+          "far_aligned": -0.002655029296875,
+          "far_se": 0.0009765148769695711
+        },
+        {
+          "sweep": 2,
+          "iou": 0.2857142857142857,
+          "accuracy": 0.453125,
+          "resolved_fraction": 0.203125,
+          "correct_resolved_fraction": 0.203125,
+          "gamma_linf": 0.17312661933062856,
+          "far_aligned": -0.000244140625,
+          "far_se": 0.000976569485000912
+        },
+        {
+          "sweep": 4,
+          "iou": 0.37777777777777777,
+          "accuracy": 0.5625,
+          "resolved_fraction": 0.28125,
+          "correct_resolved_fraction": 0.28125,
+          "gamma_linf": 0.15536598051099912,
+          "far_aligned": 0.00090789794921875,
+          "far_se": 0.0009765635109182632
+        },
+        {
+          "sweep": 8,
+          "iou": 0.5609756097560976,
+          "accuracy": 0.71875,
+          "resolved_fraction": 0.34375,
+          "correct_resolved_fraction": 0.34375,
+          "gamma_linf": 0.13774855989236962,
+          "far_aligned": 0.0009918212890625,
+          "far_se": 0.0009765622653467582
+        },
+        {
+          "sweep": 12,
+          "iou": 0.5609756097560976,
+          "accuracy": 0.71875,
+          "resolved_fraction": 0.375,
+          "correct_resolved_fraction": 0.375,
+          "gamma_linf": 0.1268060873952092,
+          "far_aligned": 3.0517578125e-05,
+          "far_se": 0.00097656994338985
+        },
+        {
+          "sweep": 20,
+          "iou": 0.9393939393939394,
+          "accuracy": 0.96875,
+          "resolved_fraction": 0.46875,
+          "correct_resolved_fraction": 0.46875,
+          "gamma_linf": 0.11044733341184548,
+          "far_aligned": 0.00080108642578125,
+          "far_se": 0.0009765649370251986
+        },
+        {
+          "sweep": 30,
+          "iou": 0.96875,
+          "accuracy": 0.984375,
+          "resolved_fraction": 0.546875,
+          "correct_resolved_fraction": 0.546875,
+          "gamma_linf": 0.0956187849470568,
+          "far_aligned": 0.0005950927734375,
+          "far_se": 0.0009765671839579528
+        },
+        {
+          "sweep": 50,
+          "iou": 0.96875,
+          "accuracy": 0.984375,
+          "resolved_fraction": 0.65625,
+          "correct_resolved_fraction": 0.65625,
+          "gamma_linf": 0.07501106393886096,
+          "far_aligned": 0.0001678466796875,
+          "far_se": 0.0009765697305664414
+        },
+        {
+          "sweep": 100,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 0.90625,
+          "correct_resolved_fraction": 0.90625,
+          "gamma_linf": 0.05036239180408708,
+          "far_aligned": 0.00202178955078125,
+          "far_se": 0.0009765380152673332
+        },
+        {
+          "sweep": 200,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.025672442623698936,
+          "far_aligned": 0.0131988525390625,
+          "far_se": 0.0009752079771972891
+        }
+      ],
+      "seconds": 6.260426040971652,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 1266,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 32,
+        "k": 1.2,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6243320,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 48.15957555386466,
+      "beta_paper": 3082.2128354473384,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.17730404967470886,
+      "exact_min_abs_gamma": 0.17730404967470886,
+      "simultaneous_radius": 0.003868904127332111,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5079365079365079,
+          "accuracy": 0.515625,
+          "resolved_fraction": 0.015625,
+          "correct_resolved_fraction": 0.015625,
+          "gamma_linf": 0.24938278824409932,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.28888888888888886,
+          "accuracy": 0.5,
+          "resolved_fraction": 0.09375,
+          "correct_resolved_fraction": 0.09375,
+          "gamma_linf": 0.24087274552533183,
+          "far_aligned": -2.288818359375e-05,
+          "far_se": 0.0009765699465731058
+        },
+        {
+          "sweep": 2,
+          "iou": 0.24489795918367346,
+          "accuracy": 0.421875,
+          "resolved_fraction": 0.1875,
+          "correct_resolved_fraction": 0.1875,
+          "gamma_linf": 0.2344604732153926,
+          "far_aligned": -0.00154876708984375,
+          "far_se": 0.0009765512106594996
+        },
+        {
+          "sweep": 4,
+          "iou": 0.6578947368421053,
+          "accuracy": 0.796875,
+          "resolved_fraction": 0.21875,
+          "correct_resolved_fraction": 0.21875,
+          "gamma_linf": 0.23231661335211135,
+          "far_aligned": 0.0007476806640625,
+          "far_se": 0.0009765655832292182
+        },
+        {
+          "sweep": 8,
+          "iou": 0.5348837209302325,
+          "accuracy": 0.6875,
+          "resolved_fraction": 0.28125,
+          "correct_resolved_fraction": 0.28125,
+          "gamma_linf": 0.2300468356399626,
+          "far_aligned": 0.000823974609375,
+          "far_se": 0.0009765646464378894
+        },
+        {
+          "sweep": 12,
+          "iou": 0.45454545454545453,
+          "accuracy": 0.625,
+          "resolved_fraction": 0.28125,
+          "correct_resolved_fraction": 0.28125,
+          "gamma_linf": 0.2270332248104045,
+          "far_aligned": 0.0005645751953125,
+          "far_se": 0.0009765674604471958
+        },
+        {
+          "sweep": 20,
+          "iou": 0.4222222222222222,
+          "accuracy": 0.59375,
+          "resolved_fraction": 0.34375,
+          "correct_resolved_fraction": 0.34375,
+          "gamma_linf": 0.2224188208530863,
+          "far_aligned": 0.00012969970703125,
+          "far_se": 0.0009765698192428672
+        },
+        {
+          "sweep": 30,
+          "iou": 0.4318181818181818,
+          "accuracy": 0.609375,
+          "resolved_fraction": 0.40625,
+          "correct_resolved_fraction": 0.40625,
+          "gamma_linf": 0.22077165404551222,
+          "far_aligned": 0.00067138671875,
+          "far_se": 0.0009765664290691605
+        },
+        {
+          "sweep": 50,
+          "iou": 0.5365853658536586,
+          "accuracy": 0.703125,
+          "resolved_fraction": 0.46875,
+          "correct_resolved_fraction": 0.46875,
+          "gamma_linf": 0.2162667003994323,
+          "far_aligned": 0.0012359619140625,
+          "far_se": 0.0009765580161124078
+        },
+        {
+          "sweep": 100,
+          "iou": 0.47619047619047616,
+          "accuracy": 0.65625,
+          "resolved_fraction": 0.59375,
+          "correct_resolved_fraction": 0.59375,
+          "gamma_linf": 0.20691870113029115,
+          "far_aligned": -0.00078582763671875,
+          "far_se": 0.0009765651262024929
+        },
+        {
+          "sweep": 200,
+          "iou": 0.8235294117647058,
+          "accuracy": 0.90625,
+          "resolved_fraction": 0.78125,
+          "correct_resolved_fraction": 0.78125,
+          "gamma_linf": 0.19582479477910186,
+          "far_aligned": -0.0004119873046875,
+          "far_se": 0.0009765686246115705
+        }
+      ],
+      "seconds": 5.947963082930073,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 32,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 4,
+        "k": 0.8,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "all_up",
+        "rng_seed": 6315280,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 32.106383702576444,
+      "beta_paper": 256.85106962061155,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.17128145561911376,
+      "exact_min_abs_gamma": 0.17128145561911376,
+      "simultaneous_radius": 0.003316956310377164,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.0,
+          "accuracy": 0.5,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 0.5,
+          "gamma_linf": 0.48771294477048255,
+          "far_aligned": -0.25,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.0,
+          "accuracy": 0.5,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 0.5,
+          "gamma_linf": 0.3155227886269263,
+          "far_aligned": -0.1442413330078125,
+          "far_se": 0.0007976317070904904
+        },
+        {
+          "sweep": 2,
+          "iou": 0.75,
+          "accuracy": 0.875,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 0.875,
+          "gamma_linf": 0.17956697808005126,
+          "far_aligned": -0.0082855224609375,
+          "far_se": 0.0009760334720100563
+        },
+        {
+          "sweep": 4,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.031482718958072586,
+          "far_aligned": 0.14076995849609375,
+          "far_se": 0.0008070398537092575
+        },
+        {
+          "sweep": 8,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0006452935218758671,
+          "far_aligned": 0.17102813720703125,
+          "far_se": 0.0007122871336485847
+        },
+        {
+          "sweep": 12,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0008021250562140203,
+          "far_aligned": 0.17186737060546875,
+          "far_se": 0.0007091980553839091
+        },
+        {
+          "sweep": 20,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0009167689026356451,
+          "far_aligned": 0.17136383056640625,
+          "far_se": 0.0007110549264792456
+        },
+        {
+          "sweep": 30,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0006896318947135494,
+          "far_aligned": 0.1707000732421875,
+          "far_se": 0.0007134869515602373
+        },
+        {
+          "sweep": 50,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0007771596117547019,
+          "far_aligned": 0.17061614990234375,
+          "far_se": 0.0007137931882090912
+        },
+        {
+          "sweep": 100,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.000724439667790483,
+          "far_aligned": 0.1719818115234375,
+          "far_se": 0.0007087745995027147
+        },
+        {
+          "sweep": 200,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0009378945390419446,
+          "far_aligned": 0.17089080810546875,
+          "far_se": 0.0007127899091367495
+        }
+      ],
+      "seconds": 0.7317225409206003,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 25,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 4,
+        "k": 0.8,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6215280,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 32.106383702576444,
+      "beta_paper": 256.85106962061155,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.17128145561911376,
+      "exact_min_abs_gamma": 0.17128145561911376,
+      "simultaneous_radius": 0.003316956310377164,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5714285714285714,
+          "accuracy": 0.625,
+          "resolved_fraction": 0.125,
+          "correct_resolved_fraction": 0.125,
+          "gamma_linf": 0.23771294477048258,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.75,
+          "accuracy": 0.875,
+          "resolved_fraction": 0.75,
+          "correct_resolved_fraction": 0.75,
+          "gamma_linf": 0.1979408488408851,
+          "far_aligned": -0.00028228759765625,
+          "far_se": 0.0009765693281117917
+        },
+        {
+          "sweep": 2,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.08900835372369759,
+          "far_aligned": 0.082489013671875,
+          "far_se": 0.0009218784136858376
+        },
+        {
+          "sweep": 4,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.01620638237692626,
+          "far_aligned": 0.1550750732421875,
+          "far_se": 0.0007659867249236711
+        },
+        {
+          "sweep": 8,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0009394541577765481,
+          "far_aligned": 0.172210693359375,
+          "far_se": 0.0007079260809723725
+        },
+        {
+          "sweep": 12,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0012201821366981946,
+          "far_aligned": 0.17032623291015625,
+          "far_se": 0.0007148489304758986
+        },
+        {
+          "sweep": 20,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0006057085548697994,
+          "far_aligned": 0.17121124267578125,
+          "far_se": 0.0007116155847009887
+        },
+        {
+          "sweep": 30,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0009063495566674906,
+          "far_aligned": 0.17218780517578125,
+          "far_se": 0.0007080110293931762
+        },
+        {
+          "sweep": 50,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0009879841669274136,
+          "far_aligned": 0.17137908935546875,
+          "far_se": 0.0007109988088584017
+        },
+        {
+          "sweep": 100,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0006419077710577703,
+          "far_aligned": 0.17169952392578125,
+          "far_se": 0.0007098181577701268
+        },
+        {
+          "sweep": 200,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0006118999550512594,
+          "far_aligned": 0.1706695556640625,
+          "far_se": 0.0007135983429725568
+        }
+      ],
+      "seconds": 1.0628071669489145,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 25,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 4,
+        "k": 1.2,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6215320,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 48.15957555386466,
+      "beta_paper": 385.2766044309173,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.23320341053368998,
+      "exact_min_abs_gamma": 0.23320341053368998,
+      "simultaneous_radius": 0.003316956310377164,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5714285714285714,
+          "accuracy": 0.625,
+          "resolved_fraction": 0.125,
+          "correct_resolved_fraction": 0.125,
+          "gamma_linf": 0.24911551810977875,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.5,
+          "accuracy": 0.75,
+          "resolved_fraction": 0.75,
+          "correct_resolved_fraction": 0.75,
+          "gamma_linf": 0.24136247639055503,
+          "far_aligned": -0.00037384033203125,
+          "far_se": 0.0009765688588085331
+        },
+        {
+          "sweep": 2,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.12321805897118998,
+          "far_aligned": 0.1099853515625,
+          "far_se": 0.0008769856754255186
+        },
+        {
+          "sweep": 4,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.02347898426415873,
+          "far_aligned": 0.20972442626953125,
+          "far_se": 0.0005315363939208186
+        },
+        {
+          "sweep": 8,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.000766276744627481,
+          "far_aligned": 0.2324371337890625,
+          "far_se": 0.00035956831004362987
+        },
+        {
+          "sweep": 12,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.000660420032716269,
+          "far_aligned": 0.23386383056640625,
+          "far_se": 0.00034516372755855133
+        },
+        {
+          "sweep": 20,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0002943279898843798,
+          "far_aligned": 0.23310089111328125,
+          "far_se": 0.00035295079913295825
+        },
+        {
+          "sweep": 30,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0007444622672281298,
+          "far_aligned": 0.2328948974609375,
+          "far_se": 0.0003550197364945645
+        },
+        {
+          "sweep": 50,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0002855059944906202,
+          "far_aligned": 0.233306884765625,
+          "far_se": 0.0003508678168949411
+        },
+        {
+          "sweep": 100,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0008665325797281298,
+          "far_aligned": 0.23294830322265625,
+          "far_se": 0.0003544846802122146
+        },
+        {
+          "sweep": 200,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.00026636235421970134,
+          "far_aligned": 0.23337554931640625,
+          "far_se": 0.0003501703251273093
+        }
+      ],
+      "seconds": 0.7244324591010809,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 14,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 64,
+        "k": 0.8,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "all_up",
+        "rng_seed": 6375280,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 32.106383702576444,
+      "beta_paper": 4109.617113929785,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.0034823423792784865,
+      "exact_min_abs_gamma": 0.0034823423792784865,
+      "simultaneous_radius": 0.0040361482224599106,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.0,
+          "accuracy": 0.5,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 0.5,
+          "gamma_linf": 0.4885950666226746,
+          "far_aligned": -0.25,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.3191489361702128,
+          "accuracy": 0.5,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 0.5,
+          "gamma_linf": 0.281829320416332,
+          "far_aligned": -0.14383697509765625,
+          "far_se": 0.0007987451495392682
+        },
+        {
+          "sweep": 2,
+          "iou": 0.3404255319148936,
+          "accuracy": 0.515625,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 0.515625,
+          "gamma_linf": 0.18562500082282313,
+          "far_aligned": -0.05339813232421875,
+          "far_se": 0.0009540334877213056
+        },
+        {
+          "sweep": 4,
+          "iou": 0.391304347826087,
+          "accuracy": 0.5625,
+          "resolved_fraction": 0.1796875,
+          "correct_resolved_fraction": 0.1328125,
+          "gamma_linf": 0.154431950618252,
+          "far_aligned": -0.0067901611328125,
+          "far_se": 0.0009762096760850926
+        },
+        {
+          "sweep": 8,
+          "iou": 0.3956043956043956,
+          "accuracy": 0.5703125,
+          "resolved_fraction": 0.203125,
+          "correct_resolved_fraction": 0.15625,
+          "gamma_linf": 0.13932784456033837,
+          "far_aligned": -0.00482940673828125,
+          "far_se": 0.0009763877200120266
+        },
+        {
+          "sweep": 12,
+          "iou": 0.40217391304347827,
+          "accuracy": 0.5703125,
+          "resolved_fraction": 0.1953125,
+          "correct_resolved_fraction": 0.171875,
+          "gamma_linf": 0.12793521873070415,
+          "far_aligned": -0.0040740966796875,
+          "far_se": 0.000976440267130271
+        },
+        {
+          "sweep": 20,
+          "iou": 0.4659090909090909,
+          "accuracy": 0.6328125,
+          "resolved_fraction": 0.234375,
+          "correct_resolved_fraction": 0.234375,
+          "gamma_linf": 0.10917592815468799,
+          "far_aligned": -0.001007080078125,
+          "far_se": 0.000976562027055424
+        },
+        {
+          "sweep": 30,
+          "iou": 0.3695652173913043,
+          "accuracy": 0.546875,
+          "resolved_fraction": 0.265625,
+          "correct_resolved_fraction": 0.265625,
+          "gamma_linf": 0.09323841385330742,
+          "far_aligned": -0.001190185546875,
+          "far_se": 0.0009765588837871914
+        },
+        {
+          "sweep": 50,
+          "iou": 0.46511627906976744,
+          "accuracy": 0.640625,
+          "resolved_fraction": 0.3125,
+          "correct_resolved_fraction": 0.3125,
+          "gamma_linf": 0.07671241891933546,
+          "far_aligned": 0.00031280517578125,
+          "far_se": 0.000976569186229435
+        },
+        {
+          "sweep": 100,
+          "iou": 0.4431818181818182,
+          "accuracy": 0.6171875,
+          "resolved_fraction": 0.4453125,
+          "correct_resolved_fraction": 0.4453125,
+          "gamma_linf": 0.049794945455279946,
+          "far_aligned": -0.0015411376953125,
+          "far_se": 0.0009765513948370988
+        },
+        {
+          "sweep": 200,
+          "iou": 0.6753246753246753,
+          "accuracy": 0.8046875,
+          "resolved_fraction": 0.578125,
+          "correct_resolved_fraction": 0.578125,
+          "gamma_linf": 0.026763372632747022,
+          "far_aligned": 0.000335693359375,
+          "far_se": 0.000976569070267878
+        }
+      ],
+      "seconds": 11.9096733329352,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 88039,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 64,
+        "k": 0.8,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6275280,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 32.106383702576444,
+      "beta_paper": 4109.617113929785,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.0034823423792784865,
+      "exact_min_abs_gamma": 0.0034823423792784865,
+      "simultaneous_radius": 0.0040361482224599106,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5039370078740157,
+          "accuracy": 0.5078125,
+          "resolved_fraction": 0.0078125,
+          "correct_resolved_fraction": 0.0078125,
+          "gamma_linf": 0.23859506662267463,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.25,
+          "accuracy": 0.4140625,
+          "resolved_fraction": 0.046875,
+          "correct_resolved_fraction": 0.046875,
+          "gamma_linf": 0.20026346348273827,
+          "far_aligned": 0.00046539306640625,
+          "far_se": 0.0009765682585365944
+        },
+        {
+          "sweep": 2,
+          "iou": 0.3684210526315789,
+          "accuracy": 0.53125,
+          "resolved_fraction": 0.09375,
+          "correct_resolved_fraction": 0.09375,
+          "gamma_linf": 0.1742481403267223,
+          "far_aligned": -0.0018157958984375,
+          "far_se": 0.0009765441914206647
+        },
+        {
+          "sweep": 4,
+          "iou": 0.31958762886597936,
+          "accuracy": 0.484375,
+          "resolved_fraction": 0.1328125,
+          "correct_resolved_fraction": 0.1328125,
+          "gamma_linf": 0.15411475980787412,
+          "far_aligned": 0.00232696533203125,
+          "far_se": 0.0009765276465545104
+        },
+        {
+          "sweep": 8,
+          "iou": 0.3958333333333333,
+          "accuracy": 0.546875,
+          "resolved_fraction": 0.171875,
+          "correct_resolved_fraction": 0.171875,
+          "gamma_linf": 0.13729842561502587,
+          "far_aligned": 0.00102996826171875,
+          "far_se": 0.0009765616627969934
+        },
+        {
+          "sweep": 12,
+          "iou": 0.3020833333333333,
+          "accuracy": 0.4765625,
+          "resolved_fraction": 0.1875,
+          "correct_resolved_fraction": 0.1875,
+          "gamma_linf": 0.12720279685570415,
+          "far_aligned": 0.00042724609375,
+          "far_se": 0.000976568524566249
+        },
+        {
+          "sweep": 20,
+          "iou": 0.44086021505376344,
+          "accuracy": 0.59375,
+          "resolved_fraction": 0.234375,
+          "correct_resolved_fraction": 0.234375,
+          "gamma_linf": 0.11087728313515674,
+          "far_aligned": 0.00174713134765625,
+          "far_se": 0.0009765461027869089
+        },
+        {
+          "sweep": 30,
+          "iou": 0.6024096385542169,
+          "accuracy": 0.7421875,
+          "resolved_fraction": 0.265625,
+          "correct_resolved_fraction": 0.265625,
+          "gamma_linf": 0.09648649160219529,
+          "far_aligned": 0.00125885009765625,
+          "far_se": 0.0009765575699962993
+        },
+        {
+          "sweep": 50,
+          "iou": 0.6125,
+          "accuracy": 0.7578125,
+          "resolved_fraction": 0.3203125,
+          "correct_resolved_fraction": 0.3203125,
+          "gamma_linf": 0.0761297323816753,
+          "far_aligned": 0.00067901611328125,
+          "far_se": 0.0009765663485779717
+        },
+        {
+          "sweep": 100,
+          "iou": 0.43333333333333335,
+          "accuracy": 0.6015625,
+          "resolved_fraction": 0.453125,
+          "correct_resolved_fraction": 0.453125,
+          "gamma_linf": 0.050763740127525284,
+          "far_aligned": -0.0,
+          "far_se": 0.0009765699506658631
+        },
+        {
+          "sweep": 200,
+          "iou": 0.9846153846153847,
+          "accuracy": 0.9921875,
+          "resolved_fraction": 0.5625,
+          "correct_resolved_fraction": 0.5625,
+          "gamma_linf": 0.026586279422986643,
+          "far_aligned": 0.00017547607421875,
+          "far_se": 0.0009765697101026495
+        }
+      ],
+      "seconds": 11.909808250144124,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 88039,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 64,
+        "k": 1.2,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6275320,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 48.15957555386466,
+      "beta_paper": 6164.425670894677,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.12961048849963233,
+      "exact_min_abs_gamma": 0.12961048849963233,
+      "simultaneous_radius": 0.0040361482224599106,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5039370078740157,
+          "accuracy": 0.5078125,
+          "resolved_fraction": 0.0078125,
+          "correct_resolved_fraction": 0.0078125,
+          "gamma_linf": 0.24938278824409932,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.22105263157894736,
+          "accuracy": 0.421875,
+          "resolved_fraction": 0.046875,
+          "correct_resolved_fraction": 0.046875,
+          "gamma_linf": 0.24265039445111308,
+          "far_aligned": 3.814697265625e-05,
+          "far_se": 0.0009765699392970926
+        },
+        {
+          "sweep": 2,
+          "iou": 0.32978723404255317,
+          "accuracy": 0.5078125,
+          "resolved_fraction": 0.09375,
+          "correct_resolved_fraction": 0.09375,
+          "gamma_linf": 0.23405611530523635,
+          "far_aligned": -0.0015716552734375,
+          "far_se": 0.000976550652669376
+        },
+        {
+          "sweep": 4,
+          "iou": 0.38202247191011235,
+          "accuracy": 0.5703125,
+          "resolved_fraction": 0.109375,
+          "correct_resolved_fraction": 0.109375,
+          "gamma_linf": 0.23112642780523635,
+          "far_aligned": -0.00028228759765625,
+          "far_se": 0.0009765693281117917
+        },
+        {
+          "sweep": 8,
+          "iou": 0.3617021276595745,
+          "accuracy": 0.53125,
+          "resolved_fraction": 0.140625,
+          "correct_resolved_fraction": 0.140625,
+          "gamma_linf": 0.22917738695838646,
+          "far_aligned": 0.00012969970703125,
+          "far_se": 0.0009765698192428672
+        },
+        {
+          "sweep": 12,
+          "iou": 0.3368421052631579,
+          "accuracy": 0.5078125,
+          "resolved_fraction": 0.140625,
+          "correct_resolved_fraction": 0.140625,
+          "gamma_linf": 0.22817793627217478,
+          "far_aligned": 0.00173187255859375,
+          "far_se": 0.000976546517529697
+        },
+        {
+          "sweep": 20,
+          "iou": 0.3829787234042553,
+          "accuracy": 0.546875,
+          "resolved_fraction": 0.171875,
+          "correct_resolved_fraction": 0.171875,
+          "gamma_linf": 0.2257147192905863,
+          "far_aligned": 0.00177001953125,
+          "far_se": 0.0009765454738509631
+        },
+        {
+          "sweep": 30,
+          "iou": 0.391304347826087,
+          "accuracy": 0.5625,
+          "resolved_fraction": 0.203125,
+          "correct_resolved_fraction": 0.203125,
+          "gamma_linf": 0.22129045287363788,
+          "far_aligned": 0.0010528564453125,
+          "far_se": 0.0009765612903528398
+        },
+        {
+          "sweep": 50,
+          "iou": 0.5679012345679012,
+          "accuracy": 0.7265625,
+          "resolved_fraction": 0.234375,
+          "correct_resolved_fraction": 0.234375,
+          "gamma_linf": 0.21639640010646355,
+          "far_aligned": 0.0005035400390625,
+          "far_se": 0.0009765679697692805
+        },
+        {
+          "sweep": 100,
+          "iou": 0.3978494623655914,
+          "accuracy": 0.5625,
+          "resolved_fraction": 0.296875,
+          "correct_resolved_fraction": 0.296875,
+          "gamma_linf": 0.20600317378654193,
+          "far_aligned": 0.0006561279296875,
+          "far_se": 0.000976566587323004
+        },
+        {
+          "sweep": 200,
+          "iou": 0.8571428571428571,
+          "accuracy": 0.921875,
+          "resolved_fraction": 0.390625,
+          "correct_resolved_fraction": 0.390625,
+          "gamma_linf": 0.1954511309362631,
+          "far_aligned": 0.0006561279296875,
+          "far_se": 0.000976566587323004
+        }
+      ],
+      "seconds": 11.916756333084777,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 64,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 8,
+        "k": 0.8,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6219280,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 32.106383702576444,
+      "beta_paper": 513.7021392412231,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.1323716507273764,
+      "exact_min_abs_gamma": 0.1323716507273764,
+      "simultaneous_radius": 0.003510594321782245,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5333333333333333,
+          "accuracy": 0.5625,
+          "resolved_fraction": 0.0625,
+          "correct_resolved_fraction": 0.0625,
+          "gamma_linf": 0.2385941945438342,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.2222222222222222,
+          "accuracy": 0.5625,
+          "resolved_fraction": 0.375,
+          "correct_resolved_fraction": 0.375,
+          "gamma_linf": 0.20148273028501557,
+          "far_aligned": -0.0015869140625,
+          "far_se": 0.0009765502761281832
+        },
+        {
+          "sweep": 2,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 0.8125,
+          "correct_resolved_fraction": 0.8125,
+          "gamma_linf": 0.17414437674861322,
+          "far_aligned": 0.00070953369140625,
+          "far_se": 0.0009765660175180973
+        },
+        {
+          "sweep": 4,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.14648782157283197,
+          "far_aligned": 0.01433563232421875,
+          "far_se": 0.0009749630667619055
+        },
+        {
+          "sweep": 8,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.10302316092830072,
+          "far_aligned": 0.0449371337890625,
+          "far_se": 0.0009606641576621073
+        },
+        {
+          "sweep": 12,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.07122384452205072,
+          "far_aligned": 0.07144927978515625,
+          "far_se": 0.0009358373620143334
+        },
+        {
+          "sweep": 20,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.03294717215876947,
+          "far_aligned": 0.1044464111328125,
+          "far_se": 0.0008872583575366442
+        },
+        {
+          "sweep": 30,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.012107205523815279,
+          "far_aligned": 0.12180328369140625,
+          "far_se": 0.0008528220274912943
+        },
+        {
+          "sweep": 50,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0015314928257137428,
+          "far_aligned": 0.131072998046875,
+          "far_se": 0.0008315869625113623
+        },
+        {
+          "sweep": 100,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0014174117726236113,
+          "far_aligned": 0.1337890625,
+          "far_se": 0.0008249604863286037
+        },
+        {
+          "sweep": 200,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0013673172312826387,
+          "far_aligned": 0.13100433349609375,
+          "far_se": 0.0008317520476445367
+        }
+      ],
+      "seconds": 1.8015530409757048,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 47,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    },
+    {
+      "signature": {
+        "width": 8,
+        "k": 1.2,
+        "shots": 65536,
+        "sweeps": 200,
+        "initial": "plus_x",
+        "rng_seed": 6219320,
+        "code_hashes": {
+          "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+          "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+          "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+          "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+        }
+      },
+      "b": 48.15957555386466,
+      "beta_paper": 770.5532088618346,
+      "threshold": 100,
+      "alpha": 0.001,
+      "exact_gibbs_far": 0.2242732788461035,
+      "exact_min_abs_gamma": 0.2242732788461035,
+      "simultaneous_radius": 0.003510594321782245,
+      "records": [
+        {
+          "sweep": 0,
+          "iou": 0.5333333333333333,
+          "accuracy": 0.5625,
+          "resolved_fraction": 0.0625,
+          "correct_resolved_fraction": 0.0625,
+          "gamma_linf": 0.2493827715052032,
+          "far_aligned": -0.0,
+          "far_se": 0.0
+        },
+        {
+          "sweep": 1,
+          "iou": 0.6,
+          "accuracy": 0.75,
+          "resolved_fraction": 0.375,
+          "correct_resolved_fraction": 0.375,
+          "gamma_linf": 0.24082696017030789,
+          "far_aligned": -0.0005645751953125,
+          "far_se": 0.0009765674604471958
+        },
+        {
+          "sweep": 2,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 0.8125,
+          "correct_resolved_fraction": 0.8125,
+          "gamma_linf": 0.2283757145664416,
+          "far_aligned": 0.00251007080078125,
+          "far_se": 0.0009765207267417513
+        },
+        {
+          "sweep": 4,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.21524552657816035,
+          "far_aligned": 0.0148162841796875,
+          "far_se": 0.0009748534111924724
+        },
+        {
+          "sweep": 8,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.19582108810159785,
+          "far_aligned": 0.0336761474609375,
+          "far_se": 0.0009676692992032826
+        },
+        {
+          "sweep": 12,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.1807225163242541,
+          "far_aligned": 0.04845428466796875,
+          "far_se": 0.0009580519123767831
+        },
+        {
+          "sweep": 20,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.14967850997659785,
+          "far_aligned": 0.07886505126953125,
+          "far_se": 0.0009267051237215619
+        },
+        {
+          "sweep": 30,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.1188176090976916,
+          "far_aligned": 0.10906219482421875,
+          "far_se": 0.0008787431259177737
+        },
+        {
+          "sweep": 50,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.07240800216409785,
+          "far_aligned": 0.15383148193359375,
+          "far_se": 0.0007698035265813666
+        },
+        {
+          "sweep": 100,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.021764081265660346,
+          "far_aligned": 0.203125,
+          "far_se": 0.0005693023813572968
+        },
+        {
+          "sweep": 200,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "resolved_fraction": 1.0,
+          "correct_resolved_fraction": 1.0,
+          "gamma_linf": 0.0018066508428020434,
+          "far_aligned": 0.2227325439453125,
+          "far_se": 0.00044349978090136937
+        }
+      ],
+      "seconds": 1.4523382920306176,
+      "exact_gibbs_iou": 1.0,
+      "ideal_equilibrium_shots_for_all_signs": 17,
+      "engine": "Independent population trajectories of the validated quantum channel; no hardware or full-state QCLAB execution at this size"
+    }
+  ],
+  "long": [
+    {
+      "k": 0.8,
+      "b": 32.106383702576444,
+      "width": 64,
+      "shots": 131072,
+      "initial": "plus_x",
+      "records": [
+        {
+          "sweep": 0,
+          "gamma_linf": 0.23859506662267463,
+          "far_aligned": -0.0,
+          "far_se": 0.0,
+          "iou": 0.5039370078740157,
+          "accuracy": 0.5078125,
+          "correct_resolved_fraction": 0.0078125
+        },
+        {
+          "sweep": 50,
+          "gamma_linf": 0.07708722139534717,
+          "far_aligned": -9.5367431640625e-05,
+          "far_se": 0.0006905365499524405,
+          "iou": 0.5357142857142857,
+          "accuracy": 0.6953125,
+          "correct_resolved_fraction": 0.34375
+        },
+        {
+          "sweep": 100,
+          "gamma_linf": 0.05005434486934579,
+          "far_aligned": -0.000125885009765625,
+          "far_se": 0.0006905365126519221,
+          "iou": 0.7012987012987013,
+          "accuracy": 0.8203125,
+          "correct_resolved_fraction": 0.4609375
+        },
+        {
+          "sweep": 200,
+          "gamma_linf": 0.0281868645214034,
+          "far_aligned": 0.000385284423828125,
+          "far_se": 0.0006905357801465032,
+          "iou": 0.8028169014084507,
+          "accuracy": 0.890625,
+          "correct_resolved_fraction": 0.578125
+        },
+        {
+          "sweep": 500,
+          "gamma_linf": 0.007233942016137446,
+          "far_aligned": 0.0012359619140625,
+          "far_se": 0.0006905281612241066,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "correct_resolved_fraction": 0.8125
+        },
+        {
+          "sweep": 1000,
+          "gamma_linf": 0.002071854371001842,
+          "far_aligned": 0.003002166748046875,
+          "far_se": 0.0006904868079207625,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "correct_resolved_fraction": 0.9921875
+        },
+        {
+          "sweep": 2000,
+          "gamma_linf": 0.001936081911162603,
+          "far_aligned": 0.003849029541015625,
+          "far_se": 0.0006904547527902316,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "correct_resolved_fraction": 1.0
+        }
+      ],
+      "exact_gibbs_far": 0.0034823423792784865,
+      "radius": 0.0028539877779754324,
+      "code_hashes": {
+        "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+        "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+        "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+        "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+      },
+      "seconds": 227.83253675000742
+    },
+    {
+      "k": 1.2,
+      "b": 48.15957555386466,
+      "width": 64,
+      "shots": 65536,
+      "initial": "plus_x",
+      "records": [
+        {
+          "sweep": 0,
+          "gamma_linf": 0.24938278824409932,
+          "far_aligned": -0.0,
+          "far_se": 0.0,
+          "iou": 0.5039370078740157,
+          "accuracy": 0.5078125,
+          "correct_resolved_fraction": 0.0078125
+        },
+        {
+          "sweep": 50,
+          "gamma_linf": 0.21718903903725018,
+          "far_aligned": 0.00350189208984375,
+          "far_se": 0.0009764741386081774,
+          "iou": 0.8285714285714286,
+          "accuracy": 0.90625,
+          "correct_resolved_fraction": 0.21875
+        },
+        {
+          "sweep": 100,
+          "gamma_linf": 0.2071129585365107,
+          "far_aligned": 0.001800537109375,
+          "far_se": 0.0009765446225357189,
+          "iou": 0.9393939393939394,
+          "accuracy": 0.96875,
+          "correct_resolved_fraction": 0.296875
+        },
+        {
+          "sweep": 200,
+          "gamma_linf": 0.19516866689751963,
+          "far_aligned": 0.0016937255859375,
+          "far_se": 0.0009765475384692529,
+          "iou": 0.8405797101449275,
+          "accuracy": 0.9140625,
+          "correct_resolved_fraction": 0.390625
+        },
+        {
+          "sweep": 500,
+          "gamma_linf": 0.17267721519239562,
+          "far_aligned": 0.001007080078125,
+          "far_se": 0.000976562027055424,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "correct_resolved_fraction": 0.609375
+        },
+        {
+          "sweep": 1000,
+          "gamma_linf": 0.15216478431214683,
+          "far_aligned": 0.00222015380859375,
+          "far_se": 0.0009765314411523618,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "correct_resolved_fraction": 0.84375
+        },
+        {
+          "sweep": 2000,
+          "gamma_linf": 0.12537717713172677,
+          "far_aligned": 0.01676177978515625,
+          "far_se": 0.0009743724829536463,
+          "iou": 1.0,
+          "accuracy": 1.0,
+          "correct_resolved_fraction": 1.0
+        }
+      ],
+      "exact_gibbs_far": 0.12961048849963233,
+      "radius": 0.0040361482224599106,
+      "code_hashes": {
+        "ising_petz.py": "d06477d45aec13dc7e30c8cba3dd7512714b671794d5b13a66242aea49bf5cfa",
+        "ising_petz_populations.py": "efb9814ee9e0cef5c4b82f6906af8d687695bef15a64b0ba06de824df51fae03",
+        "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+        "run_ising_petz.py": "35af4d51ac6922fb9534624e48b97840ac60da1be84222bd1cdb2541a56e743e"
+      },
+      "seconds": 117.3036922919564
+    }
+  ],
+  "scope": "Unfrustrated binary ladders, ideal operations; no hardware noise or generic-image universality test.",
+  "qclab_installation": {
+    "source": "https://github.com/QuantumComputingLab/qclab",
+    "tag": "v1.2.0",
+    "commit": "b9de8ca2d2e78186dc159a6ac6340646b7d603aa",
+    "matlab": "26.2.0.3386108 (R2026b)",
+    "official_tests_passed": 159,
+    "command": "results=runtests(fullfile(pwd,'external','qclab','test'),'IncludeSubfolders',true); assertSuccess(results);",
+    "log_sha256": "ba1feb7e4002547d68e3a6cf87d08f8f0d32369a28a8df49abead9e8802b480e",
+    "log": "results/ising-petz/qclab-installation-tests.log",
+    "note": "This records the separately executed upstream suite, not tests run by verify_ising_petz_qclab."
+  }
+}

@@ -4,6 +4,163 @@ This folder implements the **Quantum Segmentation Algorithm (Algorithm 1)**
 in the supplied `Quantum_paper/MainV2.tex`, in Python/Qiskit and MATLAB/QCLAB.
 It is an additive prototype; the existing MATLAB scripts are unchanged.
 
+The repository includes the research code, tests, reports, numerical summaries,
+protocols, and generated PNG/SVG/PDF figures. Downloaded datasets, Monte Carlo
+sample banks, training checkpoints, circuit exports, and other large generated
+arrays remain local under `results/`; the individual reports describe how to
+regenerate them. The Python environment and downloaded QCLAB dependency are
+also excluded from Git and must be installed separately on each collaborator's
+computer.
+
+The [arctangent Ising study](ising-algorithm1.md) removes XX/YY interactions
+and retests Algorithm 1 with exact Gibbs correlations on 63 small images.
+It includes a signed-alpha sweep, the Hamiltonian sign check, noisy and
+threshold controls, and Python/MATLAB implementations.
+
+The [EMNIST Ising study](emnist-ising.md) extends the sign-compatible model
+to 784-spin images using Monte Carlo with signed cluster updates and parallel
+tempering, parameter calibration, held-out images, and convergence checks.
+
+The [EMNIST threshold study](emnist-thresholds.md) compares replacing 125 by
+a calibrated global constant, a quantile of positive neighboring intensity
+differences, or an Otsu split of edge differences. It keeps positive sensitivity,
+calibrates temperature on training images, and evaluates fresh held-out images.
+
+The [Ising Petz circuit](ising-petz.md) implements Algorithm 1 with the
+option-1 threshold of 100 and immediate-neighbor heat-bath updates. It is
+executed and validated in **MATLAB R2026b / QCLAB v1.2.0**, with elementary
+Qiskit exports, four parallel layers per sweep, and alternating-strip tests
+through 128 spins and 2,000 sweeps. For the diagonal Ising model this local
+Petz map exactly preserves the global Gibbs state. Start with
+`matlab/run_ising_petz_demo.m`; the linked report gives installation and run
+commands, the circuit diagram, results and scaling limits.
+
+The [Weizmann and synthetic-image benchmark](weizmann-petz.md) tests that
+Ising Petz channel on human-labeled natural images and controlled geometries.
+It adds exact width-bounded Gibbs references through 16-by-16, a source-level
+25/75 calibration/test split, classical baselines, 500-sweep comparisons,
+2,000-sweep confirmations, and a general-image MATLAB/QCLAB driver. The
+results separate Hamiltonian segmentation errors from slow bath relaxation.
+
+The [Weizmann Ising-versus-XXZ Gibbs study](weizmann-xxz.md) compares the
+same arctangent image couplings with variable XX/YY exchange. It calibrates
+360 image-parameter rules, uses exact Ising references and sign-free quantum
+Monte Carlo through 256 spins, and separates threshold effects, intermediate
+bond regimes, unresolved correlation signs, and sampling failures. The
+`*_v2.py` runners and `weizmann-xxz-v2-*.json` records are the final study;
+unversioned XXZ benchmark files preserve the superseded pilot.
+
+The [staggered XYZ alignment study](weizmann-xyz-alignment.md) gives XX, YY,
+and ZZ separate arctangent thresholds and segments using their summed
+correlation. It compares 459 parameter rules and four segmentation decisions
+on native Weizmann crops and very coarse full frames, using exact Gibbs
+references through 12 spins and equal-copy Pauli measurements. Matched
+controls distinguish threshold spacing, transverse interactions, readout,
+and two-seed supervision; unresolved and confidently wrong pixels are
+reported separately. This exact solver does not scale to the earlier
+64- and 256-spin benchmarks.
+
+The [two-seed Ising and nonlinear-coupling study](weizmann-ising-two-seed.md)
+compares maximum seed correlation with the original one-seed sign rule on
+8×8 and 16×16 Weizmann images. It calibrates 351 threshold, sensitivity,
+temperature, and coupling-function rules, then draws independent Gibbs
+configurations with an exact logarithmic frontier sampler. It reports IoU,
+unresolved pixels, matched Hamiltonian/readout controls, and both exact
+binomial and generic Hoeffding uncertainty checks.
+
+The [two-seed XXZ and boundary-proximity study](xxz-two-seed-bpm.md)
+reanalyses saved XXZ states using maximum signed seed correlation and sweeps
+moderate exchange and temperature with calibration at both resolutions.
+It introduces reusable skeleton-based BPM metrics with explicit tolerance
+and morphology conventions, reported alongside ordinary IoU and unresolved
+pixels. The linked dataset-status record distinguishes this Weizmann study
+from a direct replication of the cited concrete-crack benchmark.
+
+The [iterative seed and anti-seed study](iterative-seeds.md) compares starting
+from one foreground or one background pixel, then promoting at most one
+pixel of each class per round. It evaluates a complete finite parameter
+grid with fresh Gibbs measurements, random candidate choices, stopping
+rules, sample-budget controls, promotion errors, IoU, unresolved pixels,
+and BPM for Ising and XXZ.
+
+The [promotion reliability study](promotion-reliability.md) tests spatial
+separation, independent agreement checks, and leave-one-out removal or
+downweighting of inconsistent seeds. Its 9,000 setting-policy combinations
+include matched controls, a separate reliability-targeted selection,
+fresh-round causal updates, and source-paired uncertainty estimates on
+the same Weizmann split. Promotion correctness is measured separately
+from segmentation accuracy and the number of seeds admitted.
+
+The [three-seed higher-correlation study](higher-seeds.md) compares samplewise
+majority votes and soft conditioning, first as promotion gates and then as
+segmentation scores. It sweeps 7,344 model/start/policy combinations, with
+calibration-only selection, matched pairwise and linear-triple controls,
+leave-one-out scoring, and retained-sample budget comparisons. The report
+separates IoU, unresolved pixels, BPM, promotion errors, and sampling cost.
+
+The [all-pair neural-decoder study](correlation-nn.md) tests whether the full
+ZZ correlation matrix supports better segmentation than the previous readouts.
+It uses source-level nested cross-validation, 36 Ising/XXZ Hamiltonians, a
+correlation-volume CNN and a graph network, and seedless/foreground-seeded
+comparisons. Spatial-prior, single-correlation-column, raw-image, and previous
+one/two-seed controls separate decoder improvements from extra supervision.
+Install `requirements-neural.txt` in the existing environment; the new code
+reuses the established Hamiltonians and samplers. Inputs use Pauli correlations
+`C = 4*Gamma`, with row-major pixel order, and do not change the MATLAB code.
+
+A second implementation now prepares the state through repeated contacts
+with a reusable thermal bath qubit. See [Thermal bath preparation](thermal-bath.md)
+for the literature analysis, circuit, validation results, and run instructions.
+The sections below describe the original purification reference.
+
+The current research focus is **correlation robustness away from Gibbs**.
+See [Correlation robustness](correlation-robustness.md) for sweep plots,
+l-infinity distances, connected correlations, sustained-noise tests, and
+the proposed tests of long-range behavior and universality.
+
+The [alternating-block strip study](ladder-robustness.md) implements both
+isolated perturbations and a separate local-bond bath on 2-by-4N images,
+with tensor-network results through 32 spins, size/separation plots,
+convergence checks, and a MATLAB-compatible correlation export.
+
+The [bath modification comparison](bath-modifications.md) tests overlapping
+plaquette baths and coherent Hamiltonian evolution, and reports exact
+small-system results, larger tensor checks, and compiled local circuit costs.
+Its [finite-stage timing study](bath-modifications.md#finite-hamiltonian-then-bath-stages)
+also scans separate Hamiltonian and edge-bath durations, with exact eight-spin
+generators, matched simultaneous controls, and measurements within each cycle.
+The [all-+x initial-state test](bath-modifications.md#bath-only-evolution-from-an-all-x-product-state)
+compares the same edge bath from a coherent pure product state and from I/d,
+including full-density eight-spin evolution and larger-strip tensor checks.
+
+The [XXZ worldline heat-bath study](ladder-robustness.md#xxz-worldline-heat-bath-dynamics)
+adapts Glauber sampling to the full image Hamiltonian using stochastic series
+expansion and directed loops. It compares ordered, corrupted, and random
+paths, with correlation-versus-sweep plots and independent mixing checks.
+This is a classical sampling algorithm, not a physical bath circuit.
+
+The [quantum heat-bath circuit](quantum-heat-bath.md) acts on the actual XXZ
+spin state using erasure and Petz recovery with one reusable reset ancilla.
+It includes four- and eight-spin elementary circuits, convergence and
+sustained-noise tests, resource counts, and MATLAB exchange files. The
+recovery gates are nonlocal and require exponential preprocessing; this is
+a circuit reference rather than a scalable preparation algorithm.
+
+The [local Petz implementation](local-petz.md) replaces global recovery by
+bounded patches. Its default star updates use at most five spins, preserve
+complete positivity and trace, and deliberately sacrifice global Gibbs
+preservation. Five disjoint spatial layers give linear gate count per sweep
+and bounded parallel depth with locally attached ancillas. The study includes
+routed circuits, exact eight-spin bias tests, and larger MPS trajectories.
+
+The [beta/kappa sweep](algorithm3-parameter-sweep.md) tests the Algorithm 3
+adaptation on alternating strips with independent parameter confirmations.
+
+The [Algorithm 3 adaptation](algorithm3-local-petz.md) adds magnetization-based
+freezing and the external fields from frozen pixels. It includes local Petz
+circuits for each active set, a separate capped K=3 Gibbs reference, known-truth
+segmentation tests, confidence-based freezing, and measurement-count feedback.
+
 The first objective is a correct, measurable circuit for small instances. It
 uses **exact spectral purification**, including classical diagonalization of
 the image Hamiltonian. This has exponential cost and does **not** demonstrate
@@ -141,13 +298,14 @@ Use `--help` for explicit sigma, variance convention, and random-seed options.
 Use MATLAB R2020b or newer and the
 [QCLAB toolbox](https://github.com/QuantumComputingLab/qclab). The API was
 inspected at commit `b9de8ca2d2e78186dc159a6ac6340646b7d603aa` (v1.2.0).
-Install QCLAB outside this repository and add its root to your MATLAB path,
-as for the repository's existing `new/simple_circuit.m` and `first_QC.m`.
+QCLAB is now installed in the ignored project-local `external/qclab`
+directory. Add its root to your MATLAB path, as for the repository's
+existing `new/simple_circuit.m` and `first_QC.m`.
 
 From the repository root in MATLAB:
 
 ```matlab
-addpath('/path/to/qclab');
+addpath('external/qclab');
 addpath('algorithm1/matlab');
 r = algorithm1_qclab([0,0;255,255], 2, 24, 1);
 r.circuit.draw();
@@ -165,10 +323,13 @@ need not agree. The tests compare `H`, exact reduced density matrices, and
 exact correlations. QCLAB's `MatrixGate` does not export to QASM; use the
 decomposed Python export for the portable circuit.
 
-**Validation status:** the Python simulator, physics tests, OpenQASM round
-trip, and independent simulation of the MATLAB gate encoding were executed.
-MATLAB/QCLAB execution remains unverified because MATLAB is not installed
-in this workspace. Run `test_algorithm1` in MATLAB before claiming parity.
+**Original purification validation status:** the Python simulator, physics
+tests, OpenQASM round trip, and independent simulation of the MATLAB gate
+encoding were executed. Native MATLAB execution of that older purification
+entry point has not been checked; run `test_algorithm1` before claiming its
+parity. MATLAB is now installed, and the separate new Ising Petz implementation
+has passed native QCLAB execution and cross-language validation, as recorded
+in the [Ising Petz report](ising-petz.md).
 
 ## First observed result and next experiments
 

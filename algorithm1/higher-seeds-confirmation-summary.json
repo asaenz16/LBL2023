@@ -1,0 +1,3799 @@
+{
+  "metrics": {
+    "XXZ/foreground/8/pair/balanced": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.65066666666667,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/majority_gate/balanced": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 1.149333333333333,
+      "activated": 0.6986666666666667,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.005333333333333334,
+      "score_evaluations": 222.20799999999997,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/majority_gate/balanced/matched_pair": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.65066666666667,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/majority_gate/balanced/matched_linear": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 1.149333333333333,
+      "activated": 0.6986666666666667,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.002666666666666667,
+      "score_evaluations": 222.20799999999997,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/soft_gate/balanced": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 1.149333333333333,
+      "activated": 0.6986666666666667,
+      "weighted_ess": 6909.843576952318,
+      "gate_rejections": 0.016,
+      "score_evaluations": 222.20799999999997,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/soft_gate/balanced/matched_pair": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.65066666666667,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/soft_gate/balanced/matched_linear": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 1.149333333333333,
+      "activated": 0.6986666666666667,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.04533333333333333,
+      "score_evaluations": 222.20799999999997,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/majority_score/balanced": {
+      "iou": 0.4008993692263267,
+      "unresolved": 0.06306878306878305,
+      "mixing_unresolved": 0.06306878306878305,
+      "mixing_lower": 0.3703270254011501,
+      "bpm_iou_r1": 0.4586226981709953,
+      "bpm_iou_r0": 0.19270285682669577,
+      "bpm_iou_r2": 0.6692942678236794,
+      "promoted_count": 2.3546666666666667,
+      "promoted_wrong": 0.6773333333333335,
+      "rounds": 2.3413333333333335,
+      "shots": 20097.70666666667,
+      "minimum_ess": 1260.6913589095511,
+      "max_rhat": 1.002463762128175,
+      "converged": 1.0,
+      "higher_rounds": 1.168,
+      "activated": 0.6986666666666667,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 224.59733333333332,
+      "wrong_promotion_rate": 0.2876557191392979,
+      "images": 75
+    },
+    "XXZ/foreground/8/majority_score/balanced/matched_pair": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.65066666666667,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/majority_score/balanced/matched_linear": {
+      "iou": 0.4005898329143018,
+      "unresolved": 0.06167195767195764,
+      "mixing_unresolved": 0.06167195767195764,
+      "mixing_lower": 0.3712822526128732,
+      "bpm_iou_r1": 0.4545238040826275,
+      "bpm_iou_r0": 0.19348406564196036,
+      "bpm_iou_r2": 0.6676300098594216,
+      "promoted_count": 2.3146666666666667,
+      "promoted_wrong": 0.6613333333333336,
+      "rounds": 2.322666666666667,
+      "shots": 19813.717333333334,
+      "minimum_ess": 1285.0384160533185,
+      "max_rhat": 1.002427356731565,
+      "converged": 1.0,
+      "higher_rounds": 1.1493333333333333,
+      "activated": 0.6986666666666667,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 222.20799999999997,
+      "wrong_promotion_rate": 0.2857142857142857,
+      "images": 75
+    },
+    "XXZ/foreground/8/soft_score/balanced": {
+      "iou": 0.40090319666770485,
+      "unresolved": 0.0622222222222222,
+      "mixing_unresolved": 0.0622222222222222,
+      "mixing_lower": 0.3712750038058625,
+      "bpm_iou_r1": 0.45750903388550435,
+      "bpm_iou_r0": 0.19286469904364636,
+      "bpm_iou_r2": 0.6686012867306984,
+      "promoted_count": 2.3359999999999994,
+      "promoted_wrong": 0.6693333333333334,
+      "rounds": 2.3306666666666667,
+      "shots": 19879.253333333334,
+      "minimum_ess": 1258.3611232851842,
+      "max_rhat": 1.0024492362918414,
+      "converged": 1.0,
+      "higher_rounds": 1.157333333333333,
+      "activated": 0.6986666666666667,
+      "weighted_ess": 7452.127457002319,
+      "gate_rejections": 0.0,
+      "score_evaluations": 223.23199999999997,
+      "wrong_promotion_rate": 0.28652968036529686,
+      "images": 75
+    },
+    "XXZ/foreground/8/soft_score/balanced/matched_pair": {
+      "iou": 0.40008721612884757,
+      "unresolved": 0.06188359788359787,
+      "mixing_unresolved": 0.06188359788359787,
+      "mixing_lower": 0.37152806640862274,
+      "bpm_iou_r1": 0.45687213461919335,
+      "bpm_iou_r0": 0.19598143283158762,
+      "bpm_iou_r2": 0.6724103695868401,
+      "promoted_count": 2.3120000000000003,
+      "promoted_wrong": 0.658666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19879.25333333333,
+      "minimum_ess": 1285.2230152385978,
+      "max_rhat": 1.0024255358947398,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.65066666666667,
+      "wrong_promotion_rate": 0.28489042675893894,
+      "images": 75
+    },
+    "XXZ/foreground/8/soft_score/balanced/matched_linear": {
+      "iou": 0.4005898329143018,
+      "unresolved": 0.06167195767195764,
+      "mixing_unresolved": 0.06167195767195764,
+      "mixing_lower": 0.3712822526128732,
+      "bpm_iou_r1": 0.4545238040826275,
+      "bpm_iou_r0": 0.19348406564196036,
+      "bpm_iou_r2": 0.6676300098594216,
+      "promoted_count": 2.3146666666666667,
+      "promoted_wrong": 0.6613333333333336,
+      "rounds": 2.322666666666667,
+      "shots": 19813.717333333334,
+      "minimum_ess": 1285.0384160533185,
+      "max_rhat": 1.002427356731565,
+      "converged": 1.0,
+      "higher_rounds": 1.1493333333333333,
+      "activated": 0.6986666666666667,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 222.20799999999997,
+      "wrong_promotion_rate": 0.2857142857142857,
+      "images": 75
+    },
+    "XXZ/foreground/16/pair/balanced": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 719.5306666666668,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/majority_gate/balanced": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.7573333333333332,
+      "activated": 0.92,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.005333333333333334,
+      "score_evaluations": 1169.408,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/majority_gate/balanced/matched_pair": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 719.5306666666668,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/majority_gate/balanced/matched_linear": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.7573333333333332,
+      "activated": 0.92,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.005333333333333334,
+      "score_evaluations": 1169.408,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/soft_gate/balanced": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.7573333333333332,
+      "activated": 0.92,
+      "weighted_ess": 17407.448950329162,
+      "gate_rejections": 0.19466666666666665,
+      "score_evaluations": 1169.408,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/soft_gate/balanced/matched_pair": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 719.5306666666668,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/soft_gate/balanced/matched_linear": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.7573333333333332,
+      "activated": 0.92,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.35733333333333334,
+      "score_evaluations": 1169.408,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/majority_score/balanced": {
+      "iou": 0.4251201033275889,
+      "unresolved": 0.07041045751633987,
+      "mixing_unresolved": 0.09576993464052287,
+      "mixing_lower": 0.3892910219068776,
+      "bpm_iou_r1": 0.34516540906794063,
+      "bpm_iou_r0": 0.17035620174025679,
+      "bpm_iou_r2": 0.48804108730402457,
+      "promoted_count": 3.5226666666666664,
+      "promoted_wrong": 1.0800000000000003,
+      "rounds": 2.8106666666666666,
+      "shots": 59856.21333333333,
+      "minimum_ess": 980.7229047944511,
+      "max_rhat": 1.0108622846079558,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.7573333333333334,
+      "activated": 0.92,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1169.4080000000001,
+      "wrong_promotion_rate": 0.3065859197577593,
+      "images": 75
+    },
+    "XXZ/foreground/16/majority_score/balanced/matched_pair": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 719.5306666666668,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/majority_score/balanced/matched_linear": {
+      "iou": 0.42543835069718633,
+      "unresolved": 0.07237647058823529,
+      "mixing_unresolved": 0.09773594771241828,
+      "mixing_lower": 0.38449532704195427,
+      "bpm_iou_r1": 0.34549958313619267,
+      "bpm_iou_r0": 0.16995293705329012,
+      "bpm_iou_r2": 0.48820163278457235,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0666666666666669,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1019.0293872690967,
+      "max_rhat": 1.0105713299407952,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.7573333333333332,
+      "activated": 0.92,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1169.4080000000001,
+      "wrong_promotion_rate": 0.3028009084027253,
+      "images": 75
+    },
+    "XXZ/foreground/16/soft_score/balanced": {
+      "iou": 0.42502934480808224,
+      "unresolved": 0.07656993464052285,
+      "mixing_unresolved": 0.10192941176470585,
+      "mixing_lower": 0.3829920872786751,
+      "bpm_iou_r1": 0.3458542464048786,
+      "bpm_iou_r0": 0.17013150013266787,
+      "bpm_iou_r2": 0.48738877012297366,
+      "promoted_count": 3.5173333333333328,
+      "promoted_wrong": 1.0773333333333337,
+      "rounds": 2.8080000000000003,
+      "shots": 59703.29599999999,
+      "minimum_ess": 970.2842589325693,
+      "max_rhat": 1.0110183306321983,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.7546666666666662,
+      "activated": 0.92,
+      "weighted_ess": 18852.12562825246,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1168.0426666666667,
+      "wrong_promotion_rate": 0.30629264594389694,
+      "images": 75
+    },
+    "XXZ/foreground/16/soft_score/balanced/matched_pair": {
+      "iou": 0.4249357485997731,
+      "unresolved": 0.07164444444444444,
+      "mixing_unresolved": 0.09700392156862746,
+      "mixing_lower": 0.3847811323134011,
+      "bpm_iou_r1": 0.34588324898651857,
+      "bpm_iou_r0": 0.16970927581649292,
+      "bpm_iou_r2": 0.488421362065727,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0746666666666667,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1013.9520111083092,
+      "max_rhat": 1.0105230999081132,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 719.5306666666668,
+      "wrong_promotion_rate": 0.30507191521574567,
+      "images": 75
+    },
+    "XXZ/foreground/16/soft_score/balanced/matched_linear": {
+      "iou": 0.42543835069718633,
+      "unresolved": 0.07237647058823529,
+      "mixing_unresolved": 0.09773594771241828,
+      "mixing_lower": 0.38449532704195427,
+      "bpm_iou_r1": 0.34549958313619267,
+      "bpm_iou_r0": 0.16995293705329012,
+      "bpm_iou_r2": 0.48820163278457235,
+      "promoted_count": 3.522666666666666,
+      "promoted_wrong": 1.0666666666666669,
+      "rounds": 2.810666666666667,
+      "shots": 59725.141333333326,
+      "minimum_ess": 1019.0293872690967,
+      "max_rhat": 1.0105713299407952,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.7573333333333332,
+      "activated": 0.92,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1169.4080000000001,
+      "wrong_promotion_rate": 0.3028009084027253,
+      "images": 75
+    },
+    "XXZ/background/8/pair/balanced": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.48,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/majority_gate/balanced": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.9466666666666667,
+      "activated": 0.6586666666666666,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 209.06666666666663,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/majority_gate/balanced/matched_pair": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.48,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/majority_gate/balanced/matched_linear": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.9466666666666667,
+      "activated": 0.6586666666666666,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 209.06666666666663,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/soft_gate/balanced": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.9466666666666667,
+      "activated": 0.6586666666666666,
+      "weighted_ess": 7956.825894532826,
+      "gate_rejections": 0.0,
+      "score_evaluations": 209.06666666666663,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/soft_gate/balanced/matched_pair": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.48,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/soft_gate/balanced/matched_linear": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.9466666666666667,
+      "activated": 0.6586666666666666,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 209.06666666666663,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/majority_score/balanced": {
+      "iou": 0.3286741975903041,
+      "unresolved": 0.060359788359788336,
+      "mixing_unresolved": 0.060359788359788336,
+      "mixing_lower": 0.2785888462888495,
+      "bpm_iou_r1": 0.4148068097479863,
+      "bpm_iou_r0": 0.1900013733543145,
+      "bpm_iou_r2": 0.5713677137677138,
+      "promoted_count": 1.936,
+      "promoted_wrong": 0.33599999999999997,
+      "rounds": 2.3226666666666667,
+      "shots": 19354.965333333334,
+      "minimum_ess": 1181.53626731196,
+      "max_rhat": 1.0025739778528284,
+      "converged": 1.0,
+      "higher_rounds": 0.9493333333333336,
+      "activated": 0.6586666666666666,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 209.40800000000002,
+      "wrong_promotion_rate": 0.17355371900826447,
+      "images": 75
+    },
+    "XXZ/background/8/majority_score/balanced/matched_pair": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.48,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/majority_score/balanced/matched_linear": {
+      "iou": 0.32884446457474764,
+      "unresolved": 0.05993650793650791,
+      "mixing_unresolved": 0.05993650793650791,
+      "mixing_lower": 0.27885281977325554,
+      "bpm_iou_r1": 0.4148524011935777,
+      "bpm_iou_r0": 0.1902357960122666,
+      "bpm_iou_r2": 0.5716252414252415,
+      "promoted_count": 1.936,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19354.965333333334,
+      "minimum_ess": 1192.983739991513,
+      "max_rhat": 1.0025480447535846,
+      "converged": 1.0,
+      "higher_rounds": 0.9493333333333336,
+      "activated": 0.6586666666666666,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 209.40800000000002,
+      "wrong_promotion_rate": 0.174931129476584,
+      "images": 75
+    },
+    "XXZ/background/8/soft_score/balanced": {
+      "iou": 0.32913999537106753,
+      "unresolved": 0.05968253968253966,
+      "mixing_unresolved": 0.05968253968253966,
+      "mixing_lower": 0.2800321610003717,
+      "bpm_iou_r1": 0.41456286850404506,
+      "bpm_iou_r0": 0.19075801823448876,
+      "bpm_iou_r2": 0.5706447700447701,
+      "promoted_count": 1.936,
+      "promoted_wrong": 0.33333333333333326,
+      "rounds": 2.3226666666666667,
+      "shots": 19354.965333333334,
+      "minimum_ess": 1178.3525186577124,
+      "max_rhat": 1.0025624997141702,
+      "converged": 1.0,
+      "higher_rounds": 0.9493333333333336,
+      "activated": 0.6586666666666666,
+      "weighted_ess": 7666.769780805756,
+      "gate_rejections": 0.0,
+      "score_evaluations": 209.40800000000002,
+      "wrong_promotion_rate": 0.17217630853994492,
+      "images": 75
+    },
+    "XXZ/background/8/soft_score/balanced/matched_pair": {
+      "iou": 0.32902039605598754,
+      "unresolved": 0.06019047619047617,
+      "mixing_unresolved": 0.06019047619047617,
+      "mixing_lower": 0.2788009755125161,
+      "bpm_iou_r1": 0.4146680522092287,
+      "bpm_iou_r0": 0.18981572131572128,
+      "bpm_iou_r2": 0.5711902245902246,
+      "promoted_count": 1.9306666666666668,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.32,
+      "shots": 19333.12,
+      "minimum_ess": 1190.2771573396815,
+      "max_rhat": 1.002550959180347,
+      "converged": 1.0,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 148.48,
+      "wrong_promotion_rate": 0.17541436464088395,
+      "images": 75
+    },
+    "XXZ/background/8/soft_score/balanced/matched_linear": {
+      "iou": 0.3287636564939395,
+      "unresolved": 0.06006349206349204,
+      "mixing_unresolved": 0.06006349206349204,
+      "mixing_lower": 0.2781734546938905,
+      "bpm_iou_r1": 0.4148524011935777,
+      "bpm_iou_r0": 0.1902357960122666,
+      "bpm_iou_r2": 0.5716252414252415,
+      "promoted_count": 1.936,
+      "promoted_wrong": 0.33866666666666667,
+      "rounds": 2.3226666666666667,
+      "shots": 19354.965333333334,
+      "minimum_ess": 1193.4996896970167,
+      "max_rhat": 1.0025462242173058,
+      "converged": 1.0,
+      "higher_rounds": 0.9493333333333336,
+      "activated": 0.6586666666666666,
+      "weighted_ess": 8519.68,
+      "gate_rejections": 0.0,
+      "score_evaluations": 209.40800000000002,
+      "wrong_promotion_rate": 0.174931129476584,
+      "images": 75
+    },
+    "XXZ/background/16/pair/balanced": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 700.416,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/majority_gate/balanced": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.656,
+      "activated": 0.8933333333333333,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1124.3519999999999,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/majority_gate/balanced/matched_pair": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 700.416,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/majority_gate/balanced/matched_linear": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.656,
+      "activated": 0.8933333333333333,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1124.3519999999999,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/soft_gate/balanced": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.656,
+      "activated": 0.8933333333333333,
+      "weighted_ess": 20248.568966535804,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1124.3519999999999,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/soft_gate/balanced/matched_pair": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 700.416,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/soft_gate/balanced/matched_linear": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.656,
+      "activated": 0.8933333333333333,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1124.3519999999999,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/majority_score/balanced": {
+      "iou": 0.40790660005436125,
+      "unresolved": 0.06502483660130717,
+      "mixing_unresolved": 0.09059346405228755,
+      "mixing_lower": 0.345909846529421,
+      "bpm_iou_r1": 0.35904081771685176,
+      "bpm_iou_r0": 0.18291234925953467,
+      "bpm_iou_r2": 0.49898512587357186,
+      "promoted_count": 3.3173333333333326,
+      "promoted_wrong": 0.8560000000000002,
+      "rounds": 2.7386666666666666,
+      "shots": 58873.17333333333,
+      "minimum_ess": 915.7159054784573,
+      "max_rhat": 1.0122948329019499,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.6586666666666665,
+      "activated": 0.8933333333333333,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1125.7173333333333,
+      "wrong_promotion_rate": 0.2580385852090032,
+      "images": 75
+    },
+    "XXZ/background/16/majority_score/balanced/matched_pair": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 700.416,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/majority_score/balanced/matched_linear": {
+      "iou": 0.4082282652916668,
+      "unresolved": 0.06646797385620914,
+      "mixing_unresolved": 0.09203660130718952,
+      "mixing_lower": 0.34498412223756914,
+      "bpm_iou_r1": 0.3593854891200335,
+      "bpm_iou_r0": 0.18302562605089448,
+      "bpm_iou_r2": 0.49936431943902193,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8426666666666666,
+      "rounds": 2.7359999999999998,
+      "shots": 58851.327999999994,
+      "minimum_ess": 948.9214565854098,
+      "max_rhat": 1.0120360907771286,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.656,
+      "activated": 0.8933333333333333,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1124.3519999999999,
+      "wrong_promotion_rate": 0.2544283413848631,
+      "images": 75
+    },
+    "XXZ/background/16/soft_score/balanced": {
+      "iou": 0.4085525534220888,
+      "unresolved": 0.06482614379084968,
+      "mixing_unresolved": 0.09039477124183005,
+      "mixing_lower": 0.3459206402033594,
+      "bpm_iou_r1": 0.3588465882890441,
+      "bpm_iou_r0": 0.18274024186640517,
+      "bpm_iou_r2": 0.49920930655964907,
+      "promoted_count": 3.3066666666666658,
+      "promoted_wrong": 0.8586666666666669,
+      "rounds": 2.7333333333333334,
+      "shots": 58763.94666666666,
+      "minimum_ess": 887.3623830236982,
+      "max_rhat": 1.0125597689995178,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.653333333333333,
+      "activated": 0.8933333333333333,
+      "weighted_ess": 19322.888941029498,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1122.9866666666667,
+      "wrong_promotion_rate": 0.25967741935483873,
+      "images": 75
+    },
+    "XXZ/background/16/soft_score/balanced/matched_pair": {
+      "iou": 0.4084844855562503,
+      "unresolved": 0.06672941176470588,
+      "mixing_unresolved": 0.09229803921568629,
+      "mixing_lower": 0.3449429368981851,
+      "bpm_iou_r1": 0.3591469984519261,
+      "bpm_iou_r0": 0.18311900682069984,
+      "bpm_iou_r2": 0.49913566984457247,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8480000000000001,
+      "rounds": 2.736,
+      "shots": 58851.327999999994,
+      "minimum_ess": 947.5929053625841,
+      "max_rhat": 1.0120527474185423,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 0.0,
+      "activated": 0.0,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 700.416,
+      "wrong_promotion_rate": 0.2560386473429952,
+      "images": 75
+    },
+    "XXZ/background/16/soft_score/balanced/matched_linear": {
+      "iou": 0.40833074938225583,
+      "unresolved": 0.0664470588235294,
+      "mixing_unresolved": 0.09201568627450979,
+      "mixing_lower": 0.3450931775811039,
+      "bpm_iou_r1": 0.3594810500398164,
+      "bpm_iou_r0": 0.18304373339158247,
+      "bpm_iou_r2": 0.49944341582156654,
+      "promoted_count": 3.3119999999999994,
+      "promoted_wrong": 0.8426666666666666,
+      "rounds": 2.7359999999999998,
+      "shots": 58851.327999999994,
+      "minimum_ess": 941.3944622423875,
+      "max_rhat": 1.0120569061049536,
+      "converged": 0.9733333333333334,
+      "higher_rounds": 1.656,
+      "activated": 0.8933333333333333,
+      "weighted_ess": 21954.56,
+      "gate_rejections": 0.0,
+      "score_evaluations": 1124.3519999999999,
+      "wrong_promotion_rate": 0.2544283413848631,
+      "images": 75
+    }
+  },
+  "effects": {
+    "XXZ/foreground/8/majority_gate/balanced": {
+      "XXZ/foreground/8/pair/balanced": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/foreground/8/majority_gate/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/foreground/8/majority_gate/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/foreground/8/soft_gate/balanced": {
+      "XXZ/foreground/8/pair/balanced": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/foreground/8/soft_gate/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/foreground/8/soft_gate/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/foreground/8/majority_score/balanced": {
+      "XXZ/foreground/8/pair/balanced": {
+        "iou": {
+          "mean": 0.000812153097479228,
+          "ci95": [
+            -0.0005685952349342867,
+            0.002280332653279644
+          ]
+        },
+        "unresolved": {
+          "mean": 0.001185185185185184,
+          "ci95": [
+            -8.571428571428943e-05,
+            0.0026666666666666666
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.001185185185185184,
+          "ci95": [
+            -8.571428571428943e-05,
+            0.0026666666666666666
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.001201041007472696,
+          "ci95": [
+            -0.0036931602258036696,
+            0.0006154330244972593
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0017505635518019458,
+          "ci95": [
+            -0.0032630083905316057,
+            0.007224663492109314
+          ]
+        },
+        "shots": {
+          "mean": 218.45333333333315,
+          "ci95": [
+            64.98986666666677,
+            436.90666666666624
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0027652923803589413,
+          "ci95": [
+            -0.003776797393200326,
+            0.009338222695393012
+          ]
+        }
+      },
+      "XXZ/foreground/8/majority_score/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.000812153097479228,
+          "ci95": [
+            -0.0005685952349342867,
+            0.002280332653279644
+          ]
+        },
+        "unresolved": {
+          "mean": 0.001185185185185184,
+          "ci95": [
+            -8.571428571428943e-05,
+            0.0026666666666666666
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.001185185185185184,
+          "ci95": [
+            -8.571428571428943e-05,
+            0.0026666666666666666
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.001201041007472696,
+          "ci95": [
+            -0.0036931602258036696,
+            0.0006154330244972593
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0017505635518019458,
+          "ci95": [
+            -0.0032630083905316057,
+            0.007224663492109314
+          ]
+        },
+        "shots": {
+          "mean": 218.45333333333315,
+          "ci95": [
+            64.98986666666677,
+            436.90666666666624
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0027652923803589413,
+          "ci95": [
+            -0.003776797393200326,
+            0.009338222695393012
+          ]
+        }
+      },
+      "XXZ/foreground/8/majority_score/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0003095363120250627,
+          "ci95": [
+            -0.001155276231257395,
+            0.0018520874181594778
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0013968253968253967,
+          "ci95": [
+            0.00012698412698412543,
+            0.002920634920634921
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0013968253968253967,
+          "ci95": [
+            0.00012698412698412543,
+            0.002920634920634921
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.0009552272117231168,
+          "ci95": [
+            -0.003341980552624718,
+            0.0005503115592951609
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.004098894088367776,
+          "ci95": [
+            -0.0007614707125233447,
+            0.009477686397423244
+          ]
+        },
+        "shots": {
+          "mean": 283.98933333333326,
+          "ci95": [
+            21.845333333333304,
+            699.0506666666664
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0019414334250121845,
+          "ci95": [
+            -0.0051000327378509965,
+            0.00942743572586233
+          ]
+        }
+      }
+    },
+    "XXZ/foreground/8/soft_score/balanced": {
+      "XXZ/foreground/8/pair/balanced": {
+        "iou": {
+          "mean": 0.0008159805388573423,
+          "ci95": [
+            -0.0003641108389233093,
+            0.002204732829844837
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0003386243386243389,
+          "ci95": [
+            -0.0009312169312169294,
+            0.0015238095238095254
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0003386243386243389,
+          "ci95": [
+            -0.0009312169312169294,
+            0.0015238095238095254
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.0002530626027603298,
+          "ci95": [
+            -0.0011964533686753417,
+            0.000581029835379358
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0006368992663110345,
+          "ci95": [
+            -0.00500549771579183,
+            0.005769056341262226
+          ]
+        },
+        "shots": {
+          "mean": -1.4551915228366852e-13,
+          "ci95": [
+            -218.45333333333363,
+            174.7626666666665
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0016392536063579155,
+          "ci95": [
+            -0.006772205446226478,
+            0.011748175847596265
+          ]
+        }
+      },
+      "XXZ/foreground/8/soft_score/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0008159805388573423,
+          "ci95": [
+            -0.0003641108389233093,
+            0.002204732829844837
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0003386243386243389,
+          "ci95": [
+            -0.0009312169312169294,
+            0.0015238095238095254
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0003386243386243389,
+          "ci95": [
+            -0.0009312169312169294,
+            0.0015238095238095254
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.0002530626027603298,
+          "ci95": [
+            -0.0011964533686753417,
+            0.000581029835379358
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0006368992663110345,
+          "ci95": [
+            -0.00500549771579183,
+            0.005769056341262226
+          ]
+        },
+        "shots": {
+          "mean": -1.4551915228366852e-13,
+          "ci95": [
+            -218.45333333333363,
+            174.7626666666665
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0016392536063579155,
+          "ci95": [
+            -0.006772205446226478,
+            0.011748175847596265
+          ]
+        }
+      },
+      "XXZ/foreground/8/soft_score/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.00031336375340317707,
+          "ci95": [
+            -0.0005615768723006756,
+            0.001321833859649498
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0005502645502645516,
+          "ci95": [
+            -0.0004656084656084637,
+            0.0018201058201058225
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0005502645502645516,
+          "ci95": [
+            -0.0004656084656084637,
+            0.0018201058201058225
+          ]
+        },
+        "mixing_lower": {
+          "mean": -7.248807010750517e-06,
+          "ci95": [
+            -0.0005443610523673897,
+            0.0005034851348175434
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.002985229802876865,
+          "ci95": [
+            -0.0013134751740634032,
+            0.007643997309879663
+          ]
+        },
+        "shots": {
+          "mean": 65.53599999999996,
+          "ci95": [
+            0.0,
+            152.91733333333323
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0008153946510111587,
+          "ci95": [
+            -0.007846187222041496,
+            0.011464744446516057
+          ]
+        }
+      }
+    },
+    "XXZ/foreground/16/majority_gate/balanced": {
+      "XXZ/foreground/16/pair/balanced": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/foreground/16/majority_gate/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/foreground/16/majority_gate/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/foreground/16/soft_gate/balanced": {
+      "XXZ/foreground/16/pair/balanced": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/foreground/16/soft_gate/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/foreground/16/soft_gate/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/foreground/16/majority_score/balanced": {
+      "XXZ/foreground/16/pair/balanced": {
+        "iou": {
+          "mean": 0.00018435472781576582,
+          "ci95": [
+            -0.0011258868094308682,
+            0.0014060036561649625
+          ]
+        },
+        "unresolved": {
+          "mean": -0.0012339869281045733,
+          "ci95": [
+            -0.010990849673202614,
+            0.006139084967320258
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.0012339869281045733,
+          "ci95": [
+            -0.010990849673202614,
+            0.006139084967320258
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.004509889593476437,
+          "ci95": [
+            -0.0047845035710414345,
+            0.019786327075886307
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.0007178399185779571,
+          "ci95": [
+            -0.0018335469149212595,
+            0.00032708388697750564
+          ]
+        },
+        "shots": {
+          "mean": 131.07200000000017,
+          "ci95": [
+            -218.4533333333329,
+            524.2880000000001
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.001514004542013614,
+          "ci95": [
+            -0.006078281482587455,
+            0.009769523456574622
+          ]
+        }
+      },
+      "XXZ/foreground/16/majority_score/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.00018435472781576582,
+          "ci95": [
+            -0.0011258868094308682,
+            0.0014060036561649625
+          ]
+        },
+        "unresolved": {
+          "mean": -0.0012339869281045733,
+          "ci95": [
+            -0.010990849673202614,
+            0.006139084967320258
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.0012339869281045733,
+          "ci95": [
+            -0.010990849673202614,
+            0.006139084967320258
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.004509889593476437,
+          "ci95": [
+            -0.0047845035710414345,
+            0.019786327075886307
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.0007178399185779571,
+          "ci95": [
+            -0.0018335469149212595,
+            0.00032708388697750564
+          ]
+        },
+        "shots": {
+          "mean": 131.07200000000017,
+          "ci95": [
+            -218.4533333333329,
+            524.2880000000001
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.001514004542013614,
+          "ci95": [
+            -0.006078281482587455,
+            0.009769523456574622
+          ]
+        }
+      },
+      "XXZ/foreground/16/majority_score/balanced/matched_linear": {
+        "iou": {
+          "mean": -0.00031824736959736006,
+          "ci95": [
+            -0.0014226999289496606,
+            0.0003879735546888435
+          ]
+        },
+        "unresolved": {
+          "mean": -0.001966013071895424,
+          "ci95": [
+            -0.011398954248366015,
+            0.004486274509803921
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.001966013071895424,
+          "ci95": [
+            -0.011398954248366015,
+            0.004486274509803921
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.004795694864923375,
+          "ci95": [
+            -0.004125323395181038,
+            0.019866123535285815
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.00033417406825203414,
+          "ci95": [
+            -0.0013912236354766123,
+            0.0008301613138092844
+          ]
+        },
+        "shots": {
+          "mean": 131.07200000000017,
+          "ci95": [
+            -262.14399999999955,
+            611.6693333333335
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.003785011355034007,
+          "ci95": [
+            -0.002110038849487973,
+            0.01060741686228329
+          ]
+        }
+      }
+    },
+    "XXZ/foreground/16/soft_score/balanced": {
+      "XXZ/foreground/16/pair/balanced": {
+        "iou": {
+          "mean": 9.359620830895754e-05,
+          "ci95": [
+            -0.0010111238469962805,
+            0.0012034773974470044
+          ]
+        },
+        "unresolved": {
+          "mean": 0.004925490196078431,
+          "ci95": [
+            -0.001359477124183009,
+            0.015027973856209145
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.004925490196078431,
+          "ci95": [
+            -0.001359477124183009,
+            0.015027973856209145
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.001789045034725939,
+          "ci95": [
+            -0.00508200673621249,
+            0.0005512934334586761
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -2.900258163997869e-05,
+          "ci95": [
+            -0.0013500322687943365,
+            0.0012985132062976992
+          ]
+        },
+        "shots": {
+          "mean": -21.845333333333304,
+          "ci95": [
+            -283.989333333333,
+            240.29866666666635
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0012207307281512647,
+          "ci95": [
+            -0.004737897595951867,
+            0.007822319215247816
+          ]
+        }
+      },
+      "XXZ/foreground/16/soft_score/balanced/matched_pair": {
+        "iou": {
+          "mean": 9.359620830895754e-05,
+          "ci95": [
+            -0.0010111238469962805,
+            0.0012034773974470044
+          ]
+        },
+        "unresolved": {
+          "mean": 0.004925490196078431,
+          "ci95": [
+            -0.001359477124183009,
+            0.015027973856209145
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.004925490196078431,
+          "ci95": [
+            -0.001359477124183009,
+            0.015027973856209145
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.001789045034725939,
+          "ci95": [
+            -0.00508200673621249,
+            0.0005512934334586761
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -2.900258163997869e-05,
+          "ci95": [
+            -0.0013500322687943365,
+            0.0012985132062976992
+          ]
+        },
+        "shots": {
+          "mean": -21.845333333333304,
+          "ci95": [
+            -283.989333333333,
+            240.29866666666635
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0012207307281512647,
+          "ci95": [
+            -0.004737897595951867,
+            0.007822319215247816
+          ]
+        }
+      },
+      "XXZ/foreground/16/soft_score/balanced/matched_linear": {
+        "iou": {
+          "mean": -0.0004090058891041683,
+          "ci95": [
+            -0.0013222145374231153,
+            0.0003008343915201702
+          ]
+        },
+        "unresolved": {
+          "mean": 0.004193464052287581,
+          "ci95": [
+            -0.0017152941176470623,
+            0.013971503267973851
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.004193464052287581,
+          "ci95": [
+            -0.0017152941176470623,
+            0.013971503267973851
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.001503239763279001,
+          "ci95": [
+            -0.004694061587669435,
+            0.0005754089551013309
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0003546632686859443,
+          "ci95": [
+            -0.0007541546858677282,
+            0.0014496071483565758
+          ]
+        },
+        "shots": {
+          "mean": -21.845333333333304,
+          "ci95": [
+            -65.53599999999992,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.003491737541171658,
+          "ci95": [
+            -0.0022422784299894237,
+            0.009103736296368098
+          ]
+        }
+      }
+    },
+    "XXZ/background/8/majority_gate/balanced": {
+      "XXZ/background/8/pair/balanced": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/8/majority_gate/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/8/majority_gate/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/background/8/soft_gate/balanced": {
+      "XXZ/background/8/pair/balanced": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/8/soft_gate/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/8/soft_gate/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/background/8/majority_score/balanced": {
+      "XXZ/background/8/pair/balanced": {
+        "iou": {
+          "mean": -0.00034619846568344963,
+          "ci95": [
+            -0.0010052283258711048,
+            0.0002218343384874818
+          ]
+        },
+        "unresolved": {
+          "mean": 0.00016931216931216964,
+          "ci95": [
+            -0.0007619047619047601,
+            0.0011851851851851839
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.00016931216931216964,
+          "ci95": [
+            -0.0007619047619047601,
+            0.0011851851851851839
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.00021212922366650974,
+          "ci95": [
+            -0.0019487661534439765,
+            0.00163704206175508
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0001387575387575383,
+          "ci95": [
+            -0.0014960454360454355,
+            0.0017417704517704508
+          ]
+        },
+        "shots": {
+          "mean": 21.845333333333354,
+          "ci95": [
+            0.0,
+            65.53600000000006
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": -0.0018606456326194787,
+          "ci95": [
+            -0.005115238346978366,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/8/majority_score/balanced/matched_pair": {
+        "iou": {
+          "mean": -0.00034619846568344963,
+          "ci95": [
+            -0.0010052283258711048,
+            0.0002218343384874818
+          ]
+        },
+        "unresolved": {
+          "mean": 0.00016931216931216964,
+          "ci95": [
+            -0.0007619047619047601,
+            0.0011851851851851839
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.00016931216931216964,
+          "ci95": [
+            -0.0007619047619047601,
+            0.0011851851851851839
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.00021212922366650974,
+          "ci95": [
+            -0.0019487661534439765,
+            0.00163704206175508
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0001387575387575383,
+          "ci95": [
+            -0.0014960454360454355,
+            0.0017417704517704508
+          ]
+        },
+        "shots": {
+          "mean": 21.845333333333354,
+          "ci95": [
+            0.0,
+            65.53600000000006
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": -0.0018606456326194787,
+          "ci95": [
+            -0.005115238346978366,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/8/majority_score/balanced/matched_linear": {
+        "iou": {
+          "mean": -0.00017026698444350406,
+          "ci95": [
+            -0.0005894328677859068,
+            0.0002576226562980117
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0004232804232804232,
+          "ci95": [
+            -0.0002962962962962959,
+            0.0012698412698412698
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0004232804232804232,
+          "ci95": [
+            -0.0002962962962962959,
+            0.0012698412698412698
+          ]
+        },
+        "mixing_lower": {
+          "mean": -0.0002639734844060344,
+          "ci95": [
+            -0.0014671784815900508,
+            0.0009141812674227591
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -4.5591445591447086e-05,
+          "ci95": [
+            -0.0014424242424242444,
+            0.001404551004551002
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": -0.0013774104683195454,
+          "ci95": [
+            -0.00449775112443776,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/background/8/soft_score/balanced": {
+      "XXZ/background/8/pair/balanced": {
+        "iou": {
+          "mean": 0.00011959931507994645,
+          "ci95": [
+            -0.0006320049629949188,
+            0.0008808964646464658
+          ]
+        },
+        "unresolved": {
+          "mean": -0.0005079365079365087,
+          "ci95": [
+            -0.0013544973544973536,
+            0.00016931216931216883
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.0005079365079365087,
+          "ci95": [
+            -0.0013544973544973536,
+            0.00016931216931216883
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0012311854878556887,
+          "ci95": [
+            -4.935426689072769e-05,
+            0.003093479645528603
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.00010518370518370438,
+          "ci95": [
+            -0.0018981018981018979,
+            0.0017615850815850824
+          ]
+        },
+        "shots": {
+          "mean": 21.845333333333354,
+          "ci95": [
+            0.0,
+            65.53600000000006
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": -0.003238056100939024,
+          "ci95": [
+            -0.011449924049215278,
+            0.003924063053681396
+          ]
+        }
+      },
+      "XXZ/background/8/soft_score/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.00011959931507994645,
+          "ci95": [
+            -0.0006320049629949188,
+            0.0008808964646464658
+          ]
+        },
+        "unresolved": {
+          "mean": -0.0005079365079365087,
+          "ci95": [
+            -0.0013544973544973536,
+            0.00016931216931216883
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.0005079365079365087,
+          "ci95": [
+            -0.0013544973544973536,
+            0.00016931216931216883
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0012311854878556887,
+          "ci95": [
+            -4.935426689072769e-05,
+            0.003093479645528603
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.00010518370518370438,
+          "ci95": [
+            -0.0018981018981018979,
+            0.0017615850815850824
+          ]
+        },
+        "shots": {
+          "mean": 21.845333333333354,
+          "ci95": [
+            0.0,
+            65.53600000000006
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": -0.003238056100939024,
+          "ci95": [
+            -0.011449924049215278,
+            0.003924063053681396
+          ]
+        }
+      },
+      "XXZ/background/8/soft_score/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0003763388771279734,
+          "ci95": [
+            -0.00020843957871396993,
+            0.0010278554778554783
+          ]
+        },
+        "unresolved": {
+          "mean": -0.00038095238095238205,
+          "ci95": [
+            -0.0010582010582010591,
+            0.00021164021164021127
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.00038095238095238205,
+          "ci95": [
+            -0.0010582010582010591,
+            0.00021164021164021127
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0018587063064812418,
+          "ci95": [
+            0.0002515384019220355,
+            0.004314822765469818
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.0002895326895326898,
+          "ci95": [
+            -0.0019760550560550577,
+            0.001488245088245089
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": -0.0027548209366390908,
+          "ci95": [
+            -0.010914211466139426,
+            0.004298148429824109
+          ]
+        }
+      }
+    },
+    "XXZ/background/16/majority_gate/balanced": {
+      "XXZ/background/16/pair/balanced": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/16/majority_gate/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/16/majority_gate/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/background/16/soft_gate/balanced": {
+      "XXZ/background/16/pair/balanced": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/16/soft_gate/balanced/matched_pair": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "XXZ/background/16/soft_gate/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "shots": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "XXZ/background/16/majority_score/balanced": {
+      "XXZ/background/16/pair/balanced": {
+        "iou": {
+          "mean": -0.0005778855018890768,
+          "ci95": [
+            -0.001354774219610508,
+            -5.541945359532404e-05
+          ]
+        },
+        "unresolved": {
+          "mean": -0.001704575163398694,
+          "ci95": [
+            -0.005166274509803924,
+            0.00023006535947712114
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.001704575163398694,
+          "ci95": [
+            -0.005166274509803924,
+            0.00023006535947712114
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0009669096312358001,
+          "ci95": [
+            -0.0003113375430094587,
+            0.0031976977659649787
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.00010618073507428253,
+          "ci95": [
+            -0.0010088873487387546,
+            0.0006985709665512653
+          ]
+        },
+        "shots": {
+          "mean": 21.8453333333335,
+          "ci95": [
+            -240.29866666666635,
+            283.98933333333355
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0019999378660079947,
+          "ci95": [
+            -0.0029871605453180784,
+            0.007539145279447625
+          ]
+        }
+      },
+      "XXZ/background/16/majority_score/balanced/matched_pair": {
+        "iou": {
+          "mean": -0.0005778855018890768,
+          "ci95": [
+            -0.001354774219610508,
+            -5.541945359532404e-05
+          ]
+        },
+        "unresolved": {
+          "mean": -0.001704575163398694,
+          "ci95": [
+            -0.005166274509803924,
+            0.00023006535947712114
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.001704575163398694,
+          "ci95": [
+            -0.005166274509803924,
+            0.00023006535947712114
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0009669096312358001,
+          "ci95": [
+            -0.0003113375430094587,
+            0.0031976977659649787
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.00010618073507428253,
+          "ci95": [
+            -0.0010088873487387546,
+            0.0006985709665512653
+          ]
+        },
+        "shots": {
+          "mean": 21.8453333333335,
+          "ci95": [
+            -240.29866666666635,
+            283.98933333333355
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0019999378660079947,
+          "ci95": [
+            -0.0029871605453180784,
+            0.007539145279447625
+          ]
+        }
+      },
+      "XXZ/background/16/majority_score/balanced/matched_linear": {
+        "iou": {
+          "mean": -0.00032166523730566097,
+          "ci95": [
+            -0.0010469182825446452,
+            0.00015695232007450309
+          ]
+        },
+        "unresolved": {
+          "mean": -0.0014431372549019612,
+          "ci95": [
+            -0.0041937254901960805,
+            9.411764705882217e-05
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.0014431372549019612,
+          "ci95": [
+            -0.0041937254901960805,
+            9.411764705882217e-05
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0009257242918517866,
+          "ci95": [
+            -9.753182884237254e-05,
+            0.0026450269223222715
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.00034467140318169024,
+          "ci95": [
+            -0.0011335350134548557,
+            0.00029330976292849247
+          ]
+        },
+        "shots": {
+          "mean": 21.845333333333304,
+          "ci95": [
+            0.0,
+            65.53599999999992
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0036102438241401025,
+          "ci95": [
+            -0.0012520194082848185,
+            0.009157974874519036
+          ]
+        }
+      }
+    },
+    "XXZ/background/16/soft_score/balanced": {
+      "XXZ/background/16/pair/balanced": {
+        "iou": {
+          "mean": 6.806786583851476e-05,
+          "ci95": [
+            -0.00020561509607957981,
+            0.00032836090654117625
+          ]
+        },
+        "unresolved": {
+          "mean": -0.0019032679738562094,
+          "ci95": [
+            -0.005469542483660131,
+            0.0001254901960784315
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.0019032679738562094,
+          "ci95": [
+            -0.005469542483660131,
+            0.0001254901960784315
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0009777033051743525,
+          "ci95": [
+            -0.00017876174675317532,
+            0.002980822465983664
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.0003004101628818527,
+          "ci95": [
+            -0.0016976332711205844,
+            0.000657135432994563
+          ]
+        },
+        "shots": {
+          "mean": -87.38133333333322,
+          "ci95": [
+            -349.52533333333344,
+            174.762666666667
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0036387720118435385,
+          "ci95": [
+            -0.0028421354610822305,
+            0.010853611482021169
+          ]
+        }
+      },
+      "XXZ/background/16/soft_score/balanced/matched_pair": {
+        "iou": {
+          "mean": 6.806786583851476e-05,
+          "ci95": [
+            -0.00020561509607957981,
+            0.00032836090654117625
+          ]
+        },
+        "unresolved": {
+          "mean": -0.0019032679738562094,
+          "ci95": [
+            -0.005469542483660131,
+            0.0001254901960784315
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.0019032679738562094,
+          "ci95": [
+            -0.005469542483660131,
+            0.0001254901960784315
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0009777033051743525,
+          "ci95": [
+            -0.00017876174675317532,
+            0.002980822465983664
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.0003004101628818527,
+          "ci95": [
+            -0.0016976332711205844,
+            0.000657135432994563
+          ]
+        },
+        "shots": {
+          "mean": -87.38133333333322,
+          "ci95": [
+            -349.52533333333344,
+            174.762666666667
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.0036387720118435385,
+          "ci95": [
+            -0.0028421354610822305,
+            0.010853611482021169
+          ]
+        }
+      },
+      "XXZ/background/16/soft_score/balanced/matched_linear": {
+        "iou": {
+          "mean": 0.00022180403983287957,
+          "ci95": [
+            2.7987362308728505e-05,
+            0.00044499232305172227
+          ]
+        },
+        "unresolved": {
+          "mean": -0.0016209150326797366,
+          "ci95": [
+            -0.00431895424836601,
+            -5.228758169934432e-05
+          ]
+        },
+        "mixing_unresolved": {
+          "mean": -0.0016209150326797366,
+          "ci95": [
+            -0.00431895424836601,
+            -5.228758169934432e-05
+          ]
+        },
+        "mixing_lower": {
+          "mean": 0.0008274626222555661,
+          "ci95": [
+            -0.000110747592078119,
+            0.0022064461540972514
+          ]
+        },
+        "bpm_iou_r1": {
+          "mean": -0.0006344617507722159,
+          "ci95": [
+            -0.001957898982072255,
+            0.00016206458981262464
+          ]
+        },
+        "shots": {
+          "mean": -87.38133333333342,
+          "ci95": [
+            -262.14400000000023,
+            0.0
+          ]
+        },
+        "wrong_promotion_rate": {
+          "mean": 0.005249077969975646,
+          "ci95": [
+            -0.0021325115669777774,
+            0.013371739757107386
+          ]
+        }
+      }
+    }
+  },
+  "high_bank_counts": {
+    "XXZ/foreground/8": 1,
+    "XXZ/foreground/16": 42,
+    "XXZ/background/8": 1,
+    "XXZ/background/16": 42
+  },
+  "confirmed_cases": 43,
+  "validation": {
+    "passed": true,
+    "trajectories": 4300,
+    "replays": [
+      {
+        "file": "110016671724--square-16--XXZ-foreground--8192.json",
+        "maximum_discrepancy": 0.0
+      },
+      {
+        "file": "110016671724--square-16--XXZ-background--8192.json",
+        "maximum_discrepancy": 0.0
+      },
+      {
+        "file": "beltaine_4_bg_050502--square-16--XXZ-foreground--8192.json",
+        "maximum_discrepancy": 0.0
+      },
+      {
+        "file": "beltaine_4_bg_050502--square-16--XXZ-background--8192.json",
+        "maximum_discrepancy": 0.0
+      }
+    ]
+  },
+  "result_sha256": {
+    "imgp2712--square-16--XXZ-background--8192.json": "0bc4481bbd98bb0d69c85993296a225dd2b01a0742ac7da11838294436244544",
+    "110016671724--square-16--XXZ-foreground--8192.json": "cf0ad5fdcc0780d159635fd3ff99666709daeddd73ddac044007c6adba079bc5",
+    "pict2272--square-16--XXZ-background--8192.json": "8a53ddd504ac99bd864614513e6c6f628f93951db4536dfb074400f3ad188e49",
+    "broom07--square-16--XXZ-background--8192.json": "43507755a99ddfb0f097d1ed178e7a39af56a95fc9921b83122c50cc4c099130",
+    "dsc01236--square-16--XXZ-foreground--8192.json": "b8cb75deef7158a59bbda39e47bae85b09d1508126dec235bfe8d9ae3aaf9279",
+    "imagen_072__1_--square-16--XXZ-foreground--8192.json": "3a5422a71862a2654ad9c39d2b6f660fa63b0bb4a7fb286ca1cf6b32856e8491",
+    "img_7359_copia--square-16--XXZ-foreground--8192.json": "a9ffdfba26968e4c3cda1c6ee4d783c1d91f4a24a6269657d10c398f9111c04c",
+    "matsumt060102_dyj08--square-16--XXZ-background--8192.json": "318ce20359a2910f8c0869b0d1705bc766fe7ac4246b558c8d449906875bafac",
+    "europe_holiday_484--square-16--XXZ-background--8192.json": "b5470dc763eb21f3c4bd400873f379445f90755aa029434dd5c5565f85942618",
+    "osaka060102_dyjsn071--square-16--XXZ-background--8192.json": "a1018a7478c7241b22e617f7b92c1e744fba7811333dc70321bf38dcbad905c5",
+    "dscn6805--square-16--XXZ-foreground--8192.json": "3c2abf4668b738c87f4e40d602e5da239db170cdfb3e6e3eb584f5d5ad157bf7",
+    "buggy_005--square-16--XXZ-foreground--8192.json": "684b54979c83d910265f304618699e0a27576678aa527ba8a66d758166f80300",
+    "dscf3623--square-16--XXZ-foreground--8192.json": "b3fdd992b3f107729172304a84cccf136ed182dfb075754b0b8a3b5c134ade2b",
+    "nitpix_p1280114--square-16--XXZ-foreground--8192.json": "c5733fba99e1e9fa330327538d71be08ea797c256a3d7d3ab908cd9187721519",
+    "dsc04575--square-16--XXZ-foreground--8192.json": "c7ef3829b1dd3497fc7ded7f3858761883dd62e0fae08aa8a1739aff02c79b96",
+    "dsc_0959--square-16--XXZ-foreground--8192.json": "c35adf85ded8be212c313f8db7560ec50558eaf093bc51d37bfab1ccb7d6982f",
+    "114591144943--square-16--XXZ-foreground--8192.json": "98c97b13dd853d8741c503a26b09bc91b2cc8140ec0f28d37d7d159d853b413b",
+    "112255696146--square-16--XXZ-background--8192.json": "ed2badc85c976290a9233206cf3e2375e4f67f081397a1d9427c038c359da389",
+    "pic0203vn0092--square-16--XXZ-background--8192.json": "bb79247052b99460e3587c6f4f4d97b1c8605fe84f093003ccd56d88f0d97288",
+    "egret_face--square-16--XXZ-foreground--8192.json": "d5cd9e76b79aa5657306e8adcc8d186f275ce17aceeecfcf83763e2b92b0113f",
+    "pic106470172014--square-16--XXZ-foreground--8192.json": "31293a626125313408fe45721326f852cda81d3b96aec84202c53242d96406bd",
+    "london_zoo3--square-16--XXZ-foreground--8192.json": "4667fe175a95cce2cf9e9dc49d4a326a7f60a64f04c2fb453f6afe9cd9f598ef",
+    "img_2577--square-16--XXZ-foreground--8192.json": "dd3bb918ce33f1f82780f5db480d23d5f6483f8870e7c390a47cea67b153021a",
+    "carrigafoyle_castle_ext--square-16--XXZ-background--8192.json": "8d7f0113870d8522fae4dccf4283140b4996d6df88cc5e55f07d451f630e8eb2",
+    "b2chopper008--square-8--XXZ-foreground--8192.json": "89bf236c9a9a93251b9cd671bfedd04e7fc052a5f41c2e3438a14ffbd1e5ea80",
+    "b20nature_landscapes129--square-16--XXZ-foreground--8192.json": "9c7cdf15d22692e13579898374c9e1883de43dc54db336cc3088adc1527adebc",
+    "b4nature_animals_land009--square-16--XXZ-background--8192.json": "2140a96dbd63f82fcc01046b7688655c046855253ca47f5d5746e0aed94ec75b",
+    "pic1080629574--square-16--XXZ-foreground--8192.json": "d16b6c80d8e20ae13c53e203799c89f0061bf18ea6a71ac565105c7a24d6e3fe",
+    "beltaine_4_bg_050502--square-16--XXZ-background--8192.json": "0108e39c9bf7fd3ab2ed0b9979d8c6a5c5a08047154ede28586312e0aa5209d9",
+    "moth061304_0679--square-16--XXZ-background--8192.json": "ede50fc7abd30ea76e4d05baafba07930266c086d13d8ae2292d9d6ba0a42cce",
+    "chain98--square-16--XXZ-background--8192.json": "34c3ad561dcc62f275e1a457659054a0ed4308620c7a7e0af52d65ba0dbdcbf9",
+    "b2chopper008--square-16--XXZ-foreground--8192.json": "7f94181b7fadda5d09b436f74379c3942fa78a20abc1d97642f62690b55fb17a",
+    "dscf3583--square-16--XXZ-foreground--8192.json": "388cb9902c096ef4ad69ec98e4dfe3fa283cc37d088cf4965e7df28bd91892ac",
+    "outside_guggenheim_walls--square-16--XXZ-background--8192.json": "24f46b2fce25f1b431c948a149e0418a1c9f615ea773f806b3ea79d3769e15d2",
+    "hpim5083_morguefile--square-16--XXZ-foreground--8192.json": "5f98e91714c3ae544d8fcb8e15f5d8d5af0a1af723d334c60ee5c89cb235fc8f",
+    "pict2605--square-16--XXZ-foreground--8192.json": "5f61ead883ccc421af03856acecb89c03fd3195334904fc6219320b399126c76",
+    "113334665744--square-16--XXZ-foreground--8192.json": "bfae2ea0b17b7de6d4507f99709746a90ab46d75e8b093e5958166970dc21769",
+    "carriage--square-16--XXZ-background--8192.json": "f10472d816b006fd72713ad2d7368d50d57a576c44a7dcb8d2a51cecb92bd625",
+    "img_1965--square-16--XXZ-background--8192.json": "3d9d566791c3be04225184fd05c3207c5ddb165389d59b7c091e723ec059ce01",
+    "dsc_422910022--square-16--XXZ-foreground--8192.json": "aa7f9d483ac2b1b267a58cb51f2a31f70273b080f90b3a09f5a09e5d0d4e9567",
+    "aaa--square-16--XXZ-foreground--8192.json": "3db8d4e0158609ac4a0e3454156f0c575c93e539d46ceb32e14e9d1553e8ab5e",
+    "oscar2005_05_07--square-16--XXZ-foreground--8192.json": "f75db5b1fce3827ea0a925393bc8ac412648efc7e9a5435457c5166af3fdaa0c",
+    "bbmf_lancaster_july_06--square-16--XXZ-background--8192.json": "6d5d6df6ff9bf138f11f7f50631245969ee3c47eb2dc01979dd94ecd29763787",
+    "aaa--square-16--XXZ-background--8192.json": "77aa98771d1524433cc190101a4f09062963e783ffc924333fcf90dbe4ec2e3b",
+    "bbmf_lancaster_july_06--square-16--XXZ-foreground--8192.json": "7bab78aad60ffc686e192102498ba96fcdfe9db8b4aab46b7476e245996e97fa",
+    "oscar2005_05_07--square-16--XXZ-background--8192.json": "11c733a95ce6b84f9ffc66e0a26ddb7be84256ac7997ff1633adcc79122f0b88",
+    "dsc_422910022--square-16--XXZ-background--8192.json": "2205852c8976e868735945cd80a458c35f1578dab3e20964e967f19ef923b866",
+    "img_1965--square-16--XXZ-foreground--8192.json": "e2ff11d74c4d795f0aec9d3e19906362fa3e43e156976e9a8f6185a0a58e484c",
+    "carriage--square-16--XXZ-foreground--8192.json": "84f88e9972ebaaa18029d8aab8f2128d8f80a0ab0d3691a45c8fd071224403dd",
+    "113334665744--square-16--XXZ-background--8192.json": "b0c4fde61ace62c9e1de917954282cdd71f73169ae5b6681aad0af375abed18f",
+    "pict2605--square-16--XXZ-background--8192.json": "6fabb1b9a63cfb9498ee89cf50088712533780b2d9e6c99557ddbfe008917596",
+    "hpim5083_morguefile--square-16--XXZ-background--8192.json": "eeaa07688b97a11555f2098da23c2863162a3794bd3d643fdf6ea01476993eba",
+    "outside_guggenheim_walls--square-16--XXZ-foreground--8192.json": "8c67f7778660b1135345471c6fe5d10f498e31918c78cc3939184b4e644f2ed4",
+    "dscf3583--square-16--XXZ-background--8192.json": "eed7dbbe5a088e9590602a6f5408c7b9ee0b9eb72e146ca947c6e48f11b37904",
+    "b2chopper008--square-16--XXZ-background--8192.json": "d274c11fa8909b8e058a0f816ed2c18c01feb598c9e188bb60c28889e03c3a52",
+    "moth061304_0679--square-16--XXZ-foreground--8192.json": "e54dadb577ae4f13804de181726bb6f8af6af646ce4b4e10ca55d49e3507d07b",
+    "chain98--square-16--XXZ-foreground--8192.json": "7e94f424d79744f8a19d7e6c66552e686a55c6ca747561aabf757d4a2aa2dd79",
+    "beltaine_4_bg_050502--square-16--XXZ-foreground--8192.json": "9f7b695b671fe37db563f73ebdb6274adefba0383b5747e19944a9e64a01881e",
+    "pic1080629574--square-16--XXZ-background--8192.json": "d133e6346af4c844cb3c4a41579aae17343cadf92b4ec68f313e8ce4c101b8ff",
+    "b4nature_animals_land009--square-16--XXZ-foreground--8192.json": "6eacac7ac940cce985255acb738205a762e01d5bac68f797b502a4758f52e7d2",
+    "b20nature_landscapes129--square-16--XXZ-background--8192.json": "f75d537431a4c1b505cecf3564a57a148719ec2cc27c91db8d7f757c771c3316",
+    "b2chopper008--square-8--XXZ-background--8192.json": "019f27a8be0239f923bff68bcb0bdd1cdbed402171408e4e9d59d4c5ed691a0f",
+    "carrigafoyle_castle_ext--square-16--XXZ-foreground--8192.json": "78b4795935f227cac616bf01d4a39216b976f9acdcaf5724999cc130f59b9370",
+    "img_2577--square-16--XXZ-background--8192.json": "1a686197aa95014b54e74415d39c8dc4e2adecf35bb3a0ab6685c444863a822c",
+    "pic106470172014--square-16--XXZ-background--8192.json": "965f0cc3973e4e9dcce8c2d47392c50aeaa4435bac37b7eb150263b26bdc5dcd",
+    "london_zoo3--square-16--XXZ-background--8192.json": "49e4325d913e90ccd1b6a92f90d7eed9494364bd1db64875a718f497726a6bf0",
+    "egret_face--square-16--XXZ-background--8192.json": "97c79e20b7688fd5740fd1ce8bd71b80473cd360251c2421d715acff28997364",
+    "pic0203vn0092--square-16--XXZ-foreground--8192.json": "7b3ce670fca3309da602fc8fe2884c9159be07dcf8158590afaf230e48895046",
+    "112255696146--square-16--XXZ-foreground--8192.json": "01763cde4439acc551809e8d5a72167823167dd64c11f388ac82772bf8af2c7f",
+    "114591144943--square-16--XXZ-background--8192.json": "3d6a17caf7a87b78f839bfaaa1c3128006d2df7f7d3b98ceb7b489d7df07471a",
+    "dsc_0959--square-16--XXZ-background--8192.json": "4ef1f672588caf80b8b582c303722d20022e4db3ddbe49e05da1c374bb031873",
+    "dsc04575--square-16--XXZ-background--8192.json": "965fa8a13b086872eac471f0cba1c8d3503045011a8babdaca39e0017876eb6d",
+    "nitpix_p1280114--square-16--XXZ-background--8192.json": "8ff2c09f19e9f3e5e672725f3f53520eec0ef1f426e1dce633ec9b67acfe6386",
+    "dscf3623--square-16--XXZ-background--8192.json": "181693a2ae4bce0043b2f0ac85e998f096dbe3f4619f2475df8d2dc9b87f45f1",
+    "buggy_005--square-16--XXZ-background--8192.json": "2d9ae7cdb9c1a1e4fdba44cf5d8603d7bca1bef241c8da0f4205289031e8a039",
+    "dscn6805--square-16--XXZ-background--8192.json": "e749b1acb420850d4c25ea9552175c5a2e087de7a8deeaae8f5dac894e9267e5",
+    "osaka060102_dyjsn071--square-16--XXZ-foreground--8192.json": "ca63e4553a43988a290cb0a90a0c607de84ec7d499a228dd170f8a5077d69d32",
+    "europe_holiday_484--square-16--XXZ-foreground--8192.json": "93efdb43a3fb23b574eb949d63f977ac3bf2ff75c382532a6ddf8d644892849d",
+    "matsumt060102_dyj08--square-16--XXZ-foreground--8192.json": "a6ea361959fcfef1371944ec2ab013cb0ba288aa3eb9f88bef7f2d2095278f16",
+    "img_7359_copia--square-16--XXZ-background--8192.json": "9caba2a184c9d744c61d95f4c2ae534e97eb41c28e1f85285ada722833815b77",
+    "imagen_072__1_--square-16--XXZ-background--8192.json": "bb867bd2c38c93b5a71c9754d4d0cad3a973bd879d1b247f070b6d0de0f3871c",
+    "dsc01236--square-16--XXZ-background--8192.json": "e43755ee8ed155ee33a9876bbc961c8347080e71dd6e29aee97766cee0962d30",
+    "broom07--square-16--XXZ-foreground--8192.json": "3d1b48b56e74353f615cdad53c4ac66ebbcc20c4d3b79b6665b42df6059df595",
+    "pict2272--square-16--XXZ-foreground--8192.json": "270b1f0f339b3fc801a67fb08ab0449b7e230d9194e0bcb369c7952ae6e81225",
+    "imgp2712--square-16--XXZ-foreground--8192.json": "584c29c579cc561cd8a1b37cde3f8e50ee56f94d2b8efcd1db4fa690b80fbf14",
+    "110016671724--square-16--XXZ-background--8192.json": "a89319c58f4c4f9a5cc000131224371d244c2c4882e5b30a0db2f91f14e8ef61"
+  }
+}

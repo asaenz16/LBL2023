@@ -1,0 +1,579 @@
+{
+  "winners": {
+    "Ising/fixed50": {
+      "rule_id": "90bef9433f86",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "fixed01",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed50",
+      "mean_iou": 0.33001685195436825,
+      "mean_lower_iou": 0.3277946087245997,
+      "mean_unfiltered_lower_iou": 0.3277946087245997,
+      "mean_resolved": 0.9828125,
+      "convergence_fraction": 1.0
+    },
+    "Ising/edge_otsu": {
+      "rule_id": "827bc217cc50",
+      "rule": {
+        "threshold": "edge_otsu",
+        "sensitivity": "fixed001",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/edge_otsu",
+      "mean_iou": 0.33969876801343674,
+      "mean_lower_iou": 0.3241923051971417,
+      "mean_unfiltered_lower_iou": 0.3241923051971417,
+      "mean_resolved": 0.9753125,
+      "convergence_fraction": 1.0
+    },
+    "Ising/q75": {
+      "rule_id": "9a2aa950a464",
+      "rule": {
+        "threshold": "q75",
+        "sensitivity": "fixed01",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/q75",
+      "mean_iou": 0.3476018237900503,
+      "mean_lower_iou": 0.30841062426869786,
+      "mean_unfiltered_lower_iou": 0.30841062426869786,
+      "mean_resolved": 0.9353125,
+      "convergence_fraction": 1.0
+    },
+    "XXZ/edge_otsu": {
+      "rule_id": "f884591b14c0",
+      "rule": {
+        "threshold": "edge_otsu",
+        "sensitivity": "fixed001",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/edge_otsu",
+      "mean_iou": 0.32724626789017314,
+      "mean_lower_iou": 0.10322597730691005,
+      "mean_unfiltered_lower_iou": 0.10322597730691005,
+      "mean_resolved": 0.5021875,
+      "convergence_fraction": 1.0
+    },
+    "XXZ/q75": {
+      "rule_id": "c58084c2487b",
+      "rule": {
+        "threshold": "q75",
+        "sensitivity": "fixed01",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/q75",
+      "mean_iou": 0.2989458762487875,
+      "mean_lower_iou": 0.08631683697123727,
+      "mean_unfiltered_lower_iou": 0.08715017030457062,
+      "mean_resolved": 0.465,
+      "convergence_fraction": 0.96
+    },
+    "XXZ/fixed50": {
+      "rule_id": "84ba572aef1f",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "inverse_spread",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/fixed50",
+      "mean_iou": 0.3187243735245954,
+      "mean_lower_iou": 0.05080622087603872,
+      "mean_unfiltered_lower_iou": 0.05080622087603872,
+      "mean_resolved": 0.4478125,
+      "convergence_fraction": 1.0
+    },
+    "Ising/fixed100": {
+      "rule_id": "130fc9224ad5",
+      "rule": {
+        "threshold": "fixed100",
+        "sensitivity": "inverse_spread",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed100",
+      "mean_iou": 0.03434782608695652,
+      "mean_lower_iou": 0.03347826086956522,
+      "mean_unfiltered_lower_iou": 0.03347826086956522,
+      "mean_resolved": 0.9946875,
+      "convergence_fraction": 1.0
+    },
+    "XXZ/fixed100": {
+      "rule_id": "2341b293e90a",
+      "rule": {
+        "threshold": "fixed100",
+        "sensitivity": "inverse_spread",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 2.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/fixed100",
+      "mean_iou": 0.27440767373783154,
+      "mean_lower_iou": 0.023492063492063495,
+      "mean_unfiltered_lower_iou": 0.023492063492063495,
+      "mean_resolved": 0.2403125,
+      "convergence_fraction": 1.0
+    }
+  },
+  "overall": {
+    "Ising": {
+      "rule_id": "90bef9433f86",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "fixed01",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed50",
+      "mean_iou": 0.33001685195436825,
+      "mean_lower_iou": 0.3277946087245997,
+      "mean_unfiltered_lower_iou": 0.3277946087245997,
+      "mean_resolved": 0.9828125,
+      "convergence_fraction": 1.0
+    },
+    "XXZ": {
+      "rule_id": "f884591b14c0",
+      "rule": {
+        "threshold": "edge_otsu",
+        "sensitivity": "fixed001",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/edge_otsu",
+      "mean_iou": 0.32724626789017314,
+      "mean_lower_iou": 0.10322597730691005,
+      "mean_unfiltered_lower_iou": 0.10322597730691005,
+      "mean_resolved": 0.5021875,
+      "convergence_fraction": 1.0
+    }
+  },
+  "refined_scores": [
+    {
+      "rule_id": "90bef9433f86",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "fixed01",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed50",
+      "mean_iou": 0.33001685195436825,
+      "mean_lower_iou": 0.3277946087245997,
+      "mean_unfiltered_lower_iou": 0.3277946087245997,
+      "mean_resolved": 0.9828125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "827bc217cc50",
+      "rule": {
+        "threshold": "edge_otsu",
+        "sensitivity": "fixed001",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/edge_otsu",
+      "mean_iou": 0.33969876801343674,
+      "mean_lower_iou": 0.3241923051971417,
+      "mean_unfiltered_lower_iou": 0.3241923051971417,
+      "mean_resolved": 0.9753125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "91b33321b4cd",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "fixed001",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed50",
+      "mean_iou": 0.3311988457004833,
+      "mean_lower_iou": 0.3223980851939298,
+      "mean_unfiltered_lower_iou": 0.3223980851939298,
+      "mean_resolved": 0.985625,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "3d8166c7d273",
+      "rule": {
+        "threshold": "edge_otsu",
+        "sensitivity": "fixed01",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/edge_otsu",
+      "mean_iou": 0.34296829737986045,
+      "mean_lower_iou": 0.32219919394909224,
+      "mean_unfiltered_lower_iou": 0.32219919394909224,
+      "mean_resolved": 0.9790625,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "9a2aa950a464",
+      "rule": {
+        "threshold": "q75",
+        "sensitivity": "fixed01",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/q75",
+      "mean_iou": 0.3476018237900503,
+      "mean_lower_iou": 0.30841062426869786,
+      "mean_unfiltered_lower_iou": 0.30841062426869786,
+      "mean_resolved": 0.9353125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "f23d7682de81",
+      "rule": {
+        "threshold": "q75",
+        "sensitivity": "fixed001",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/q75",
+      "mean_iou": 0.3454489364882268,
+      "mean_lower_iou": 0.3061651354725207,
+      "mean_unfiltered_lower_iou": 0.3061651354725207,
+      "mean_resolved": 0.9296875,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "bf32de125072",
+      "rule": {
+        "threshold": "q75",
+        "sensitivity": "inverse_spread",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/q75",
+      "mean_iou": 0.3442701408420883,
+      "mean_lower_iou": 0.29588385681341994,
+      "mean_unfiltered_lower_iou": 0.29588385681341994,
+      "mean_resolved": 0.91125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "ca7d68e05d5c",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "inverse_spread",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed50",
+      "mean_iou": 0.33060793937686106,
+      "mean_lower_iou": 0.28459084249920275,
+      "mean_unfiltered_lower_iou": 0.3241463980547583,
+      "mean_resolved": 0.9815625,
+      "convergence_fraction": 0.92
+    },
+    {
+      "rule_id": "5a6bd2a389bd",
+      "rule": {
+        "threshold": "edge_otsu",
+        "sensitivity": "inverse_spread",
+        "K": 0.4,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/edge_otsu",
+      "mean_iou": 0.3563792704219537,
+      "mean_lower_iou": 0.275939259291023,
+      "mean_unfiltered_lower_iou": 0.275939259291023,
+      "mean_resolved": 0.883125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "f884591b14c0",
+      "rule": {
+        "threshold": "edge_otsu",
+        "sensitivity": "fixed001",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/edge_otsu",
+      "mean_iou": 0.32724626789017314,
+      "mean_lower_iou": 0.10322597730691005,
+      "mean_unfiltered_lower_iou": 0.10322597730691005,
+      "mean_resolved": 0.5021875,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "c58084c2487b",
+      "rule": {
+        "threshold": "q75",
+        "sensitivity": "fixed01",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/q75",
+      "mean_iou": 0.2989458762487875,
+      "mean_lower_iou": 0.08631683697123727,
+      "mean_unfiltered_lower_iou": 0.08715017030457062,
+      "mean_resolved": 0.465,
+      "convergence_fraction": 0.96
+    },
+    {
+      "rule_id": "e793d1199363",
+      "rule": {
+        "threshold": "q75",
+        "sensitivity": "fixed001",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/q75",
+      "mean_iou": 0.3120501547142666,
+      "mean_lower_iou": 0.08070203281193594,
+      "mean_unfiltered_lower_iou": 0.08450951944295199,
+      "mean_resolved": 0.4590625,
+      "convergence_fraction": 0.88
+    },
+    {
+      "rule_id": "054b2dea9fb0",
+      "rule": {
+        "threshold": "edge_otsu",
+        "sensitivity": "inverse_spread",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/edge_otsu",
+      "mean_iou": 0.31805672429477594,
+      "mean_lower_iou": 0.07455006549945763,
+      "mean_unfiltered_lower_iou": 0.07455006549945763,
+      "mean_resolved": 0.45125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "84ba572aef1f",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "inverse_spread",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/fixed50",
+      "mean_iou": 0.3187243735245954,
+      "mean_lower_iou": 0.05080622087603872,
+      "mean_unfiltered_lower_iou": 0.05080622087603872,
+      "mean_resolved": 0.4478125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "5159ffae2632",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "fixed001",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 1.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/fixed50",
+      "mean_iou": 0.3177878387155665,
+      "mean_lower_iou": 0.04240126728807967,
+      "mean_unfiltered_lower_iou": 0.04240126728807967,
+      "mean_resolved": 0.3871875,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "130fc9224ad5",
+      "rule": {
+        "threshold": "fixed100",
+        "sensitivity": "inverse_spread",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed100",
+      "mean_iou": 0.03434782608695652,
+      "mean_lower_iou": 0.03347826086956522,
+      "mean_unfiltered_lower_iou": 0.03347826086956522,
+      "mean_resolved": 0.9946875,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "a4c2fc2ba7dd",
+      "rule": {
+        "threshold": "fixed100",
+        "sensitivity": "fixed001",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed100",
+      "mean_iou": 0.03347826086956522,
+      "mean_lower_iou": 0.03347826086956522,
+      "mean_unfiltered_lower_iou": 0.03347826086956522,
+      "mean_resolved": 0.995,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "2341b293e90a",
+      "rule": {
+        "threshold": "fixed100",
+        "sensitivity": "inverse_spread",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 2.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/fixed100",
+      "mean_iou": 0.27440767373783154,
+      "mean_lower_iou": 0.023492063492063495,
+      "mean_unfiltered_lower_iou": 0.023492063492063495,
+      "mean_resolved": 0.2403125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "4e53cfca37dc",
+      "rule": {
+        "threshold": "fixed100",
+        "sensitivity": "fixed01",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 2.0,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/fixed100",
+      "mean_iou": 0.2649901301610018,
+      "mean_lower_iou": 0.020952380952380948,
+      "mean_unfiltered_lower_iou": 0.020952380952380948,
+      "mean_resolved": 0.2359375,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "56ab21bf909f",
+      "rule": {
+        "threshold": "fixed100",
+        "sensitivity": "fixed001",
+        "K": 0.4,
+        "transverse": "relative",
+        "strength": 0.0,
+        "temperature": "longitudinal"
+      },
+      "family": "Ising/fixed100",
+      "mean_iou": 0.06712085016432842,
+      "mean_lower_iou": 0.011700327410513925,
+      "mean_unfiltered_lower_iou": 0.011700327410513925,
+      "mean_resolved": 0.9153125,
+      "convergence_fraction": 1.0
+    },
+    {
+      "rule_id": "64573d9251a4",
+      "rule": {
+        "threshold": "q75",
+        "sensitivity": "fixed01",
+        "K": 1.2,
+        "transverse": "relative",
+        "strength": 0.5,
+        "temperature": "combined"
+      },
+      "family": "XXZ/q75",
+      "mean_iou": 0.3287567397984878,
+      "mean_lower_iou": 0.007619047619047619,
+      "mean_unfiltered_lower_iou": 0.10910799965061514,
+      "mean_resolved": 0.4978125,
+      "convergence_fraction": 0.04
+    },
+    {
+      "rule_id": "453e180d92ea",
+      "rule": {
+        "threshold": "fixed50",
+        "sensitivity": "inverse_spread",
+        "K": 0.8,
+        "transverse": "relative",
+        "strength": 0.5,
+        "temperature": "longitudinal"
+      },
+      "family": "XXZ/fixed50",
+      "mean_iou": 0.2831314748117903,
+      "mean_lower_iou": 0.0,
+      "mean_unfiltered_lower_iou": 0.13949557389786246,
+      "mean_resolved": 0.6740625,
+      "convergence_fraction": 0.0
+    },
+    {
+      "rule_id": "8a13e0d14d8f",
+      "rule": {
+        "threshold": "fixed100",
+        "sensitivity": "fixed01",
+        "K": 0.4,
+        "transverse": "relative",
+        "strength": 0.5,
+        "temperature": "combined"
+      },
+      "family": "XXZ/fixed100",
+      "mean_iou": 0.2156198976774381,
+      "mean_lower_iou": 0.0,
+      "mean_unfiltered_lower_iou": 0.0,
+      "mean_resolved": 0.1653125,
+      "convergence_fraction": 1.0
+    }
+  ],
+  "code_hashes": {
+    "xxz_image_gibbs.py": "bd913f06ad3ba80d1c63a2b0cc6be3c5a60785152f633c6dde8b17954e8b707c",
+    "xxz_sse_fast.py": "cdc0e367fff5d89909400d01f3e643f5871000546cacffeab7f72e4fb29b2e1c",
+    "xxz_glauber.py": "fdf36afa73de9bada80a645b74974869cff7126ff368fda72f397809e31acc1b",
+    "ising_grid_transfer.py": "1ddc0418ab54f11583d1d64b351b372ab843de9a0140c1e282fd758bda1fe494",
+    "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9",
+    "run_weizmann_xxz.py": "cdc364948dcb846cd73022ac4431b50cc26525a63964c64d5815d7b1e6aa0f76"
+  }
+}

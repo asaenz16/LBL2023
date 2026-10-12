@@ -1,0 +1,3190 @@
+{
+  "date": "2026-10-08",
+  "model": "H=-sum_e J_e ZiZj/4; rho=exp(-bH)/Z; paper beta=N*b. No clamped spins or seed labels.",
+  "functions": "x=alpha*(tau-d), delta=atan(x). Functions: delta; delta+delta*abs(delta); delta+4*delta^3; x; x+x^3. All odd and sign-preserving.",
+  "parameters": "tau=25,50,75,100,125, positive-edge q50/q75/q90, edge-Otsu. alpha=.001,.01,1/S with S=max(q90(d)-q10(d),1). Pure linear has only alpha=1/S because median normalization makes alpha redundant. K=.4,.8,1.6; b=4K/median|J|, near-zero median fallback max(mean,.001).",
+  "decisions": "Primary one-seed: foreground iff background ZZ correlation <0. Two-seed: foreground iff foreground ZZ correlation > background ZZ correlation; signed values, no absolute value. Foreground-only sign rule is a secondary diagnostic. Ties -> background.",
+  "sampler": "Exact logarithmic frontier conditional probabilities, then independent full-grid Gibbs samples. Shorter side <=16. O(N 2^width) preprocessing/storage and O(N B) sampling. Exact seed correlations from positive-seed conditioning and global spin-flip symmetry.",
+  "calibration": "All rules on 25 8x8 calibration images, three independent 24576-copy replicates. Primary winners per coupling-function and decision maximize mean sampled IoU, then lower IoU bound, exact IoU, then fixed ID. Two additional robustness winners maximize lower IoU bound across all functions. Legacy arctan edge-Otsu/.01/K=.8 retained as fixed control.",
+  "test": "All selected distinct Hamiltonians on every eligible 8x8 and16x16 test image, eight independent sampling replicates with nested budget prefixes. No 16x16 retuning. Every Hamiltonian evaluated with all three decisions using identical samples.",
+  "uncertainty": "Exact Clopper-Pearson binomial intervals with Bonferroni 95 percent coverage across three decisions, all pixels and three budgets per Hamiltonian/replicate. Two-seed uses conditional sf*zi samples when sf!=sb, since Cf-Cb=2*P(sf!=sb)*E[sf*zi | sf!=sb]. No discord samples -> unresolved. Confidence concerns sign/winner, not segmentation correctness.",
+  "metrics": "Primary full-mask foreground IoU, unresolved fraction among pixels excluding both seeds, correct-resolved and wrong-resolved fractions, uncertain-label IoU bounds, unseeded IoU, exact Gibbs IoU. Known seed labels are not imposed.",
+  "budgets": [
+    1536,
+    6144,
+    24576
+  ],
+  "primary_budget": 24576,
+  "test_replicates": 8,
+  "calibration_replicates": 3,
+  "candidates": [
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_quadratic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "arctan_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a001",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "a01",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 25.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 50.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 75.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 100.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "fixed",
+        "value": 125.0
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.5
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.75
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "quantile",
+        "value": 0.9
+      },
+      "K": 1.6
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.4
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 0.8
+    },
+    {
+      "function": "linear_cubic",
+      "sensitivity": "adaptive",
+      "threshold": {
+        "kind": "otsu",
+        "positive_only": false
+      },
+      "K": 1.6
+    }
+  ],
+  "code_hashes": {
+    "ising_seed_sampling.py": "879a49afd8d85bfd907ca100c16b201bf903fa07cffc871056792e8cc4d94c29",
+    "run_weizmann_ising_seeds.py": "c713bcf36187db0c1734b95f21d98e7f3e2135933426e6f46e9480054f3375bb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "ising_algorithm1.py": "898ffe08c96a87cad04f3880148bcebafe14231891862dde280261d4df2f5450",
+    "weizmann_petz_data.py": "1e87ad3c6339ac79d8e3caa6a7469e9b9539d120cfe9fbcb75efdacd89a9e9fd",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9"
+  },
+  "manifest_sha256": "5c5cfbfec41ec3eb50f26b1b85e2e56ef69e4f787fad8a5da35a0ac0e949ae3b"
+}

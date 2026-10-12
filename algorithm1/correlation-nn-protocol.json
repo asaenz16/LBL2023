@@ -1,0 +1,2611 @@
+{
+  "version": 1,
+  "date": "2026-10-12",
+  "cases": [
+    {
+      "case_id": "0677845-r1-067-32_a--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        204,
+        121
+      ],
+      "foreground_fraction": 0.12109375,
+      "source_id": "0677845-r1-067-32_a",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "100_0109--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        195,
+        87
+      ],
+      "foreground_fraction": 0.3671875,
+      "source_id": "100_0109",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "100_0497--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        136
+      ],
+      "foreground_fraction": 0.4765625,
+      "source_id": "100_0497",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "110016671724--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        59,
+        70
+      ],
+      "foreground_fraction": 0.1015625,
+      "source_id": "110016671724",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "112255696146--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        87
+      ],
+      "foreground_fraction": 0.09765625,
+      "source_id": "112255696146",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "113334665744--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        40,
+        138
+      ],
+      "foreground_fraction": 0.24609375,
+      "source_id": "113334665744",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "114591144943--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        134
+      ],
+      "foreground_fraction": 0.3828125,
+      "source_id": "114591144943",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "20060319_087--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        68,
+        170
+      ],
+      "foreground_fraction": 0.1328125,
+      "source_id": "20060319_087",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "aaa--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        88,
+        197
+      ],
+      "foreground_fraction": 0.08203125,
+      "source_id": "aaa",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "animal_5_bg_020803--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        45,
+        87
+      ],
+      "foreground_fraction": 0.29296875,
+      "source_id": "animal_5_bg_020803",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b14pavel013--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        68,
+        122
+      ],
+      "foreground_fraction": 0.15625,
+      "source_id": "b14pavel013",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b19objects118--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        45,
+        103
+      ],
+      "foreground_fraction": 0.46875,
+      "source_id": "b19objects118",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b1chesnuttame--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        210,
+        120
+      ],
+      "foreground_fraction": 0.51171875,
+      "source_id": "b1chesnuttame",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b1snake001--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        194,
+        87
+      ],
+      "foreground_fraction": 0.37109375,
+      "source_id": "b1snake001",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b20nature_landscapes129--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        140
+      ],
+      "foreground_fraction": 0.37890625,
+      "source_id": "b20nature_landscapes129",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b2chopper008--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        69,
+        107
+      ],
+      "foreground_fraction": 0.0546875,
+      "source_id": "b2chopper008",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b2pods001--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        45,
+        118
+      ],
+      "foreground_fraction": 0.48828125,
+      "source_id": "b2pods001",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b4nature_animals_land009--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        204,
+        136
+      ],
+      "foreground_fraction": 0.171875,
+      "source_id": "b4nature_animals_land009",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "b7nature_trees002--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        17,
+        55
+      ],
+      "foreground_fraction": 0.47265625,
+      "source_id": "b7nature_trees002",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "bbmf_lancaster_july_06--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        75,
+        151
+      ],
+      "foreground_fraction": 0.0546875,
+      "source_id": "bbmf_lancaster_july_06",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "beltaine_4_bg_050502--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        118
+      ],
+      "foreground_fraction": 0.05859375,
+      "source_id": "beltaine_4_bg_050502",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "boy_float_lake--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        85,
+        181
+      ],
+      "foreground_fraction": 0.03515625,
+      "source_id": "boy_float_lake",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "bream_in_basin--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        90
+      ],
+      "foreground_fraction": 0.1640625,
+      "source_id": "bream_in_basin",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "broom07--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        167
+      ],
+      "foreground_fraction": 0.44140625,
+      "source_id": "broom07",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "buggy_005--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        88
+      ],
+      "foreground_fraction": 0.421875,
+      "source_id": "buggy_005",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "bw4--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        43,
+        136
+      ],
+      "foreground_fraction": 0.390625,
+      "source_id": "bw4",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "carriage--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        117
+      ],
+      "foreground_fraction": 0.2734375,
+      "source_id": "carriage",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "carrigafoyle_castle_ext--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        74,
+        150
+      ],
+      "foreground_fraction": 0.09375,
+      "source_id": "carrigafoyle_castle_ext",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "caterpiller--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        68,
+        167
+      ],
+      "foreground_fraction": 0.12109375,
+      "source_id": "caterpiller",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "chain98--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        129
+      ],
+      "foreground_fraction": 0.25390625,
+      "source_id": "chain98",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "chaom38--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        121
+      ],
+      "foreground_fraction": 0.1875,
+      "source_id": "chaom38",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "cheeky_penguin--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        149
+      ],
+      "foreground_fraction": 0.2734375,
+      "source_id": "cheeky_penguin",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "crw_0384--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        204,
+        105
+      ],
+      "foreground_fraction": 0.30859375,
+      "source_id": "crw_0384",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "culzeancastle--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        134
+      ],
+      "foreground_fraction": 0.33203125,
+      "source_id": "culzeancastle",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dsc01236--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        180,
+        74
+      ],
+      "foreground_fraction": 0.19140625,
+      "source_id": "dsc01236",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dsc01239_d--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        151
+      ],
+      "foreground_fraction": 0.30078125,
+      "source_id": "dsc01239_d",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dsc04575--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        75,
+        133
+      ],
+      "foreground_fraction": 0.1015625,
+      "source_id": "dsc04575",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dsc_0769--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        138
+      ],
+      "foreground_fraction": 0.4453125,
+      "source_id": "dsc_0769",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dsc_0959--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        182
+      ],
+      "foreground_fraction": 0.390625,
+      "source_id": "dsc_0959",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dsc_422910022--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        180,
+        90
+      ],
+      "foreground_fraction": 0.3203125,
+      "source_id": "dsc_422910022",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscf0034_l--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        152
+      ],
+      "foreground_fraction": 0.19921875,
+      "source_id": "dscf0034_l",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscf0459--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        187,
+        134
+      ],
+      "foreground_fraction": 0.10546875,
+      "source_id": "dscf0459",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscf3583--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        181
+      ],
+      "foreground_fraction": 0.31640625,
+      "source_id": "dscf3583",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscf3623--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        121
+      ],
+      "foreground_fraction": 0.0703125,
+      "source_id": "dscf3623",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscf3772--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        167
+      ],
+      "foreground_fraction": 0.37890625,
+      "source_id": "dscf3772",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscn0756--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        210,
+        103
+      ],
+      "foreground_fraction": 0.43359375,
+      "source_id": "dscn0756",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscn1908--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        210,
+        104
+      ],
+      "foreground_fraction": 0.41796875,
+      "source_id": "dscn1908",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscn2064--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        68,
+        178
+      ],
+      "foreground_fraction": 0.17578125,
+      "source_id": "dscn2064",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscn2154--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        204,
+        104
+      ],
+      "foreground_fraction": 0.16796875,
+      "source_id": "dscn2154",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "dscn6805--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        180,
+        91
+      ],
+      "foreground_fraction": 0.38671875,
+      "source_id": "dscn6805",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "egret_face--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        179,
+        105
+      ],
+      "foreground_fraction": 0.1875,
+      "source_id": "egret_face",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "estb_img_6461_--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        181
+      ],
+      "foreground_fraction": 0.36328125,
+      "source_id": "estb_img_6461_",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "europe_holiday_484--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        75,
+        198
+      ],
+      "foreground_fraction": 0.31640625,
+      "source_id": "europe_holiday_484",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "fullicewater--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        210,
+        119
+      ],
+      "foreground_fraction": 0.41015625,
+      "source_id": "fullicewater",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "hot_air_balloons_05--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        119
+      ],
+      "foreground_fraction": 0.24609375,
+      "source_id": "hot_air_balloons_05",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "hpim1242--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        75,
+        167
+      ],
+      "foreground_fraction": 0.0625,
+      "source_id": "hpim1242",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "hpim5083_morguefile--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        101
+      ],
+      "foreground_fraction": 0.26953125,
+      "source_id": "hpim5083_morguefile",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "imagen_072__1_--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        167
+      ],
+      "foreground_fraction": 0.22265625,
+      "source_id": "imagen_072__1_",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_1516--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        39
+      ],
+      "foreground_fraction": 0.11328125,
+      "source_id": "img_1516",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_1965--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        167
+      ],
+      "foreground_fraction": 0.48828125,
+      "source_id": "img_1965",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_2528--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        195,
+        72
+      ],
+      "foreground_fraction": 0.2109375,
+      "source_id": "img_2528",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_2577--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        135
+      ],
+      "foreground_fraction": 0.09375,
+      "source_id": "img_2577",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_2592_f--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        167
+      ],
+      "foreground_fraction": 0.30859375,
+      "source_id": "img_2592_f",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_3083_modif--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        59,
+        135
+      ],
+      "foreground_fraction": 0.1953125,
+      "source_id": "img_3083_modif",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_3803--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        45,
+        103
+      ],
+      "foreground_fraction": 0.4375,
+      "source_id": "img_3803",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_4214--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        45,
+        67
+      ],
+      "foreground_fraction": 0.5078125,
+      "source_id": "img_4214",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_4730_modif--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        58,
+        136
+      ],
+      "foreground_fraction": 0.0859375,
+      "source_id": "img_4730_modif",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "img_7359_copia--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        56
+      ],
+      "foreground_fraction": 0.37890625,
+      "source_id": "img_7359_copia",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "imgp2712--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        169,
+        39
+      ],
+      "foreground_fraction": 0.08984375,
+      "source_id": "imgp2712",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "ireland_62_bg_061502--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        150
+      ],
+      "foreground_fraction": 0.26953125,
+      "source_id": "ireland_62_bg_061502",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "kconnors030466--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        183
+      ],
+      "foreground_fraction": 0.5,
+      "source_id": "kconnors030466",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "leafpav--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        204,
+        119
+      ],
+      "foreground_fraction": 0.17578125,
+      "source_id": "leafpav",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "london_zoo3--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        92,
+        151
+      ],
+      "foreground_fraction": 0.2265625,
+      "source_id": "london_zoo3",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "matsumt060102_dyj08--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        164,
+        57
+      ],
+      "foreground_fraction": 0.14453125,
+      "source_id": "matsumt060102_dyj08",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "mexico3--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        151
+      ],
+      "foreground_fraction": 0.2421875,
+      "source_id": "mexico3",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "moth061304_0679--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        104
+      ],
+      "foreground_fraction": 0.12890625,
+      "source_id": "moth061304_0679",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "nitpix_p1280114--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        195,
+        120
+      ],
+      "foreground_fraction": 0.109375,
+      "source_id": "nitpix_p1280114",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "osaka060102_dyjsn071--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        44,
+        184
+      ],
+      "foreground_fraction": 0.390625,
+      "source_id": "osaka060102_dyjsn071",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "oscar2005_05_07--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        167
+      ],
+      "foreground_fraction": 0.44140625,
+      "source_id": "oscar2005_05_07",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "outside_guggenheim_walls--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        45,
+        166
+      ],
+      "foreground_fraction": 0.5546875,
+      "source_id": "outside_guggenheim_walls",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "palovigna--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        188,
+        55
+      ],
+      "foreground_fraction": 0.30859375,
+      "source_id": "palovigna",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "pic0203vn0092--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        185
+      ],
+      "foreground_fraction": 0.44921875,
+      "source_id": "pic0203vn0092",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "pic0203vn0105--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        187,
+        149
+      ],
+      "foreground_fraction": 0.203125,
+      "source_id": "pic0203vn0105",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "pic106470172014--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        45,
+        120
+      ],
+      "foreground_fraction": 0.41796875,
+      "source_id": "pic106470172014",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "pic1080629574--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        74,
+        36
+      ],
+      "foreground_fraction": 0.13671875,
+      "source_id": "pic1080629574",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "pic109250805856--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        116
+      ],
+      "foreground_fraction": 0.20703125,
+      "source_id": "pic109250805856",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "pic1092515922117--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        60,
+        119
+      ],
+      "foreground_fraction": 0.15625,
+      "source_id": "pic1092515922117",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "pict2272--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        104
+      ],
+      "foreground_fraction": 0.2421875,
+      "source_id": "pict2272",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "pict2605--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        125,
+        87
+      ],
+      "foreground_fraction": 0.3515625,
+      "source_id": "pict2605",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "picture_458--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        75,
+        118
+      ],
+      "foreground_fraction": 0.06640625,
+      "source_id": "picture_458",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "postjp--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        195,
+        106
+      ],
+      "foreground_fraction": 0.49609375,
+      "source_id": "postjp",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "redberry_rb03--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        172,
+        119
+      ],
+      "foreground_fraction": 0.171875,
+      "source_id": "redberry_rb03",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "san_andres_130--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        68,
+        89
+      ],
+      "foreground_fraction": 0.078125,
+      "source_id": "san_andres_130",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "sg_01_img_1943_tratada--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        152
+      ],
+      "foreground_fraction": 0.28515625,
+      "source_id": "sg_01_img_1943_tratada",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "sharp_image--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        45,
+        103
+      ],
+      "foreground_fraction": 0.54296875,
+      "source_id": "sharp_image",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "skookumchuk_starfish1--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        34,
+        136
+      ],
+      "foreground_fraction": 0.234375,
+      "source_id": "skookumchuk_starfish1",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "snow2_004--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        180,
+        121
+      ],
+      "foreground_fraction": 0.12890625,
+      "source_id": "snow2_004",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "tendrils--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        195,
+        136
+      ],
+      "foreground_fraction": 0.16796875,
+      "source_id": "tendrils",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "windowcn_0078--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        17,
+        103
+      ],
+      "foreground_fraction": 0.4296875,
+      "source_id": "windowcn_0078",
+      "split": "calibration",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    },
+    {
+      "case_id": "yokohm060409_dyjsn191--square-16",
+      "shape": [
+        16,
+        16
+      ],
+      "seeds": [
+        51,
+        138
+      ],
+      "foreground_fraction": 0.15625,
+      "source_id": "yokohm060409_dyjsn191",
+      "split": "test",
+      "family": "natural-square",
+      "category": "16x16",
+      "preprocessing": "full-frame BOX image / NEAREST annotation resize to square"
+    }
+  ],
+  "rules": {
+    "c8c7bd6bf454": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "4a7f28c05242": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "03b5f1b85f12": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "3d8166c7d273": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "384eeef54c19": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "e779bd0daba9": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "1789b9c16415": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "4257c061b959": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "d6e634063c01": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "5a6bd2a389bd": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "38521b80bce4": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "a3ea7870f9ae": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "99b251d9b106": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "b371ab4fcf2a": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "3e82617b2948": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "10467e063afc": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "b7673ad9cfe7": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "dcc091e2aea9": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "feb625a72f50": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "e8702544587b": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "6e031ab55164": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "0f3b2f05116f": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "09d32848863a": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "661e0343e2fd": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "f31d5189e52f": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "c84b519f55a4": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "8b2a53b12b3c": {
+      "threshold": "q90",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "3c990f75369a": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "2e35ed488446": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "14b011ba2936": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "97311f5dcf1d": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "096e438abf5b": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "bb02c101473e": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    "79173a8f83ea": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "7c5f560698f9": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    "ee1bfae17c5a": {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train": [
+        "dscn2154",
+        "kconnors030466",
+        "oscar2005_05_07",
+        "b1chesnuttame",
+        "dscn1908",
+        "pic0203vn0092",
+        "matsumt060102_dyj08",
+        "moth061304_0679",
+        "dsc_0959",
+        "mexico3",
+        "hot_air_balloons_05",
+        "culzeancastle",
+        "b7nature_trees002",
+        "osaka060102_dyjsn071",
+        "outside_guggenheim_walls",
+        "broom07",
+        "leafpav",
+        "110016671724",
+        "bream_in_basin",
+        "pic1080629574",
+        "dsc_422910022",
+        "estb_img_6461_",
+        "dscf3583",
+        "beltaine_4_bg_050502",
+        "buggy_005",
+        "london_zoo3",
+        "hpim5083_morguefile",
+        "dsc_0769",
+        "dscn2064",
+        "cheeky_penguin",
+        "carriage",
+        "img_2528",
+        "20060319_087",
+        "0677845-r1-067-32_a",
+        "chaom38",
+        "sharp_image",
+        "dsc04575",
+        "carrigafoyle_castle_ext",
+        "b14pavel013",
+        "europe_holiday_484",
+        "snow2_004",
+        "redberry_rb03",
+        "img_3083_modif",
+        "img_3803",
+        "dsc01239_d",
+        "100_0497",
+        "chain98",
+        "palovigna",
+        "dscf3623",
+        "img_4730_modif",
+        "ireland_62_bg_061502",
+        "pic106470172014",
+        "dscn6805",
+        "pict2605",
+        "fullicewater",
+        "img_2577",
+        "dscn0756",
+        "egret_face",
+        "yokohm060409_dyjsn191",
+        "pic0203vn0105",
+        "bw4",
+        "b1snake001",
+        "b19objects118",
+        "nitpix_p1280114"
+      ],
+      "validation": [
+        "caterpiller",
+        "hpim1242",
+        "b4nature_animals_land009",
+        "dsc01236",
+        "boy_float_lake",
+        "img_7359_copia",
+        "tendrils",
+        "b20nature_landscapes129",
+        "picture_458",
+        "san_andres_130",
+        "crw_0384",
+        "sg_01_img_1943_tratada",
+        "img_2592_f",
+        "114591144943",
+        "100_0109",
+        "pic109250805856"
+      ],
+      "test": [
+        "dscf0034_l",
+        "imagen_072__1_",
+        "animal_5_bg_020803",
+        "img_4214",
+        "dscf3772",
+        "skookumchuk_starfish1",
+        "b2pods001",
+        "img_1516",
+        "pic1092515922117",
+        "dscf0459",
+        "imgp2712",
+        "postjp",
+        "113334665744",
+        "aaa",
+        "img_1965",
+        "bbmf_lancaster_july_06",
+        "b2chopper008",
+        "112255696146",
+        "windowcn_0078",
+        "pict2272"
+      ]
+    },
+    {
+      "fold": 1,
+      "train": [
+        "img_2577",
+        "redberry_rb03",
+        "112255696146",
+        "img_2528",
+        "img_7359_copia",
+        "b4nature_animals_land009",
+        "imagen_072__1_",
+        "b7nature_trees002",
+        "dscf0034_l",
+        "hpim5083_morguefile",
+        "estb_img_6461_",
+        "110016671724",
+        "pict2272",
+        "san_andres_130",
+        "postjp",
+        "dsc04575",
+        "boy_float_lake",
+        "b2pods001",
+        "img_4730_modif",
+        "buggy_005",
+        "chain98",
+        "dscn6805",
+        "dscn0756",
+        "dscf0459",
+        "carrigafoyle_castle_ext",
+        "skookumchuk_starfish1",
+        "fullicewater",
+        "pic1080629574",
+        "img_1965",
+        "pict2605",
+        "ireland_62_bg_061502",
+        "dscn2154",
+        "dsc_0959",
+        "bream_in_basin",
+        "114591144943",
+        "oscar2005_05_07",
+        "113334665744",
+        "animal_5_bg_020803",
+        "dsc01236",
+        "pic109250805856",
+        "carriage",
+        "broom07",
+        "100_0497",
+        "bbmf_lancaster_july_06",
+        "culzeancastle",
+        "b20nature_landscapes129",
+        "hpim1242",
+        "beltaine_4_bg_050502",
+        "leafpav",
+        "egret_face",
+        "europe_holiday_484",
+        "caterpiller",
+        "snow2_004",
+        "aaa",
+        "dscf3772",
+        "b1chesnuttame",
+        "tendrils",
+        "imgp2712",
+        "img_1516",
+        "matsumt060102_dyj08",
+        "20060319_087",
+        "cheeky_penguin",
+        "pic1092515922117",
+        "b2chopper008"
+      ],
+      "validation": [
+        "windowcn_0078",
+        "dscf3623",
+        "chaom38",
+        "b1snake001",
+        "yokohm060409_dyjsn191",
+        "outside_guggenheim_walls",
+        "bw4",
+        "dscn1908",
+        "pic0203vn0105",
+        "dsc_422910022",
+        "b19objects118",
+        "100_0109",
+        "img_4214",
+        "img_3083_modif",
+        "moth061304_0679",
+        "dscn2064"
+      ],
+      "test": [
+        "0677845-r1-067-32_a",
+        "pic106470172014",
+        "img_3803",
+        "crw_0384",
+        "palovigna",
+        "london_zoo3",
+        "b14pavel013",
+        "sharp_image",
+        "picture_458",
+        "sg_01_img_1943_tratada",
+        "dsc01239_d",
+        "osaka060102_dyjsn071",
+        "mexico3",
+        "img_2592_f",
+        "dscf3583",
+        "nitpix_p1280114",
+        "hot_air_balloons_05",
+        "kconnors030466",
+        "pic0203vn0092",
+        "dsc_0769"
+      ]
+    },
+    {
+      "fold": 2,
+      "train": [
+        "pic109250805856",
+        "b20nature_landscapes129",
+        "london_zoo3",
+        "bream_in_basin",
+        "b1snake001",
+        "postjp",
+        "mexico3",
+        "aaa",
+        "skookumchuk_starfish1",
+        "matsumt060102_dyj08",
+        "chain98",
+        "picture_458",
+        "img_1516",
+        "pict2272",
+        "tendrils",
+        "img_1965",
+        "dscf0034_l",
+        "b14pavel013",
+        "b2chopper008",
+        "san_andres_130",
+        "pic1092515922117",
+        "hot_air_balloons_05",
+        "sg_01_img_1943_tratada",
+        "imagen_072__1_",
+        "b1chesnuttame",
+        "ireland_62_bg_061502",
+        "kconnors030466",
+        "img_4214",
+        "dsc04575",
+        "dscn6805",
+        "img_4730_modif",
+        "0677845-r1-067-32_a",
+        "buggy_005",
+        "dsc_0959",
+        "113334665744",
+        "dscn1908",
+        "100_0497",
+        "112255696146",
+        "img_2577",
+        "crw_0384",
+        "dscn2064",
+        "animal_5_bg_020803",
+        "dscf0459",
+        "b2pods001",
+        "dscf3583",
+        "cheeky_penguin",
+        "bbmf_lancaster_july_06",
+        "dsc_0769",
+        "redberry_rb03",
+        "leafpav",
+        "20060319_087",
+        "sharp_image",
+        "snow2_004",
+        "yokohm060409_dyjsn191",
+        "egret_face",
+        "boy_float_lake",
+        "dsc_422910022",
+        "b4nature_animals_land009",
+        "img_2528",
+        "estb_img_6461_",
+        "pict2605",
+        "img_2592_f",
+        "img_3803",
+        "pic0203vn0092"
+      ],
+      "validation": [
+        "windowcn_0078",
+        "nitpix_p1280114",
+        "beltaine_4_bg_050502",
+        "dsc01239_d",
+        "caterpiller",
+        "dscf3772",
+        "imgp2712",
+        "palovigna",
+        "pic0203vn0105",
+        "chaom38",
+        "img_3083_modif",
+        "pic106470172014",
+        "dsc01236",
+        "dscn0756",
+        "osaka060102_dyjsn071",
+        "dscn2154"
+      ],
+      "test": [
+        "europe_holiday_484",
+        "dscf3623",
+        "broom07",
+        "hpim1242",
+        "bw4",
+        "b7nature_trees002",
+        "pic1080629574",
+        "oscar2005_05_07",
+        "114591144943",
+        "culzeancastle",
+        "110016671724",
+        "100_0109",
+        "carriage",
+        "b19objects118",
+        "moth061304_0679",
+        "outside_guggenheim_walls",
+        "hpim5083_morguefile",
+        "img_7359_copia",
+        "carrigafoyle_castle_ext",
+        "fullicewater"
+      ]
+    },
+    {
+      "fold": 3,
+      "train": [
+        "london_zoo3",
+        "dscf3772",
+        "b7nature_trees002",
+        "dscf3583",
+        "dsc01239_d",
+        "pic0203vn0105",
+        "palovigna",
+        "bw4",
+        "broom07",
+        "matsumt060102_dyj08",
+        "img_1516",
+        "110016671724",
+        "hpim5083_morguefile",
+        "pict2272",
+        "estb_img_6461_",
+        "b20nature_landscapes129",
+        "europe_holiday_484",
+        "outside_guggenheim_walls",
+        "112255696146",
+        "beltaine_4_bg_050502",
+        "img_3083_modif",
+        "pic109250805856",
+        "0677845-r1-067-32_a",
+        "dscf0034_l",
+        "boy_float_lake",
+        "b19objects118",
+        "hpim1242",
+        "img_2592_f",
+        "b2pods001",
+        "bbmf_lancaster_july_06",
+        "dsc_0769",
+        "oscar2005_05_07",
+        "moth061304_0679",
+        "carrigafoyle_castle_ext",
+        "cheeky_penguin",
+        "img_1965",
+        "b1chesnuttame",
+        "pic1092515922117",
+        "100_0109",
+        "tendrils",
+        "hot_air_balloons_05",
+        "redberry_rb03",
+        "113334665744",
+        "osaka060102_dyjsn071",
+        "img_2528",
+        "img_7359_copia",
+        "san_andres_130",
+        "egret_face",
+        "dscn6805",
+        "skookumchuk_starfish1",
+        "crw_0384",
+        "img_2577",
+        "mexico3",
+        "culzeancastle",
+        "114591144943",
+        "windowcn_0078",
+        "nitpix_p1280114",
+        "aaa",
+        "chain98",
+        "animal_5_bg_020803",
+        "imgp2712",
+        "postjp",
+        "fullicewater",
+        "pic1080629574"
+      ],
+      "validation": [
+        "dscf0459",
+        "sg_01_img_1943_tratada",
+        "b14pavel013",
+        "dscf3623",
+        "kconnors030466",
+        "sharp_image",
+        "b2chopper008",
+        "carriage",
+        "img_3803",
+        "dscn0756",
+        "imagen_072__1_",
+        "ireland_62_bg_061502",
+        "picture_458",
+        "img_4214",
+        "pic106470172014",
+        "pic0203vn0092"
+      ],
+      "test": [
+        "dscn1908",
+        "dsc_422910022",
+        "100_0497",
+        "b4nature_animals_land009",
+        "20060319_087",
+        "dscn2064",
+        "caterpiller",
+        "b1snake001",
+        "chaom38",
+        "dsc01236",
+        "dscn2154",
+        "img_4730_modif",
+        "yokohm060409_dyjsn191",
+        "dsc04575",
+        "dsc_0959",
+        "bream_in_basin",
+        "snow2_004",
+        "pict2605",
+        "buggy_005",
+        "leafpav"
+      ]
+    },
+    {
+      "fold": 4,
+      "train": [
+        "dscf0459",
+        "bw4",
+        "114591144943",
+        "crw_0384",
+        "osaka060102_dyjsn071",
+        "culzeancastle",
+        "moth061304_0679",
+        "112255696146",
+        "bbmf_lancaster_july_06",
+        "b4nature_animals_land009",
+        "chaom38",
+        "b19objects118",
+        "buggy_005",
+        "pic106470172014",
+        "kconnors030466",
+        "nitpix_p1280114",
+        "20060319_087",
+        "b2chopper008",
+        "img_1516",
+        "110016671724",
+        "sharp_image",
+        "dscf0034_l",
+        "dsc01239_d",
+        "hot_air_balloons_05",
+        "dsc04575",
+        "img_1965",
+        "pic1080629574",
+        "pict2605",
+        "b2pods001",
+        "mexico3",
+        "caterpiller",
+        "dscf3583",
+        "leafpav",
+        "dsc_0959",
+        "pic1092515922117",
+        "imagen_072__1_",
+        "fullicewater",
+        "imgp2712",
+        "img_4214",
+        "palovigna",
+        "dsc_0769",
+        "img_7359_copia",
+        "dscn2064",
+        "pic0203vn0092",
+        "windowcn_0078",
+        "113334665744",
+        "img_4730_modif",
+        "dsc01236",
+        "dscf3623",
+        "pict2272",
+        "dsc_422910022",
+        "dscn2154",
+        "img_3803",
+        "100_0109",
+        "snow2_004",
+        "dscf3772",
+        "sg_01_img_1943_tratada",
+        "london_zoo3",
+        "100_0497",
+        "yokohm060409_dyjsn191",
+        "b7nature_trees002",
+        "skookumchuk_starfish1",
+        "oscar2005_05_07",
+        "europe_holiday_484"
+      ],
+      "validation": [
+        "img_2592_f",
+        "outside_guggenheim_walls",
+        "hpim5083_morguefile",
+        "dscn1908",
+        "broom07",
+        "b1snake001",
+        "picture_458",
+        "hpim1242",
+        "bream_in_basin",
+        "postjp",
+        "aaa",
+        "animal_5_bg_020803",
+        "0677845-r1-067-32_a",
+        "carriage",
+        "carrigafoyle_castle_ext",
+        "b14pavel013"
+      ],
+      "test": [
+        "tendrils",
+        "dscn6805",
+        "boy_float_lake",
+        "dscn0756",
+        "pic0203vn0105",
+        "cheeky_penguin",
+        "ireland_62_bg_061502",
+        "beltaine_4_bg_050502",
+        "egret_face",
+        "img_2577",
+        "pic109250805856",
+        "matsumt060102_dyj08",
+        "b20nature_landscapes129",
+        "img_2528",
+        "san_andres_130",
+        "estb_img_6461_",
+        "img_3083_modif",
+        "redberry_rb03",
+        "chain98",
+        "b1chesnuttame"
+      ]
+    }
+  ],
+  "observable": "C_ij = <Z_i Z_j>, all pairs, Pauli normalization; no X/Y correlators",
+  "hamiltonian": "H=-sum_e [g(XX+YY)+atan(alpha*(tau-d))ZZ]/4; rho=exp(-b H)/Z",
+  "scales": "D=median(abs(Delta)); g=r D; b=4K/D; beta_paper=N*b. Same fallback as previous studies.",
+  "sampling": {
+    "chains": 4,
+    "samples": 2048,
+    "burn": 2000,
+    "thin": 2,
+    "rounds": 1
+  },
+  "budgets": [
+    512,
+    1024,
+    2048
+  ],
+  "split": "Five outer image-level folds, each 64 training /16 inner validation /20 outer test. All parameter selection uses inner validation only.",
+  "reuse": "Existing development dataset, not untouched external validation. Existing state banks reused only as label-independent measurements.",
+  "seed_modes": [
+    "none",
+    "foreground"
+  ],
+  "seed_note": "The foreground seed is the existing mask-derived interior pixel, shared by seeded neural and classical controls. No seed supplied in the seedless arm.",
+  "network_screen": {
+    "architecture": "volume",
+    "width": 24,
+    "lr": 0.003,
+    "weight_decay": 0.001,
+    "epochs": 100
+  },
+  "network_refine": [
+    {
+      "architecture": "volume",
+      "width": 24,
+      "lr": 0.001,
+      "weight_decay": 0.001,
+      "epochs": 140
+    },
+    {
+      "architecture": "volume",
+      "width": 40,
+      "lr": 0.003,
+      "weight_decay": 0.01,
+      "epochs": 140
+    },
+    {
+      "architecture": "graph",
+      "width": 24,
+      "lr": 0.003,
+      "weight_decay": 0.001,
+      "epochs": 140
+    }
+  ],
+  "refinement": "Refine the top two Hamiltonians per model, seed mode, and outer fold; select checkpoint and output threshold on inner validation.",
+  "final": "Refit on all 80 outer-training sources for the selected epoch count, with three fixed training seeds; average probabilities. Keep the inner-selected output threshold.",
+  "controls": [
+    "single foreground seed sign",
+    "two-seed max (extra known background label)",
+    "seed/position only neural",
+    "single-seed correlation neural",
+    "raw grayscale image neural"
+  ],
+  "validation": "Same-image pairwise comparisons and source bootstrap; neither pixels nor sample configurations are independent evaluation images.",
+  "code_sha256": {
+    "correlation_nn_data.py": "7c54decbdc50489a7f3602c6e8a16165b2623e8d6decb01a48ece18232acda9a",
+    "promotion_reliability_bank.py": "31b4132737818a09ea43658cff3670e60dfa9acdd674dc88aa093f97fae2384a",
+    "iterative_seed_extended_loops.py": "d68f22b23ca6bd1571b7ecb23af9765696a32452f977b9e33dbbc9f13deea847",
+    "ising_seed_sampling.py": "879a49afd8d85bfd907ca100c16b201bf903fa07cffc871056792e8cc4d94c29"
+  }
+}

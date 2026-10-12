@@ -1,0 +1,64 @@
+{
+  "paper": "https://arxiv.org/pdf/2410.10713v1",
+  "pdf_sha256": "36fb477174a55816820a0131616e00e242d4c79209af1e868cdcdcc7e5b97b30",
+  "status": "No public download of original image-mask pairs located as of 2026-10-08; not a statement that data cannot be obtained from the authors.",
+  "dataset": {
+    "domain": "concrete cracks",
+    "patch_shape": [
+      32,
+      32
+    ],
+    "training_validation_patches": 456,
+    "test_patches": 30,
+    "original_image_shape_approx": [
+      16000,
+      32000
+    ]
+  },
+  "searched_sources": [
+    "https://arxiv.org/abs/2410.10713v1",
+    "https://www.antoniomacaluso.com/publication/srinivasan-2025-comparative/",
+    "https://www.itwm.fraunhofer.de/en/departments/bv/quantum-image-processing.html",
+    "https://doi.org/10.1515/teme-2025-0017"
+  ],
+  "search_scope": "Read full arXiv paper and inspect PDF external links (none); author and institutional publication pages; targeted web queries for title, DOI, GitHub and Zenodo. Publisher HTML could not be fetched. No author contacted.",
+  "bmp": {
+    "paper_acronym": "BPM",
+    "radius": "Not specified in v1",
+    "skeletonizer": "Not specified in v1",
+    "equation_issue": "Eq3 negative FP/FN indicator differences followed by l1 norm and unsigned sum; implementation records nonnegative unmatched counts.",
+    "our_radii": [
+      0,
+      1,
+      2
+    ],
+    "primary_radius": 1,
+    "skeletonizer_used": "scikit-image 0.25.2 Zhang"
+  },
+  "published_iou": {
+    "MGM": {
+      "ordinary": 0.5783,
+      "bpm": 0.7454
+    },
+    "QI Hamiltonian": {
+      "ordinary": 0.6218,
+      "bpm": 0.9447
+    },
+    "U-Net": {
+      "ordinary": 0.6159,
+      "bpm": 0.8945
+    },
+    "Q-Seg": {
+      "ordinary": 0.5728,
+      "bpm": 0.8014
+    }
+  },
+  "direct_comparison_performed": false,
+  "reason": "Original 30 test patches/masks not obtained; exact radius and morphology unspecified. Our two oracle seeds also provide additional supervision.",
+  "needed_for_direct_comparison": [
+    "Original 30 test images and masks at32x32, without resizing",
+    "Training/validation split and original parent-image IDs",
+    "BPM radius and author metric code, including skeletonization and count convention",
+    "Preprocessing, per-image vs pooled averaging, and method prediction masks if available"
+  ]
+}

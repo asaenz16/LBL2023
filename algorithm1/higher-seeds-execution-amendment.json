@@ -1,0 +1,15 @@
+{
+  "optimization": "Skip fresh-round evaluation after the largest cap requested for a fixed readout configuration. Confidence correction and RNG schedule remain ten rounds; no sample prefix or endpoint changes.",
+  "wrapper_sha256": "f6dd6d5e4bb60f6841fb8967499182c5da9a60c874e3ce6a5c55c8e9d528bd3c",
+  "equivalence_pilot": {
+    "case": "100_0109--square-16",
+    "anchor": "Ising/background",
+    "policies": 10,
+    "maximum_metric_difference": 0.0,
+    "identical_reasons_and_traces": true,
+    "original_seconds": 6.7611,
+    "bounded_seconds": 0.7344
+  },
+  "frozen_mathematical_code_hashes_unchanged": true,
+  "completed_comparison_files_reused": true
+}

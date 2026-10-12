@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "date": "2026-10-08",
+  "focused_tests": {
+    "tests": 51,
+    "failures": 0,
+    "errors": 0
+  },
+  "stage_counts": {
+    "screen": 9000,
+    "refine": 575,
+    "test": 1200,
+    "small": 200,
+    "scan": 450,
+    "confirm": 59,
+    "raw": 300
+  },
+  "coverage_checks": "Exact expected case-rule pairs, disjoint calibration/test source sets, frozen numerical source hashes, numerical budgets, rule IDs and comparison input hashes checked by analyzer.",
+  "source_hashes": {
+    "xxz_image_gibbs_v2.py": "379caad6f3c035a4cdc21f39739d018094385cbdd7348a6317cae8543a0ee093",
+    "xxz_sse_cluster.py": "195cd96f27b0c55ba77ff73c47611852f92e33375787a7249c142530e3dba2e8",
+    "xxz_image_gibbs.py": "bd913f06ad3ba80d1c63a2b0cc6be3c5a60785152f633c6dde8b17954e8b707c",
+    "xxz_sse_fast.py": "cdc0e367fff5d89909400d01f3e643f5871000546cacffeab7f72e4fb29b2e1c",
+    "xxz_glauber.py": "fdf36afa73de9bada80a645b74974869cff7126ff368fda72f397809e31acc1b",
+    "ising_grid_transfer.py": "1ddc0418ab54f11583d1d64b351b372ab843de9a0140c1e282fd758bda1fe494",
+    "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9",
+    "run_weizmann_xxz_v2.py": "5e3999556711ee9248bad2ae3a9a1b8bcb1dfdb05eb21551fa74fba311d90ce5"
+  },
+  "small_exact_checks": {
+    "Ising": {
+      "cases": 100,
+      "convergence_checks_passed": 100,
+      "mean_gamma_linf": 0.0012606061074189492,
+      "max_gamma_linf": 0.005767055747777944
+    },
+    "XXZ": {
+      "cases": 100,
+      "convergence_checks_passed": 100,
+      "mean_gamma_linf": 0.003203655394964293,
+      "max_gamma_linf": 0.006623296584664193
+    }
+  },
+  "figures_visually_checked": 8,
+  "report_local_links_checked": true,
+  "diff_whitespace_check": "passed",
+  "scope": "51 targeted tests and study validation; not the entire historical repository test suite."
+}

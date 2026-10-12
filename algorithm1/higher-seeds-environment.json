@@ -1,0 +1,17 @@
+{
+  "python": "3.12.4 (main, Jun  6 2024, 18:26:44) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-14.4-arm64-arm-64bit",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "numba": "0.68.0",
+  "skimage": "0.25.2",
+  "workers": {
+    "calibrate": 4,
+    "test": 6,
+    "budget": 2
+  },
+  "unit_tests": 46,
+  "preoptimization_pilot_maximum_metric_difference": 2.4883775040507317e-09,
+  "preoptimization_pilot_identical_decisions": true,
+  "note": "Batched moments replaced repeated dense variance passes. Original incomplete calibration results retained under results/higher-seeds/pre-optimization; full calibration restarted with frozen code hashes."
+}

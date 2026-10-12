@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "counts": {
+    "banks": 1017,
+    "prefixes": 1011,
+    "calibration_endpoints": 1350000,
+    "comparison_endpoints": 133520,
+    "traces": 133520,
+    "replayed_banks": 16
+  },
+  "max_metric_replay_difference": 0.0,
+  "code_hashes": {
+    "xxz_image_gibbs_v2.py": "379caad6f3c035a4cdc21f39739d018094385cbdd7348a6317cae8543a0ee093",
+    "xxz_sse_cluster.py": "195cd96f27b0c55ba77ff73c47611852f92e33375787a7249c142530e3dba2e8",
+    "xxz_image_gibbs.py": "bd913f06ad3ba80d1c63a2b0cc6be3c5a60785152f633c6dde8b17954e8b707c",
+    "xxz_sse_fast.py": "cdc0e367fff5d89909400d01f3e643f5871000546cacffeab7f72e4fb29b2e1c",
+    "xxz_glauber.py": "fdf36afa73de9bada80a645b74974869cff7126ff368fda72f397809e31acc1b",
+    "ising_grid_transfer.py": "1ddc0418ab54f11583d1d64b351b372ab843de9a0140c1e282fd758bda1fe494",
+    "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9",
+    "run_weizmann_xxz_v2.py": "5e3999556711ee9248bad2ae3a9a1b8bcb1dfdb05eb21551fa74fba311d90ce5",
+    "run_xxz_two_seed_study.py": "170c0d25ac7e281f9eaabea4b882cf46103a650d49972ed7f3c578604bb79b24",
+    "xxz_two_seed.py": "1ab13040ea2f15a60ff4961b6aa0c0afc0a8174223632860817fa68eed2cc6cd",
+    "segmentation_bpm.py": "e23217e6338b6f64dcac0436bae2ed535dac4085838be94d66d651898da8a1d4",
+    "ising_seed_sampling.py": "879a49afd8d85bfd907ca100c16b201bf903fa07cffc871056792e8cc4d94c29",
+    "weizmann_petz_data.py": "1e87ad3c6339ac79d8e3caa6a7469e9b9539d120cfe9fbcb75efdacd89a9e9fd",
+    "iterative_seed_gibbs.py": "cda5c7f2737898547175b8222c0cf1d511340dcbb6397cebd82c2e366601ab97",
+    "iterative_seed_readout.py": "4e757c1cc9271664650dea93a7b29490eb3d8f503f4ecefa4965fa6e04d80a37",
+    "run_iterative_seed_study.py": "a099a28639af67da9500c471fc05c61a0f617ede3e04d26e1079251742a9ae0d",
+    "iterative_seed_extended_loops.py": "d68f22b23ca6bd1571b7ecb23af9765696a32452f977b9e33dbbc9f13deea847",
+    "promotion_reliability.py": "2e7ac689c92370db59214a6c7711677248edb24a85eec1ec11138f0e2d4bd1ab",
+    "promotion_reliability_bank.py": "31b4132737818a09ea43658cff3670e60dfa9acdd674dc88aa093f97fae2384a",
+    "run_promotion_reliability.py": "466a4a4e4c0b7e2435298f647efe45d055407162860abe5952961137f25372a0"
+  },
+  "protocol_sha256": "efd1b7f0ceebceca13351f47fa91ce1306125a3157fc3a3894fc9243e1228eed"
+}

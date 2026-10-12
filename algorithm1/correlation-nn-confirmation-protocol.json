@@ -1,0 +1,10 @@
+{
+  "jobs": [],
+  "criterion": "Primary quality-eligible XXZ, either seed mode, any failed full-pair/scalar convergence. Test labels and prediction errors not used.",
+  "settings": {
+    "chains": 4,
+    "samples": 8192,
+    "burn": 6000,
+    "thin": 2
+  }
+}

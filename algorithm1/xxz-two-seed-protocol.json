@@ -1,0 +1,387 @@
+{
+  "date": "2026-10-08",
+  "hamiltonian": "H=-sum[g(XX+YY)+atan(alpha*(tau-d))ZZ]/4; Gamma=<ZZ>/4",
+  "candidates": [
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.75,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.75,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.75,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.75,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.75,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.75,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.75,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.1,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "q90",
+      "sensitivity": "inverse_spread",
+      "K": 1.6,
+      "transverse": "relative",
+      "strength": 0.75,
+      "temperature": "longitudinal"
+    }
+  ],
+  "settings": {
+    "calibrate": {
+      "burn": 1500,
+      "samples": 2048,
+      "thin": 2,
+      "chains": 4
+    },
+    "test": {
+      "burn": 2000,
+      "samples": 4096,
+      "thin": 2,
+      "chains": 4
+    },
+    "confirm": {
+      "burn": 8000,
+      "samples": 16384,
+      "thin": 2,
+      "chains": 4
+    }
+  },
+  "code_hashes": {
+    "xxz_image_gibbs_v2.py": "379caad6f3c035a4cdc21f39739d018094385cbdd7348a6317cae8543a0ee093",
+    "xxz_sse_cluster.py": "195cd96f27b0c55ba77ff73c47611852f92e33375787a7249c142530e3dba2e8",
+    "xxz_image_gibbs.py": "bd913f06ad3ba80d1c63a2b0cc6be3c5a60785152f633c6dde8b17954e8b707c",
+    "xxz_sse_fast.py": "cdc0e367fff5d89909400d01f3e643f5871000546cacffeab7f72e4fb29b2e1c",
+    "xxz_glauber.py": "fdf36afa73de9bada80a645b74974869cff7126ff368fda72f397809e31acc1b",
+    "ising_grid_transfer.py": "1ddc0418ab54f11583d1d64b351b372ab843de9a0140c1e282fd758bda1fe494",
+    "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9",
+    "run_weizmann_xxz_v2.py": "5e3999556711ee9248bad2ae3a9a1b8bcb1dfdb05eb21551fa74fba311d90ce5",
+    "run_xxz_two_seed_study.py": "170c0d25ac7e281f9eaabea4b882cf46103a650d49972ed7f3c578604bb79b24",
+    "xxz_two_seed.py": "1ab13040ea2f15a60ff4961b6aa0c0afc0a8174223632860817fa68eed2cc6cd",
+    "segmentation_bpm.py": "e23217e6338b6f64dcac0436bae2ed535dac4085838be94d66d651898da8a1d4",
+    "ising_seed_sampling.py": "879a49afd8d85bfd907ca100c16b201bf903fa07cffc871056792e8cc4d94c29",
+    "weizmann_petz_data.py": "1e87ad3c6339ac79d8e3caa6a7469e9b9539d120cfe9fbcb75efdacd89a9e9fd"
+  },
+  "skimage": "0.25.2",
+  "manifest_sha256": "5feccae9584e4899cb492af27de2792d6806254f84cb423f2ac0354f93af4762",
+  "data": "Verified Weizmann archive; 25 calibration sources and 75 comparison sources; both 8x8 and 16x16; oracle interior seeds. Reused development split, not external validation.",
+  "reanalysis": "All original test, scan and small runs; original confirm substitutes only for matching main test rows. Paired batch differences retain covariance. Point masks use max signed seed correlation. Source hashes retained.",
+  "selection": "All 40 candidates on 25 calibration sources at BOTH sizes. Equal weight per source and per size. Highest mean mixing-aware lower IoU per model/threshold family for two_max; also overall one_background winners and secondary raw-IoU two_max winners. Ties sampled IoU then rule ID. No BPM tuning. Additional g=0 controls match each selected two_max XXZ state parameters.",
+  "comparison": "Selected rules on all 75 sources at both sizes; all three readouts from same samples. Exact iid Gibbs for Ising, numerical SSE Gibbs for XXZ. Equal retained configuration counts; unequal effective sample sizes and cost are reported.",
+  "confirmation": "All selected-rule test cases with max Rhat>=1.05/undefined or minimum paired-score ESS<200 rerun at fixed larger budget. Also first five lexically sorted test source IDs at16 for each rule independent of outcomes. Substitute confirmations without changing rules or dropping failures.",
+  "uncertainty": "Approximate Bonferroni-t intervals over 3 readouts times all pixels. SE is max of paired batch-mean and paired between-chain SE. Old cached runs retain 16 blocks, new runs32. Not iid binomial coverage or rigorous finite-time MCMC coverage. Old direct-score Rhat only available on batch series; guard at1.1 plus original diagnostics. New direct-score and scalar/raw Rhat checked at1.05.",
+  "unresolved": "Exclude both known seeds; report statistical unresolved and mixing-aware unresolved (all pixels unresolved on failed cases). IoU/BPM use tentative full masks, including unresolved pixels.",
+  "bpm": {
+    "source": "https://arxiv.org/pdf/2410.10713v1",
+    "primary_radius": 1,
+    "radii": [
+      0,
+      1,
+      2
+    ],
+    "skeletonization": "skimage.morphology.skeletonize(method=zhang)",
+    "distance": "Euclidean disk on evaluated pixel grid; outside image false",
+    "counts": "TP=predicted skeleton within r of truth skeleton; FP=unmatched predicted skeleton; FN=unmatched truth skeleton; IoU=TP/(TP+FP+FN); F1=2TP/(2TP+FP+FN)",
+    "ambiguity": "Paper equations print negative FP/FN masks then l1 norm and an inconsistent unsigned sum. Nonnegative unmatched counts implement the l1 interpretation. Radius and skeletonization algorithm unspecified in paper. Not verified author-code reproduction.",
+    "limitations": "Skeleton metric is a centerline proximity measure, not outline accuracy for filled objects; asymmetric for unequal skeleton lengths. Report symmetric precision/recall F1 separately. r=0 is skeleton IoU, not ordinary IoU. Both masks empty score1, one empty score0."
+  },
+  "dataset_comparison": "Search for original 32x32 crack test patches and author evaluation code; no claim of direct replication without verified access, exact split and metric choices."
+}

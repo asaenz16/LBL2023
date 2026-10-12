@@ -1,0 +1,3 @@
+# Generated scientific figures remain viewable without noisy path-data diffs.
+algorithm1/results/** linguist-generated=true
+algorithm1/results/**/*.svg -diff

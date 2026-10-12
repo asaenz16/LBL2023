@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-08",
+  "original_protocol": "weizmann-xxz-protocol.json",
+  "change": "Only the absolute g=1 arm of the mechanism scan uses combined temperature normalization, matching its calibration definition. All relative-g arms and primary comparisons are unchanged.",
+  "reason": "At the selected small alpha, retaining longitudinal beta while setting g=1 produces very large b*g and excessive SSE expansion/loop work. Two unfinished absolute-g jobs were stopped; no absolute-g result was used to choose this change.",
+  "aborted_absolute_longitudinal_bg_range": [
+    72.23000039428373,
+    593.7613536786461
+  ],
+  "absolute_combined_bg_range": "b*g <= 4K = 4.8",
+  "scan_rules": [
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 0.5,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 1.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "relative",
+      "strength": 2.0,
+      "temperature": "longitudinal"
+    },
+    {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed001",
+      "K": 1.2,
+      "transverse": "absolute",
+      "strength": 1.0,
+      "temperature": "combined"
+    }
+  ],
+  "code_hashes": {
+    "xxz_image_gibbs.py": "bd913f06ad3ba80d1c63a2b0cc6be3c5a60785152f633c6dde8b17954e8b707c",
+    "xxz_sse_fast.py": "cdc0e367fff5d89909400d01f3e643f5871000546cacffeab7f72e4fb29b2e1c",
+    "xxz_glauber.py": "fdf36afa73de9bada80a645b74974869cff7126ff368fda72f397809e31acc1b",
+    "ising_grid_transfer.py": "1ddc0418ab54f11583d1d64b351b372ab843de9a0140c1e282fd758bda1fe494",
+    "ising_monte_carlo.py": "229805fc666c93aa8f7312a50763c0454bd2e77dba5f5caae7ab445637bccedb",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9",
+    "run_weizmann_xxz.py": "cdc364948dcb846cd73022ac4431b50cc26525a63964c64d5815d7b1e6aa0f76"
+  },
+  "scan_script_sha256": "63804c8a3ec80ca00e8134a5873e5d64236a0ae47334c0ffc8d1ea2b17d3a2c8",
+  "additional_controls": "Apply the already-planned three matched-b classical controls to the 75 native 2x4 test crops as well as the squares; also report all previously selected Ising family rules on those crops, with no retuning."
+}

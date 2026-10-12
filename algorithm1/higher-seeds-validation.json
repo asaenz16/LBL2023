@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "files": 1800,
+  "trajectories": 161250,
+  "endpoints": 161250,
+  "calibration_endpoints": 734400,
+  "full_bank_replays": [
+    {
+      "file": "110016671724--square-16--Ising-background--1024.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--Ising-background--2048.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--Ising-background--512.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--Ising-foreground--1024.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--Ising-foreground--2048.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--Ising-foreground--512.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--XXZ-background--1024.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--XXZ-background--2048.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--XXZ-background--512.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--XXZ-foreground--1024.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--XXZ-foreground--2048.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-16--XXZ-foreground--512.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--Ising-background--1024.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--Ising-background--2048.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--Ising-background--512.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--Ising-foreground--1024.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--Ising-foreground--2048.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--Ising-foreground--512.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--XXZ-background--1024.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--XXZ-background--2048.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--XXZ-background--512.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--XXZ-foreground--1024.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--XXZ-foreground--2048.json",
+      "maximum_metric_discrepancy": 0.0
+    },
+    {
+      "file": "110016671724--square-8--XXZ-foreground--512.json",
+      "maximum_metric_discrepancy": 0.0
+    }
+  ],
+  "code_hashes": {
+    "higher_seed_readout.py": "83c02816798d4de128836ca3706aed9de2083f24cbe32a037e548ada7f47bee0",
+    "run_higher_seed_study.py": "26f206729a0785ac7f871b855484f6e259d5f90a7b50acbdaafd9ef440dd8166",
+    "segmentation_bpm.py": "e23217e6338b6f64dcac0436bae2ed535dac4085838be94d66d651898da8a1d4"
+  }
+}

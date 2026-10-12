@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-12",
+  "before_outer_evaluation": true,
+  "sampling_quality": "Primary NN and reoptimized classical Hamiltonian selections require >=95% full-pair/scalar convergence among the 80 outer-training sources only. Retain unrestricted XXZ selections separately; include all outer-test cases without dropping failures.",
+  "reason": "Initial label-independent full-matrix diagnostics exposed widespread cold-XXZ mixing failures. Avoid identifying sampling artifacts as Gibbs information.",
+  "refinement": "Also refine top two quality-eligible Hamiltonians and the previously used foreground Hamiltonian. Other architecture, optimizer, and data split settings remain unchanged.",
+  "diagnostics": "Direct-observation unit test caught a missing N/(N-1) correction in ESS. Fix it and repair in-flight outputs after sampling. Correlation means, standard errors, Rhat, and convergence flags are unchanged.",
+  "confirmation": "Check selected quality-eligible XXZ outer-test cases that fail full-pair/scalar convergence with 8192 samples per chain and burn-in 6000. Evaluate frozen networks on replacement correlations without retuning.",
+  "hashes": {
+    "correlation_nn.py": "4f0cf41d70009beac69c45032901a1e35b48a3d52e34caa119d01cebc4cf0fcd",
+    "correlation_nn_data.py": "d80618cf1acaa32b2404b5a8acb6b81b484b46670a196bb26d7396be75397c2b",
+    "run_correlation_nn.py": "d1f97f682cba4fa611d5be683cbf55dbb11ea894bad844ceb2c681d35a8277cf",
+    "audit_correlation_nn.py": "2a79e837c5043873c3e9d3ec9a8b111c53fe8d003a32719c51589924d1b37290"
+  },
+  "matched_prior_control": "Before any control fits: preserve the constant identity-matrix input in the prior, image, and column controls so that pixel-position coding and volume-network capacity match the full-C decoder. Raw correlations are read only by full/column variants. All controls also receive the graph architecture option; the full-C decoder is unchanged.",
+  "full_decoder_equivalence_after_control_fix": [
+    {
+      "architecture": "volume",
+      "maximum_output_change": 0.0
+    },
+    {
+      "architecture": "graph",
+      "maximum_output_change": 0.0
+    }
+  ],
+  "stronger_classical_controls": "Before outer evaluation, also fit simple sign/threshold/two-seed baselines on all 80 outer-training labels. Keep the original inner-validation-only baselines too. No outer-test labels enter either fit.",
+  "classical_seed_constraints": "Classical candidate-selection scores force the supplied foreground/background labels just as the final prediction does, including tied correlations.",
+  "classical_zero_threshold": "Round the scalar threshold grid to two decimals so its zero entry is exactly zero; avoid treating exact-zero correlations as positive due to np.arange roundoff. Applied before outer metric analysis or inspection of outer predictions.",
+  "unrestricted_confirmation": "After locking all model choices and before inspecting outer segmentation results, also independently resample failed outer-test states of the unrestricted XXZ selections at 8192 samples/chain, burn6000. Keep networks frozen; this is a secondary sampling-sensitivity diagnostic, not a change to primary selection or training.",
+  "seedless_pairing_ablation": "Before outer metric analysis, add a frozen-decoder diagnostic that mismatches each test matrix with each of the 19 other sources in the same fold. For seedless models this exactly permutes predicted masks, since intensities and seed locations are ignored. Average all donors; no fitting or selection changes."
+}

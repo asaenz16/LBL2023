@@ -1,0 +1,4176 @@
+{
+  "date": "2026-10-08",
+  "model": "H=-sum_e [Jx XX+Jy YY+Jz ZZ]/4; Ja=wa*atan(alpha*(tau_a-d)); wx=wy=xy_scale,wz=1",
+  "alignment": "A=<XX+YY+ZZ>; internal mean a=A/3 for equal-copy comparison, with self a=1 and distinct-pair a in [-1,1/3].",
+  "threshold_rules": "Central tau is fixed50, edge-Otsu or positive-edge q75. tau_a=tau+[-width,0,width]*S, S=max(q90(d)-q10(d),1). No clipping. Independent triplets are quantiles(25,50,75), quantiles(50,75,90) of all neighbor differences, or (25,75,125).",
+  "coupling_rules": "alpha=.001,.01,1/S; wx=wy=.25 or1; K=.4,.8,1.6; b=4K/median(sum_a |Ja|) or4K/median(max_a |Ja|). Median-zero fallback max(mean,.001). beta_paper=N*b.",
+  "decisions": "Background: -a_bg > t, t=-.1,0,.1. Two-seed contrast: a_fg-a_bg >0. Same rules also evaluated using ZZ only. Ties predict background; seed labels not clamped.",
+  "calibration": "All 459 rules on native and full-frame 3x3 calibration cases. Average domains within each original source, then average sources. Three independent measurement replicates at 24576 Gibbs copies.",
+  "primary_selection": "Per family maximize mean worst-case IoU over unresolved labels, then exact IoU, then sampled IoU, then lexical IDs. Report raw-exact-IoU winners separately. Never tune on test outcomes.",
+  "families": [
+    "Ising_zero",
+    "Ising_flexible",
+    "XYZ_tied_zero",
+    "XYZ_tied_flexible",
+    "XYZ_staggered_zero",
+    "XYZ_staggered_flexible",
+    "XYZ_staggered_ZZ",
+    "Ising_exact_best",
+    "XYZ_exact_best"
+  ],
+  "test": "All family winners on eligible 3x3 test cases. Extend Ising_zero, Ising_flexible, XYZ_tied_flexible, XYZ_staggered_zero and XYZ_staggered_flexible to eligible 3x4 test cases.",
+  "controls": "For XYZ_staggered_flexible: same Hamiltonian ZZ and alignment readouts; also Jz-only at the same b, and collapsed threshold triple at its arithmetic mean at both unchanged b and matched median total interaction scale.",
+  "samples": "Independent global Pauli-basis projective samples from exact Gibbs distributions; no MCMC sign problem, mixing error, tensor truncation or circuit implementation. Alignment splits total copies equally across X/Y/Z; ZZ spends all copies on Z. Both seeds estimated from each outcome.",
+  "uncertainty": "Hoeffding union bound, 95 percent jointly over both observables, background/contrast scores, all pixels and three budgets per model/replicate. Contrast radius twice background radius. Mean-IoU ranges allow every unresolved label assignment. Resolution excludes both known seeds; confidently incorrect labels reported.",
+  "budgets": [
+    6144,
+    24576,
+    98304
+  ],
+  "test_replicates": 16,
+  "primary_budget": 24576,
+  "exact": "All parity sectors, dense exact spectra through12 spins. These experiments do not establish scalability to previous64/256-spin benchmarks. No claim of quantum speedup.",
+  "reuse": "Sources used in previous development; internal held-out exploratory comparison, not fresh external validation.",
+  "candidates": [
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "Ising",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed50",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "edge_otsu",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.25,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "q75",
+      "width": 0.5,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles2575",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "quantiles5090",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed001",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "fixed01",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 0.25,
+      "K": 1.6,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.4,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 0.8,
+      "normalization": "max"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "sum"
+    },
+    {
+      "model": "XYZ",
+      "threshold": "fixed_triple",
+      "width": 0.0,
+      "sensitivity": "inverse_spread",
+      "xy_scale": 1.0,
+      "K": 1.6,
+      "normalization": "max"
+    }
+  ],
+  "code_hashes": {
+    "xyz_alignment.py": "8524b6220a77cb629c5260e47ca5643a3ade8f2262c7658315fb5ac08ea060d9",
+    "run_weizmann_xyz.py": "528b49e35acb355b795fa7029fd46d67b1b007c2f86e908280dd273927fb501e",
+    "weizmann_petz_data.py": "1e87ad3c6339ac79d8e3caa6a7469e9b9539d120cfe9fbcb75efdacd89a9e9fd",
+    "weizmann_petz_metrics.py": "489ce82e1ff272ba163596720e1c548616e26136a0ca732621f7d66a49236bf9",
+    "ising_thresholds.py": "30365a087b0277619bca644ddd29c0d83e2e648dcb90796069bbeabee18fa7f8",
+    "ising_algorithm1.py": "898ffe08c96a87cad04f3880148bcebafe14231891862dde280261d4df2f5450"
+  },
+  "manifest_sha256": "f6599807e2c300749e4ca0ab16b6f4414f36238ffcf15642b9a0ab33c4035272"
+}

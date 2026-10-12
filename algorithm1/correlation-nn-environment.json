@@ -1,0 +1,40 @@
+{
+  "python": "3.12.4 (main, Jun  6 2024, 18:26:44) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "platform": "macOS-14.4-arm64-arm-64bit",
+  "cpu_count": 8,
+  "torch": "2.14.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "device": "cpu",
+  "torch_threads": 1,
+  "deterministic_algorithms": true,
+  "models": [
+    {
+      "architecture": "volume",
+      "width": 24,
+      "parameters": 29785
+    },
+    {
+      "architecture": "volume",
+      "width": 40,
+      "parameters": 75241
+    },
+    {
+      "architecture": "graph",
+      "width": 24,
+      "parameters": 21289
+    }
+  ],
+  "tests_passed": 18,
+  "code_sha256": {
+    "audit_correlation_nn.py": "9c92d4eb46dc03eb07f09310c2b67f20de8eaa8c780150fb408f9edd8561f161",
+    "analyze_correlation_nn.py": "3a3471fa10b64830824b510d3ef96b98804b9b643089df5c15f83b4ab17bcd8b",
+    "correlation_nn_data.py": "d80618cf1acaa32b2404b5a8acb6b81b484b46670a196bb26d7396be75397c2b",
+    "correlation_nn.py": "f38386d3f3ad7a37ff22afc0a21c920c1a28e9a03af98b8fd4c16b4ee6d182a8",
+    "run_correlation_nn.py": "44be52715c963fa2098374f3a66ec57bcfa9d91a2aa609971ce6e0f10b756069",
+    "finish_correlation_nn.py": "21d143732691aac4ac2088f8fbb09df42e9dd4455f50640864267b851638b0a8",
+    "confirm_correlation_nn.py": "0e6336639ec48667ea8c75a9590467c9ad52dcd8f8c88a09aa246192b7803e59"
+  },
+  "tests_report": "results/correlation-nn/tests.xml",
+  "test_sha256": "ebe4761d0cf5b29a0de2a2fa6220159bb4a7beabc1985ac14f0c180e3f919caa"
+}

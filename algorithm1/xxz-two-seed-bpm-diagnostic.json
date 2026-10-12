@@ -1,0 +1,42 @@
+{
+  "shape": [
+    16,
+    16
+  ],
+  "examples": [
+    {
+      "example": "Crack shifted by one pixel",
+      "metrics": {
+        "iou": 0.0,
+        "dice": 0.0,
+        "accuracy": 0.921875,
+        "bpm_iou_r0": 0.0,
+        "bpm_f1_r0": 0.0,
+        "bpm_symmetric_f1_r0": 0.0,
+        "bpm_iou_r1": 1.0,
+        "bpm_f1_r1": 1.0,
+        "bpm_symmetric_f1_r1": 1.0,
+        "bpm_iou_r2": 1.0,
+        "bpm_f1_r2": 1.0,
+        "bpm_symmetric_f1_r2": 1.0
+      }
+    },
+    {
+      "example": "Filled object replaced by skeleton",
+      "metrics": {
+        "iou": 0.03,
+        "dice": 0.05825242718446602,
+        "accuracy": 0.62109375,
+        "bpm_iou_r0": 1.0,
+        "bpm_f1_r0": 1.0,
+        "bpm_symmetric_f1_r0": 1.0,
+        "bpm_iou_r1": 1.0,
+        "bpm_f1_r1": 1.0,
+        "bpm_symmetric_f1_r1": 1.0,
+        "bpm_iou_r2": 1.0,
+        "bpm_f1_r2": 1.0,
+        "bpm_symmetric_f1_r2": 1.0
+      }
+    }
+  ]
+}

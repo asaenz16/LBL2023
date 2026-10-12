@@ -1,0 +1,11 @@
+{
+  "source": "https://github.com/QuantumComputingLab/qclab",
+  "tag": "v1.2.0",
+  "commit": "b9de8ca2d2e78186dc159a6ac6340646b7d603aa",
+  "matlab": "26.2.0.3386108 (R2026b)",
+  "official_tests_passed": 159,
+  "command": "results=runtests(fullfile(pwd,'external','qclab','test'),'IncludeSubfolders',true); assertSuccess(results);",
+  "log_sha256": "ba1feb7e4002547d68e3a6cf87d08f8f0d32369a28a8df49abead9e8802b480e",
+  "log": "results/ising-petz/qclab-installation-tests.log",
+  "note": "This records the separately executed upstream suite, not tests run by verify_ising_petz_qclab."
+}

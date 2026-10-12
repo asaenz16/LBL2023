@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "inner_fits": 693,
+  "final_fits": 240,
+  "evaluation_images": 100,
+  "outer_folds": 5,
+  "replicates": 3,
+  "no_source_overlap": true,
+  "checkpoint_hashes_checked": true,
+  "measurement_to_training_cache_checks": 3600
+}

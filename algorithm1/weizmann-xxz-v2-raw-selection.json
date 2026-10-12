@@ -1,0 +1,36 @@
+{
+  "Ising": {
+    "rule_id": "5a6bd2a389bd",
+    "rule": {
+      "threshold": "edge_otsu",
+      "sensitivity": "inverse_spread",
+      "K": 0.4,
+      "transverse": "relative",
+      "strength": 0.0,
+      "temperature": "longitudinal"
+    },
+    "family": "Ising/edge_otsu",
+    "mean_iou": 0.35371822930173147,
+    "mean_lower_iou": 0.2651741569355015,
+    "mean_unfiltered_lower_iou": 0.2651741569355015,
+    "mean_resolved": 0.8709375,
+    "convergence_fraction": 1.0
+  },
+  "XXZ": {
+    "rule_id": "11ddc2e591ec",
+    "rule": {
+      "threshold": "edge_otsu",
+      "sensitivity": "fixed01",
+      "K": 0.8,
+      "transverse": "relative",
+      "strength": 0.25,
+      "temperature": "combined"
+    },
+    "family": "XXZ/edge_otsu",
+    "mean_iou": 0.345287221295699,
+    "mean_lower_iou": 0.3055606051908724,
+    "mean_unfiltered_lower_iou": 0.3055606051908724,
+    "mean_resolved": 0.92875,
+    "convergence_fraction": 1.0
+  }
+}

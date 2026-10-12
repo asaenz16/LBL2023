@@ -1,0 +1,364 @@
+{
+  "XXZ/none": {
+    "changed_images": 0,
+    "remaining_failed": 0,
+    "iou": {
+      "mean": 0.5994092752775038,
+      "ci95": [
+        0.5574034652663268,
+        0.6396467659741852
+      ]
+    },
+    "metrics": {
+      "iou": {
+        "mean": 0.5994092752775038,
+        "ci95": [
+          0.5574034652663268,
+          0.6396467659741852
+        ]
+      },
+      "dice": {
+        "mean": 0.7268956532416307,
+        "ci95": [
+          0.6892649708848974,
+          0.7622112443819621
+        ]
+      },
+      "pixel_accuracy": {
+        "mean": 0.865390625,
+        "ci95": [
+          0.8456640625,
+          0.8839453125
+        ]
+      },
+      "bpm": {
+        "mean": 0.46746480015152014,
+        "ci95": [
+          0.41897000276740476,
+          0.5173014808873482
+        ]
+      },
+      "score_band_unresolved": {
+        "mean": 0.04421875,
+        "ci95": [
+          0.03828125,
+          0.0505078125
+        ]
+      }
+    },
+    "difference_vs_original": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "difference_vs_prior": {
+      "mean": 0.1669022282659998,
+      "ci95": [
+        0.13230704194167806,
+        0.2022668348953917
+      ]
+    },
+    "difference_vs_ising": {
+      "mean": 0.019477847453559953,
+      "ci95": [
+        0.0010378946350845936,
+        0.03808050164147127
+      ]
+    },
+    "difference_vs_primary_xxz": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "mean_retained_configurations": 8192.0,
+    "mean_total_configurations_spent": 8192.0,
+    "bank_sha256": {}
+  },
+  "XXZ/foreground": {
+    "changed_images": 0,
+    "remaining_failed": 0,
+    "iou": {
+      "mean": 0.663172051022072,
+      "ci95": [
+        0.6241911858550608,
+        0.7007701501726415
+      ]
+    },
+    "metrics": {
+      "iou": {
+        "mean": 0.663172051022072,
+        "ci95": [
+          0.6241911858550608,
+          0.7007701501726415
+        ]
+      },
+      "dice": {
+        "mean": 0.7789604757167041,
+        "ci95": [
+          0.7454769310685679,
+          0.8098454323467557
+        ]
+      },
+      "pixel_accuracy": {
+        "mean": 0.896796875,
+        "ci95": [
+          0.8830078125,
+          0.91015625
+        ]
+      },
+      "bpm": {
+        "mean": 0.5297498390743057,
+        "ci95": [
+          0.48094267091949566,
+          0.5773317794393624
+        ]
+      },
+      "score_band_unresolved": {
+        "mean": 0.03819607843137254,
+        "ci95": [
+          0.0332156862745098,
+          0.0430205882352941
+        ]
+      }
+    },
+    "difference_vs_original": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "difference_vs_prior": {
+      "mean": 0.1807663674512144,
+      "ci95": [
+        0.14340789062210965,
+        0.21797703220224124
+      ]
+    },
+    "difference_vs_ising": {
+      "mean": -0.0016420772895819147,
+      "ci95": [
+        -0.012505597191214045,
+        0.010123405052192122
+      ]
+    },
+    "difference_vs_primary_xxz": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    "mean_retained_configurations": 8192.0,
+    "mean_total_configurations_spent": 8192.0,
+    "bank_sha256": {}
+  },
+  "XXZ-unrestricted/none": {
+    "changed_images": 34,
+    "remaining_failed": 0,
+    "iou": {
+      "mean": 0.5985917699975396,
+      "ci95": [
+        0.5558712196602241,
+        0.6412814796583604
+      ]
+    },
+    "metrics": {
+      "iou": {
+        "mean": 0.5985917699975396,
+        "ci95": [
+          0.5558712196602241,
+          0.6412814796583604
+        ]
+      },
+      "dice": {
+        "mean": 0.7232574238197743,
+        "ci95": [
+          0.685063596912904,
+          0.760391994704349
+        ]
+      },
+      "pixel_accuracy": {
+        "mean": 0.8607421875,
+        "ci95": [
+          0.8410546875,
+          0.8798447265625
+        ]
+      },
+      "bpm": {
+        "mean": 0.45594604606755706,
+        "ci95": [
+          0.4048012215131737,
+          0.5072927725800217
+        ]
+      },
+      "score_band_unresolved": {
+        "mean": 0.047109375,
+        "ci95": [
+          0.039569335937500005,
+          0.0548046875
+        ]
+      }
+    },
+    "difference_vs_original": {
+      "mean": 0.0007077736478366972,
+      "ci95": [
+        -0.00124841594170972,
+        0.0027821073505930787
+      ]
+    },
+    "difference_vs_prior": {
+      "mean": 0.1660847229860355,
+      "ci95": [
+        0.1265603394800214,
+        0.20616740681328324
+      ]
+    },
+    "difference_vs_ising": {
+      "mean": 0.01866034217359568,
+      "ci95": [
+        -0.0013991579462893982,
+        0.03790775634326819
+      ]
+    },
+    "difference_vs_primary_xxz": {
+      "mean": -0.0008175052799642723,
+      "ci95": [
+        -0.025009903793081545,
+        0.024874122844147518
+      ]
+    },
+    "mean_retained_configurations": 16547.84,
+    "mean_total_configurations_spent": 19333.120000000003,
+    "bank_sha256": {
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/dscf0034_l--square-16.npz": "1c8777955130afc6167341ac437bf6bbc008d53f723e5cd3aca5b3c137865569",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/imagen_072__1_--square-16.npz": "94d42700163997977923684792263952e937264dec263fa93f70dca31584865c",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/img_4214--square-16.npz": "446531903e59b01ab3e528ab42baa3741756f12812939c68e03f119b92b5a29f",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/dscf3772--square-16.npz": "2370089287c3d411646122ebb4b284e8ebc0ec60f9a6425fcfc0fc8edc3c5619",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/skookumchuk_starfish1--square-16.npz": "0796129fa9e346eab2ae1e1aa6cc3f50151729a9de095d9edc71107ad1630286",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/b2pods001--square-16.npz": "7ec816d38463ac84efa66e074ab9bd3fbd7264aca24dff93678a0e5b35a95c27",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/img_1516--square-16.npz": "9924b83ee3a4338257e7322621b353a6fa104f2bfa30364a14ed74885de0aac9",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/pic1092515922117--square-16.npz": "0892eb93e8750afb59a2ad505f1f4a349af013be68f5a5f0592fbc739b8cbc49",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/dscf0459--square-16.npz": "afc725fd9e4245643e8794497d8452f066fc3400888d7217c208eae3b45384da",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/imgp2712--square-16.npz": "118b031b2f7491a4e86625bf1200cdc026dbbbd6f54c1b3957468caf6104124b",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/postjp--square-16.npz": "c516042eb2bc8ee2f1747fce5a4c1a44f9af29ede4831c1493d3f381336ad0b9",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/113334665744--square-16.npz": "38366ca8a4a534e22c4aa62e044bdf12c5cef596b6afcad20aa65dc03a259d6a",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/aaa--square-16.npz": "304fb4bf481f694bd2c1ddbe7bb4dd480a800aa6c090c975eb04f27e16d9e694",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/img_1965--square-16.npz": "8cc00d5cb78f95015f837a921a36a912b841105ce72edd15ee70eb0da46037ef",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/bbmf_lancaster_july_06--square-16.npz": "1ac0e7f4057cda05621c9366c1bf2f627995d69a0d315decb57ac7631c3b1ea4",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/b2chopper008--square-16.npz": "47e56b3d706ccf742723fbc0f3f6c5eb130ec1af175639a83754ad2dc632fdf8",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/windowcn_0078--square-16.npz": "506111b9a077e0612eb3c771166e4e7f4b782568f907d3feb0d98b55faeae6e0",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/e779bd0daba9/pict2272--square-16.npz": "d20d8d402413fb97c25fd5d5a27bed5861949db11c60c0c8a02682042f3c88ca",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/london_zoo3--square-16.npz": "63f8fcda592fb40d08bdf446eba1ab4957be4a22cdda6caab17ea63004874055",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/sharp_image--square-16.npz": "7f1af2e37a4f375fbdf7c77928c54f3f672b32dfd1ee03b9dc8f049a75ea029c",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/mexico3--square-16.npz": "c581ab8a5ed20fd878c2362904049c3dd016d1ad4754c9d0ebde12038d455c48",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/dscf3583--square-16.npz": "fb079107a86ce5b2461d25615ed892e17d2cdb917954fd6aaa5dfe458110d78b",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/dscf3623--square-16.npz": "92bcbc395dd68a41181d5edcc282a2d71cd83568108177c4a91d3f41339b9a1b",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/b7nature_trees002--square-16.npz": "6318381799103a9b63f5a7e0dd82b90f9cd93ea0d10f1cbec627aa3d3d2cd9b3",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/oscar2005_05_07--square-16.npz": "2b2e551a66a5f0102efcd488fca373d0d2f70797b1be495929a76abbf4b38e34",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/110016671724--square-16.npz": "00ffa8338268ad697c6b16a1dc1140ca43b6b302e603b96a6503d61b90dcb3e8",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/b19objects118--square-16.npz": "25dd96bfcda1e3392a6d4d0f5a66fcf813710213fd522c639b364e8a65ffbe90",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/moth061304_0679--square-16.npz": "10a368bf55b23e4a012d9f41816b7e1edad406622233fa2c8a891be7e3b655c9",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/outside_guggenheim_walls--square-16.npz": "daf861a06e7658632f86031a08b6a3957352e83d28e28a99a09a82e674462c94",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/fullicewater--square-16.npz": "31dcf9c1367a05aa0f0f7fdb92948459a52cdecc94c0d60fb3f4bfde511a03ef",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/dscn0756--square-16.npz": "178489c3c437b5849f46b1a82d521e698d9f6a00f6b5b63af853e7ca9ead75d1",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/pic0203vn0105--square-16.npz": "b7052a057c421d55989a33e9a5767713d044239da21d45cb7aad045978ee714a",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/beltaine_4_bg_050502--square-16.npz": "554a6861f0f93cf1ef8a70a8a9a5e92d61559d8f8fa90dca7b7493db4d75ed7e",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/384eeef54c19/matsumt060102_dyj08--square-16.npz": "65133cdcfd326fb271570f28756bb772f10ade1e5ad3cc22a4914eb50031df77"
+    }
+  },
+  "XXZ-unrestricted/foreground": {
+    "changed_images": 10,
+    "remaining_failed": 0,
+    "iou": {
+      "mean": 0.6626106433970819,
+      "ci95": [
+        0.6230160256307345,
+        0.7013667214388306
+      ]
+    },
+    "metrics": {
+      "iou": {
+        "mean": 0.6626106433970819,
+        "ci95": [
+          0.6230160256307345,
+          0.7013667214388306
+        ]
+      },
+      "dice": {
+        "mean": 0.7776143589213731,
+        "ci95": [
+          0.7435331358343019,
+          0.8089443227531062
+        ]
+      },
+      "pixel_accuracy": {
+        "mean": 0.89625,
+        "ci95": [
+          0.8814443359375,
+          0.9105078125
+        ]
+      },
+      "bpm": {
+        "mean": 0.5348224169737025,
+        "ci95": [
+          0.484479916399166,
+          0.5850607183980431
+        ]
+      },
+      "score_band_unresolved": {
+        "mean": 0.038392156862745094,
+        "ci95": [
+          0.03309803921568627,
+          0.0436470588235294
+        ]
+      }
+    },
+    "difference_vs_original": {
+      "mean": -0.00020667725551380301,
+      "ci95": [
+        -0.001343271772513159,
+        0.0006776297924904306
+      ]
+    },
+    "difference_vs_prior": {
+      "mean": 0.1802049598262242,
+      "ci95": [
+        0.14224235703743507,
+        0.21796492378684257
+      ]
+    },
+    "difference_vs_ising": {
+      "mean": -0.0022034849145720933,
+      "ci95": [
+        -0.010666636274795312,
+        0.006330470519563378
+      ]
+    },
+    "difference_vs_primary_xxz": {
+      "mean": -0.0005614076249901784,
+      "ci95": [
+        -0.008737524879720392,
+        0.007203461005180365
+      ]
+    },
+    "mean_retained_configurations": 10649.6,
+    "mean_total_configurations_spent": 11468.8,
+    "bank_sha256": {
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/london_zoo3--square-16.npz": "63f8fcda592fb40d08bdf446eba1ab4957be4a22cdda6caab17ea63004874055",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/sharp_image--square-16.npz": "7f1af2e37a4f375fbdf7c77928c54f3f672b32dfd1ee03b9dc8f049a75ea029c",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/mexico3--square-16.npz": "c581ab8a5ed20fd878c2362904049c3dd016d1ad4754c9d0ebde12038d455c48",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/dscf3583--square-16.npz": "fb079107a86ce5b2461d25615ed892e17d2cdb917954fd6aaa5dfe458110d78b",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/110016671724--square-16.npz": "3466fc57caa4de52c1136726cb2465e8506a88c9168605a74b7f75107b8dc48f",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/moth061304_0679--square-16.npz": "9479b1fcbd27023c7596f34c9e088bdcf92bee646ee23d2d4260f5e6a4e578df",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/outside_guggenheim_walls--square-16.npz": "eb0a7067a71097bf2268d2dc01b4791ace8a2356eac1e1ef0fca98005cb64326",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/hpim5083_morguefile--square-16.npz": "5e7948a4000335d171132c929da89b2bbb46dfef81b0b74cdb04c89365e9a02e",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/carrigafoyle_castle_ext--square-16.npz": "2505ac7809c4c5b5e1a0b6be609a879282741f9792035320550be31b851168dc",
+      "/Users/papi/Documents/ChatGPT/Quantum Segmentation/LBL2023/algorithm1/results/correlation-nn/confirmation/b371ab4fcf2a/fullicewater--square-16.npz": "e503ef7f7ed38d5abbe4fd22a233b9238960bde2199f5a54e48bc456e78abda9"
+    }
+  }
+}

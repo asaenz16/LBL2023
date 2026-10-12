@@ -1,0 +1,239 @@
+{
+  "note": "Post-selection diagnostic; no parameter selection or Weizmann test retuning. Single noiseless 2x4 two-block image; not evidence of general performance.",
+  "image": [
+    [
+      0.0,
+      0.0,
+      255.0,
+      255.0
+    ],
+    [
+      0.0,
+      0.0,
+      255.0,
+      255.0
+    ]
+  ],
+  "truth": [
+    [
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1
+    ]
+  ],
+  "seeds": [
+    0,
+    2
+  ],
+  "budget": 24576,
+  "records": [
+    {
+      "label": "Ising_flexible",
+      "rule": {
+        "model": "Ising",
+        "threshold": "q75",
+        "width": 0.0,
+        "sensitivity": "fixed01",
+        "xy_scale": 0.0,
+        "K": 0.8,
+        "normalization": "sum"
+      },
+      "parameters": {
+        "thresholds": [
+          255.0,
+          255.0,
+          255.0
+        ],
+        "alpha": 0.01,
+        "edge_spread": 255.0,
+        "scales": {
+          "sum": 1.1970695068293433,
+          "max": 1.1970695068293433
+        },
+        "normalization_fallback": {
+          "sum": false,
+          "max": false
+        },
+        "b": 2.673194815960005,
+        "beta_paper": 21.38555852768004,
+        "distinct_thresholds": 1,
+        "negative_fraction": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mixed_axis_sign_fraction": 0.0,
+        "positive_offdiagonal_fraction": 0.0
+      },
+      "exact": {
+        "iou": 1.0,
+        "dice": 1.0,
+        "accuracy": 1.0,
+        "iou_lower": 1.0,
+        "iou_upper": 1.0,
+        "resolved": 1.0,
+        "correct_resolved": 1.0,
+        "wrong_resolved": 0.0,
+        "predicted_foreground": 0.5,
+        "unknown_iou": 1.0,
+        "minimum_margin": 0.7383337098586282,
+        "seed_accuracy": 1.0
+      },
+      "sample": {
+        "iou": 1.0,
+        "dice": 1.0,
+        "accuracy": 1.0,
+        "iou_lower": 1.0,
+        "iou_upper": 1.0,
+        "resolved": 1.0,
+        "correct_resolved": 1.0,
+        "wrong_resolved": 0.0,
+        "predicted_foreground": 0.5,
+        "unknown_iou": 1.0,
+        "minimum_margin": 0.7382863362630208,
+        "seed_accuracy": 1.0
+      }
+    },
+    {
+      "label": "XYZ_staggered_flexible",
+      "rule": {
+        "model": "XYZ",
+        "threshold": "quantiles2575",
+        "width": 0.0,
+        "sensitivity": "fixed01",
+        "xy_scale": 1.0,
+        "K": 1.6,
+        "normalization": "max"
+      },
+      "parameters": {
+        "thresholds": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "alpha": 0.01,
+        "edge_spread": 255.0,
+        "scales": {
+          "sum": 0.718241704097606,
+          "max": 0.23941390136586865
+        },
+        "normalization_fallback": {
+          "sum": true,
+          "max": true
+        },
+        "b": 26.731948159600048,
+        "beta_paper": 213.85558527680038,
+        "distinct_thresholds": 1,
+        "negative_fraction": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "mixed_axis_sign_fraction": 0.0,
+        "positive_offdiagonal_fraction": 0.1
+      },
+      "exact": {
+        "iou": 0.25,
+        "dice": 0.4,
+        "accuracy": 0.625,
+        "iou_lower": 0.16666666666666666,
+        "iou_upper": 1.0,
+        "resolved": 0.16666666666666666,
+        "correct_resolved": 0.16666666666666666,
+        "wrong_resolved": 0.0,
+        "predicted_foreground": 0.0,
+        "unknown_iou": 0.0,
+        "minimum_margin": 1.0846837446788912e-30,
+        "seed_accuracy": 1.0
+      },
+      "sample": {
+        "iou": 0.5270833333333333,
+        "dice": 0.6614583333333333,
+        "accuracy": 0.671875,
+        "iou_lower": 0.16666666666666666,
+        "iou_upper": 1.0,
+        "resolved": 0.16666666666666666,
+        "correct_resolved": 0.16666666666666666,
+        "wrong_resolved": 0.0,
+        "predicted_foreground": 0.4583333333333333,
+        "unknown_iou": 0.41874999999999996,
+        "minimum_margin": 0.002497355143229167,
+        "seed_accuracy": 1.0
+      }
+    },
+    {
+      "label": "XYZ_fixed_triple_diagnostic",
+      "rule": {
+        "model": "XYZ",
+        "threshold": "fixed_triple",
+        "width": 0.0,
+        "sensitivity": "fixed01",
+        "xy_scale": 1.0,
+        "K": 1.6,
+        "normalization": "max"
+      },
+      "parameters": {
+        "thresholds": [
+          25.0,
+          75.0,
+          125.0
+        ],
+        "alpha": 0.01,
+        "edge_spread": 255.0,
+        "scales": {
+          "sum": 1.7845351564914924,
+          "max": 0.8960553845713439
+        },
+        "normalization_fallback": {
+          "sum": false,
+          "max": false
+        },
+        "b": 7.14241564773548,
+        "beta_paper": 57.13932518188384,
+        "distinct_thresholds": 3,
+        "negative_fraction": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "mixed_axis_sign_fraction": 0.0,
+        "positive_offdiagonal_fraction": 0.6
+      },
+      "exact": {
+        "iou": 1.0,
+        "dice": 1.0,
+        "accuracy": 1.0,
+        "iou_lower": 1.0,
+        "iou_upper": 1.0,
+        "resolved": 1.0,
+        "correct_resolved": 1.0,
+        "wrong_resolved": 0.0,
+        "predicted_foreground": 0.5,
+        "unknown_iou": 1.0,
+        "minimum_margin": 0.5033657210322954,
+        "seed_accuracy": 1.0
+      },
+      "sample": {
+        "iou": 1.0,
+        "dice": 1.0,
+        "accuracy": 1.0,
+        "iou_lower": 1.0,
+        "iou_upper": 1.0,
+        "resolved": 1.0,
+        "correct_resolved": 1.0,
+        "wrong_resolved": 0.0,
+        "predicted_foreground": 0.5,
+        "unknown_iou": 1.0,
+        "minimum_margin": 0.5067291259765625,
+        "seed_accuracy": 1.0
+      }
+    }
+  ]
+}

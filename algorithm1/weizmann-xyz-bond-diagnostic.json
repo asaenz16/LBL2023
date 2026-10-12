@@ -1,0 +1,14 @@
+{
+  "thresholds": [
+    25.0,
+    75.0,
+    125.0
+  ],
+  "alpha": 0.01,
+  "alignment_zero_by_b": {
+    "0.5": 76.03204620112835,
+    "2.0": 79.04412158766294,
+    "8.0": 87.81130613019889
+  },
+  "statement": "For an isolated bond at fixed positive inverse temperature, thresholds, positive arctangent sensitivities and amplitudes, raw alignment is strictly decreasing in d and has one sign crossing over the real line. This does not establish monotonicity when adaptive parameters are recalculated or for correlations in a full image."
+}
